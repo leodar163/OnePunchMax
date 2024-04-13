@@ -21,10 +21,7 @@ namespace Character
         {
             direction = Vector2.zero;
         }
-
-        /// <summary>
-        /// Set up the direction the pawn should move toward. Must be call during FixedUpdate.
-        /// </summary>
+        
         public void MoveToward(Vector2 headedDirection)
         {
             direction = headedDirection.normalized;

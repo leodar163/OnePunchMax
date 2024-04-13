@@ -41,9 +41,6 @@ namespace Character
             _rb.angularVelocity = rotationVelocity;
         }
         
-        /// <summary>
-        /// Set up the position the pawn should look at. Must be called in FixedUpdate.
-        /// </summary>
         public void LookTo(Vector2 positionToLookAt)
         {
             direction = (positionToLookAt - (Vector2)_rb.transform.position).normalized;
