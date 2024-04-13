@@ -1,6 +1,4 @@
-﻿using System;
-using Input;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Character
 {
@@ -14,24 +12,19 @@ namespace Character
         [SerializeField][Min(0)] public float deceleration;
         public Vector2 direction { get; private set; }
 
-        private MainControls _controls;
-        
-        private void Awake()
-        {
-            _controls = new MainControls();
-            _controls.Enable();
-        }
-
-        private void FixedUpdate()
+        protected virtual void FixedUpdate()
         {
             ManageMovements();
         }
 
-        private void LateUpdate()
+        protected virtual void LateUpdate()
         {
             direction = Vector2.zero;
         }
 
+        /// <summary>
+        /// Set up the direction the pawn should move toward. Must be call during FixedUpdate.
+        /// </summary>
         public void MoveToward(Vector2 headedDirection)
         {
             direction = headedDirection.normalized;
