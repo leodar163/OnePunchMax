@@ -2,7 +2,7 @@
 
 namespace Character
 {
-    public class Pawn : MonoBehaviour
+    public class MovementBehavior : MonoBehaviour
     {
         [SerializeField] protected Rigidbody2D _rb;
 
