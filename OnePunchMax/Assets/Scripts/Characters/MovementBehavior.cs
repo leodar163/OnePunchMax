@@ -13,7 +13,7 @@ namespace Characters
         public Vector2 direction { get; private set; }
 
         private bool _hasReceivedInput;
-        
+
         private void FixedUpdate()
         {
             ManageMovements();
