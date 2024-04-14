@@ -10,8 +10,8 @@ namespace Characters
         [Header("Look at")] 
         [SerializeField][Min(0)] public float maxRotationSpeed;
         [SerializeField][Min(0)] public float acceleration;
-        public Vector2 direction { get; private set; }
-        private Vector2 currentDirection;
+        public Vector2 Direction { get; private set; }
+        private Vector2 _flatDirection;
 
         private bool _hasReceivedInput;
         
@@ -20,17 +20,17 @@ namespace Characters
             ManagerLookAt();
             
             if (!_hasReceivedInput)
-                direction = currentDirection;
+                Direction = _flatDirection;
             _hasReceivedInput = false;
         }
 
         private void ManagerLookAt()
         {
-            currentDirection = _rb.transform.rotation * Vector3.right;
+            _flatDirection = _rb.transform.rotation * Vector3.right;
             
-            float currentRotation = Mathf.Atan2(currentDirection.y, currentDirection.x) * Mathf.Rad2Deg;
+            float currentRotation = Mathf.Atan2(_flatDirection.y, _flatDirection.x) * Mathf.Rad2Deg;
 
-            float targetRotation = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            float targetRotation = Mathf.Atan2(Direction.y, Direction.x) * Mathf.Rad2Deg;
 
             float rotationDelta = Mathf.DeltaAngle(currentRotation, targetRotation);
 
@@ -43,7 +43,7 @@ namespace Characters
         
         public void LookTo(Vector2 positionToLookAt)
         {
-            direction = (positionToLookAt - (Vector2)_rb.transform.position).normalized;
+            Direction = (positionToLookAt - (Vector2)_rb.transform.position).normalized;
             _hasReceivedInput = true;
         }
     }
