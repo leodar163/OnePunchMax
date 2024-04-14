@@ -32,7 +32,12 @@ namespace Characters
         private void FixedUpdate()
         {
             DefineAimingDirection();
-            _movementBehavior.MoveToward(InputsUtility.MainControls.Movements.Move.ReadValue<Vector2>());
+
+            Vector2 moveInput = InputsUtility.MainControls.Movements.Move.ReadValue<Vector2>();
+            
+            if (moveInput.magnitude > 0.125f) 
+                _movementBehavior.MoveToward(moveInput);
+            
             _lookAtBehavior.LookTo((Vector2)transform.position + _aimingDirection);
             PlaceAimePoint();
         }

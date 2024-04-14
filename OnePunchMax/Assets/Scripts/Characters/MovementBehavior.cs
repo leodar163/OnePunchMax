@@ -41,6 +41,9 @@ namespace Characters
                 x = currentDirection.x * direction.x <= 0 ? -currentDirection.x : 0,
                 y = currentDirection.y * direction.y <= 0 ? -currentDirection.y : 0
             } * (deceleration * Time.fixedDeltaTime);
+
+            currentDeceleration.x = Mathf.Abs(currentDeceleration.x) > Mathf.Abs(_rb.velocity.x) ? - _rb.velocity.x : currentDeceleration.x;
+            currentDeceleration.y = Mathf.Abs(currentDeceleration.y) > Mathf.Abs(_rb.velocity.y) ? - _rb.velocity.y : currentDeceleration.y;
             
             _rb.velocity += currentAcceleration + currentDeceleration;
             
