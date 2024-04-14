@@ -37,13 +37,22 @@ namespace Inputs
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Aime"",
+                    ""type"": ""Value"",
+                    ""id"": ""933a34d9-d9e4-4a71-97c4-e097646f1e69"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": ""Direction"",
                     ""id"": ""64f5ab58-b53d-4a20-b0ca-aba7fa23fbec"",
-                    ""path"": ""2DVector"",
+                    ""path"": ""2DVector(mode=2)"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -138,6 +147,61 @@ namespace Inputs
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""0fe7077c-d1fa-4a54-a6e9-4c913d09c445"",
+                    ""path"": ""2DVector(mode=2)"",
+                    ""interactions"": """",
+                    ""processors"": ""StickDeadzone"",
+                    ""groups"": """",
+                    ""action"": ""Aime"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""6b1e1aae-95bc-4eae-a835-f6e3964c0c19"",
+                    ""path"": ""<Gamepad>/rightStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Aime"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""4cd7c93c-a494-4af7-9904-e04bb8073923"",
+                    ""path"": ""<Gamepad>/rightStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Aime"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""d96989a8-0a93-4f54-b93f-653a0d017350"",
+                    ""path"": ""<Gamepad>/rightStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Aime"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""d3edda5f-4538-4d24-8a5b-1310033c2035"",
+                    ""path"": ""<Gamepad>/rightStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Aime"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         },
@@ -215,6 +279,7 @@ namespace Inputs
             // Movements
             m_Movements = asset.FindActionMap("Movements", throwIfNotFound: true);
             m_Movements_Move = m_Movements.FindAction("Move", throwIfNotFound: true);
+            m_Movements_Aime = m_Movements.FindAction("Aime", throwIfNotFound: true);
             // Actions
             m_Actions = asset.FindActionMap("Actions", throwIfNotFound: true);
             m_Actions_Fire = m_Actions.FindAction("Fire", throwIfNotFound: true);
@@ -282,11 +347,13 @@ namespace Inputs
         private readonly InputActionMap m_Movements;
         private List<IMovementsActions> m_MovementsActionsCallbackInterfaces = new List<IMovementsActions>();
         private readonly InputAction m_Movements_Move;
+        private readonly InputAction m_Movements_Aime;
         public struct MovementsActions
         {
             private @MainControls m_Wrapper;
             public MovementsActions(@MainControls wrapper) { m_Wrapper = wrapper; }
             public InputAction @Move => m_Wrapper.m_Movements_Move;
+            public InputAction @Aime => m_Wrapper.m_Movements_Aime;
             public InputActionMap Get() { return m_Wrapper.m_Movements; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -299,6 +366,9 @@ namespace Inputs
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
+                @Aime.started += instance.OnAime;
+                @Aime.performed += instance.OnAime;
+                @Aime.canceled += instance.OnAime;
             }
 
             private void UnregisterCallbacks(IMovementsActions instance)
@@ -306,6 +376,9 @@ namespace Inputs
                 @Move.started -= instance.OnMove;
                 @Move.performed -= instance.OnMove;
                 @Move.canceled -= instance.OnMove;
+                @Aime.started -= instance.OnAime;
+                @Aime.performed -= instance.OnAime;
+                @Aime.canceled -= instance.OnAime;
             }
 
             public void RemoveCallbacks(IMovementsActions instance)
@@ -388,6 +461,7 @@ namespace Inputs
         public interface IMovementsActions
         {
             void OnMove(InputAction.CallbackContext context);
+            void OnAime(InputAction.CallbackContext context);
         }
         public interface IActionsActions
         {
