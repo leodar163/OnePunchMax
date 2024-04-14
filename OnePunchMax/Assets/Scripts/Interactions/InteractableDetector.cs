@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Interactions
 {
-    public class InteractableDetector : MonoBehaviour, IInteractor
+    public class InteractableDetector : MonoBehaviour
     { 
         [Header("Detection Settings")]
         [SerializeField] private LayerMask _detectionMask;
@@ -22,7 +22,7 @@ namespace Interactions
 
         private IInteractable _nearestInteractable;
 
-        public IInteractable SelectedInteractable => _nearestInteractable;
+        public IInteractable NearestInteractable => _nearestInteractable;
         
         private Transform _transform;
 

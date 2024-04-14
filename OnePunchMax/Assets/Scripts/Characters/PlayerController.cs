@@ -1,10 +1,11 @@
 ﻿using System;
 using Inputs;
+using Interactions;
 using UnityEngine;
 
 namespace Characters
 {
-    public class PlayerController : MonoBehaviour
+    public class PlayerController : MonoBehaviour, IInteractor
     {
         [Header("Behaviors")]
         [SerializeField] private MovementBehavior _movementBehavior;
@@ -12,6 +13,10 @@ namespace Characters
         [Header("Aiming")]
         [SerializeField] private Transform _aimePoint;
         [SerializeField] private float _aimingRadius;
+        [Header("Interactions")] 
+        [SerializeField] private InteractableDetector _interactableDetector;
+        [SerializeField] private ObjectHolder _holder;
+        [SerializeField] private ObjectThrower _thrower;
 
         private Vector2 _aimingDirection;
         private Vector2 _lastMousePosition;
@@ -22,6 +27,20 @@ namespace Characters
         private void Awake()
         {
             _mainCam = Camera.main;
+        }
+
+        private void Update()
+        {
+            if (InputsUtility.MainControls.Actions.Interact.WasReleasedThisFrame())
+            {
+               InteractWith(_interactableDetector.NearestInteractable);
+            }
+            if (InputsUtility.MainControls.Actions.Fire.WasReleasedThisFrame())
+            {
+                ActivateHoldObject();
+            }
+
+            _thrower.Direction = _aimingDirection;
         }
 
         private void FixedUpdate()
@@ -50,8 +69,7 @@ namespace Characters
             else if (Vector2.Distance(currentMousePosition, _lastMousePosition) > 0.125f)
             {
                 _aimingDirection = mouseWorldPos - (Vector2)transform.position;
-                if (Vector2.Distance(mouseWorldPos, transform.position) > 1)
-                    _aimingDirection = _aimingDirection.normalized;
+                _aimingDirection = _aimingDirection.normalized;
             }
 
             _lastMousePosition = currentMousePosition;
@@ -62,6 +80,36 @@ namespace Characters
             Transform aimeTransform = _aimePoint.transform;
             aimeTransform.position = transform.position + (Vector3)_aimingDirection * _aimingRadius;
             aimeTransform.rotation = new Quaternion();
+        }
+
+        public void InteractWith(IInteractable interactable)
+        {
+            switch (interactable)
+            {
+                case IPickable { IsPickable: true } pickable:
+                    _holder.HolderSelf.Switch(pickable);
+                    break;
+                case IThrowable throwable:
+                    _thrower.Throw(throwable);
+                    break;
+                default:
+                    interactable?.OnInteract(this);
+                    break;
+            }
+        }
+
+        public void ActivateHoldObject()
+        {
+            IPickable pickable = _holder.HolderSelf.HoldObject;
+            
+            if (pickable == null) return;
+            
+            _holder.HolderSelf.Drop();
+
+            if (pickable.RigidBody.TryGetComponent(out IThrowable throwable))
+            {
+                _thrower.Throw(throwable);
+            }
         }
     }   
 }
