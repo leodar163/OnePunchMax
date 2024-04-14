@@ -2,7 +2,7 @@
 using Inputs;
 using UnityEngine;
 
-namespace Character
+namespace Characters
 {
     public class PlayerController : MonoBehaviour
     {
