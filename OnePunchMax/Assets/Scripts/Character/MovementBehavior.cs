@@ -12,14 +12,14 @@ namespace Character
         [SerializeField][Min(0)] public float deceleration;
         public Vector2 direction { get; private set; }
 
-        protected virtual void FixedUpdate()
+        private bool _hasReceivedInput;
+        
+        private void FixedUpdate()
         {
             ManageMovements();
-        }
-
-        protected virtual void LateUpdate()
-        {
-            direction = Vector2.zero;
+            if (!_hasReceivedInput)
+                direction = Vector2.zero;
+            _hasReceivedInput = false;
         }
         
         public void MoveToward(Vector2 headedDirection)

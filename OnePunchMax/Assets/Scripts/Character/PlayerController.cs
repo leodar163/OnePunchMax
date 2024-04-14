@@ -14,6 +14,7 @@ namespace Character
         private void Awake()
         {
             _mainCam = Camera.main;
+            
         }
 
         private void FixedUpdate()
