@@ -24,11 +24,6 @@ namespace Characters
             _mainCam = Camera.main;
         }
 
-        private void Update()
-        {
-          
-        }
-
         private void FixedUpdate()
         {
             DefineAimingDirection();

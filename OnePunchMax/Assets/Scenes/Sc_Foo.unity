@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 634726a16e9f34643859fc591de86236, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactable: {fileID: 11400000, guid: dbe4cac8550e7d14ab2521cc09cb60f2, type: 2}
+  _interactable: {fileID: 1217505211}
 --- !u!4 &1217505213
 Transform:
   m_ObjectHideFlags: 0
