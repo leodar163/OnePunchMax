@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace Interactions
@@ -57,7 +56,7 @@ namespace Interactions
             Vector2 overlapCirclePosition = _transform.position + _transform.rotation * Vector2.right * _offset;
             
             Physics2D.OverlapCircle(overlapCirclePosition, _radius,
-                new ContactFilter2D { layerMask = _detectionMask }, _colliders);
+                new ContactFilter2D {useLayerMask = true, layerMask = _detectionMask }, _colliders);
 
             _inRangeInteractables.Clear();
             

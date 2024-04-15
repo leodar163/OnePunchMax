@@ -10,11 +10,25 @@ namespace Characters
         [Header("Look at")] 
         [SerializeField][Min(0)] public float maxRotationSpeed;
         [SerializeField][Min(0)] public float acceleration;
+
+        [SerializeField]
+        private Vector2 _initialDirection;
         public Vector2 Direction { get; private set; }
         private Vector2 _flatDirection;
 
         private bool _hasReceivedInput;
-        
+
+        private void OnValidate()
+        {
+            _initialDirection = _initialDirection.normalized;
+            transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(_initialDirection.y, _initialDirection.x) * Mathf.Rad2Deg);
+        }
+
+        private void Start()
+        {
+            _flatDirection = _initialDirection;
+        }
+
         private void FixedUpdate()
         {
             ManagerLookAt();
