@@ -17,6 +17,7 @@ namespace Interactions
         [SerializeField] private float _offset;
         [SerializeField] private float _radius;
 
+        private Collider2D[] _colliders;
         private readonly List<IInteractable> _inRangeInteractables = new();
         private List<IInteractable> InRangeInteractables => new (_inRangeInteractables);
 
@@ -36,6 +37,7 @@ namespace Interactions
         private void Awake()
         {
             _transform = transform;
+            _colliders = new Collider2D[_maxInteractableDetected];
         }
 
         private void FixedUpdate()
@@ -54,9 +56,8 @@ namespace Interactions
         {
             Vector2 overlapCirclePosition = _transform.position + _transform.rotation * Vector2.right * _offset;
             
-            Collider2D[] colliders = new Collider2D[_maxInteractableDetected];
             Physics2D.OverlapCircle(overlapCirclePosition, _radius,
-                new ContactFilter2D { layerMask = _detectionMask }, colliders);
+                new ContactFilter2D { layerMask = _detectionMask }, _colliders);
 
             _inRangeInteractables.Clear();
             
@@ -64,7 +65,7 @@ namespace Interactions
             
             float nearestDistance = float.PositiveInfinity;
             
-            foreach (var col in colliders)
+            foreach (var col in _colliders)
             {
                 if (col != null && col.TryGetComponent(out IInteractable interactable))
                 {

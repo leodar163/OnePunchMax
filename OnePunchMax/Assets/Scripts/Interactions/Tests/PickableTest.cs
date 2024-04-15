@@ -25,14 +25,12 @@ namespace Interactions.Tests
 
         public void OnPicked(IHolder holder)
         {
-            print($"{this} picked by {holder}");
             IsPickable = false;
             onPicked.Invoke();
         }
 
         public void OnDropped(IHolder holder)
         {
-            print($"{this} dropped by {holder}");
             IsPickable = true;
             onDropped.Invoke();
         }
