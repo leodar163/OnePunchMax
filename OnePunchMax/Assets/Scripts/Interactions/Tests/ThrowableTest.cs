@@ -13,7 +13,7 @@ namespace Interactions.Tests
         private float _range;
         
         [SerializeField] public UnityEvent onThrown;
-        [SerializeField] public UnityEvent onHitSomething;
+        [SerializeField] public UnityEvent onHitFinishThrow;
         
         public void OnInteract(IInteractor interactor)
         {
@@ -41,19 +41,14 @@ namespace Interactions.Tests
             _range = thrower.Range;
             _isThrown = true;
             onThrown.Invoke();
-        }
-
-        public void OnHitSomething()
-        {
-            onHitSomething.Invoke();
-            StopThrowing();
-        }
+        }   
 
         private void StopThrowing()
         {
             _isThrown = false;
             _rb.velocity = Vector2.zero;
             _rb.angularVelocity = 0;
+            onHitFinishThrow.Invoke();
         }
     }
 }

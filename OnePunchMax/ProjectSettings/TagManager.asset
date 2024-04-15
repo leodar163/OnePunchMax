@@ -13,9 +13,9 @@ TagManager:
   - UI
   - Interactables
   - Triggers
-  - Thrownable
-  - 
-  - 
+  - Projectiles
+  - Target
+  - Player
   - 
   - 
   - 
