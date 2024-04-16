@@ -654,7 +654,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &419709795
 Rigidbody2D:
   serializedVersion: 4
@@ -786,7 +786,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &514975483
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -956,7 +956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &578455606
 Transform:
   m_ObjectHideFlags: 0
@@ -1042,7 +1042,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &617211746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1277,7 +1277,7 @@ Transform:
   m_GameObject: {fileID: 617211745}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.79, y: -3.6499996, z: 0}
+  m_LocalPosition: {x: 3.17, y: -0.67, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1591,9 +1591,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af6fb83798094838846e5601c4700b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _viewAngle: 90
-  _viewOffset: 0
-  _viewRadius: 4
+  _geometryType: 0
+  _cone:
+    _viewAngle: 90
+    _viewOffset: 0
+    _viewRadius: 3
+  _circle:
+    _offset: 0
+    _radius: 0
   _rateOfDetection: 6
   _filter:
     useTriggers: 0
@@ -2057,7 +2062,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1095849234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2843,7 +2848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1511520973
 Transform:
   m_ObjectHideFlags: 0
@@ -2949,6 +2954,7 @@ GameObject:
   - component: {fileID: 1877685094}
   - component: {fileID: 1877685093}
   - component: {fileID: 1877685095}
+  - component: {fileID: 1877685096}
   m_Layer: 0
   m_Name: Interactions
   m_TagString: Untagged
@@ -3011,13 +3017,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c12550bf62b24380b76431ed9192ddf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _detectionMask:
-    serializedVersion: 2
-    m_Bits: 64
-  _maxInteractableDetected: 6
-  _detectionRate: 10
-  _offset: 0.6
-  _radius: 0.6
+  _detectors:
+  - {fileID: 1877685096}
+  _distanceOffset: {x: 0.5, y: 0}
+  _debugData:
+    activateDebug: 1
+    gizmoColor: {r: 0.531859, g: 1, b: 0.49622637, a: 1}
+    debugColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!114 &1877685096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877685091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af6fb83798094838846e5601c4700b59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _geometryType: 0
+  _cone:
+    _viewAngle: 90
+    _viewOffset: 0
+    _viewRadius: 3
+  _circle:
+    _offset: 0.5
+    _radius: 0.6
+  _rateOfDetection: 6
+  _filter:
+    useTriggers: 0
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 64
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  _maxNumberOfDetection: 1
+  _activateOcclusion: 1
+  _occlusionFilter:
+    useTriggers: 0
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 2048
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  _debugData:
+    activateDebug: 1
+    gizmoColor: {r: 0.72216517, g: 1, b: 0.47358483, a: 1}
+    debugColor: {r: 1, g: 1, b: 1, a: 1}
+  onColliderEnters:
+    m_PersistentCalls:
+      m_Calls: []
+  onColliderExits:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1995922534
 GameObject:
   m_ObjectHideFlags: 0

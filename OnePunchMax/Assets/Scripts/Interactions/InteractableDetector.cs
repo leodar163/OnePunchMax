@@ -1,22 +1,13 @@
 ﻿using System.Collections.Generic;
+using Detections;
 using UnityEngine;
+using Utils.Debug;
 
 namespace Interactions
 {
-    public class InteractableDetector : MonoBehaviour
-    { 
-        [Header("Detection Settings")]
-        [SerializeField] private LayerMask _detectionMask;
-        [SerializeField] [Min(0)] private int _maxInteractableDetected = 6; 
-        [Tooltip("Detect interactable every <Detection Rate> frame")]
-        [SerializeField][Min(0)] private int _detectionRate = 10;
-        private int step;
-        
-        [Header("Overlap Properties")] 
-        [SerializeField] private float _offset;
-        [SerializeField] private float _radius;
-
-        private Collider2D[] _colliders;
+    public class InteractableDetector : DetectorSubscriber
+    {
+        [SerializeField] private Vector2 _distanceOffset;
         private readonly List<IInteractable> _inRangeInteractables = new();
         private List<IInteractable> InRangeInteractables => new (_inRangeInteractables);
 
@@ -24,61 +15,78 @@ namespace Interactions
 
         public IInteractable NearestInteractable => _nearestInteractable;
         
-        private Transform _transform;
+        private Transform _cachedTransform;
 
+        [SerializeField] private DebugData _debugData;
+        
         private void OnDrawGizmosSelected()
         {
-            Gizmos.color  = Color.green;
-            Gizmos.DrawWireSphere(transform.position + transform.rotation * Vector2.right * _offset,
-                _radius);
+            if (!_debugData.activateDebug) return;
+            Gizmos.color = _debugData.gizmoColor;
+            Gizmos.DrawSphere(transform.position + transform.rotation * _distanceOffset , 0.15f);
         }
 
-        private void Awake()
+        protected override void Awake()
         {
-            _transform = transform;
-            _colliders = new Collider2D[_maxInteractableDetected];
+            base.Awake();
+            _cachedTransform = transform;
         }
 
-        private void FixedUpdate()
+        private void LateUpdate()
         {
-            if (step >= _detectionRate)
-            {
-                DetectInteractableInRangeAndFinNearest();
-                step = 0;
-            }
-            
-            step++;
+            FindNearestInteractable();
         }
 
-
-        private void DetectInteractableInRangeAndFinNearest()
+        protected override void OnColliderEnters(Collider2D col)
         {
-            Vector2 overlapCirclePosition = _transform.position + _transform.rotation * Vector2.right * _offset;
-            
-            Physics2D.OverlapCircle(overlapCirclePosition, _radius,
-                new ContactFilter2D {useLayerMask = true, layerMask = _detectionMask }, _colliders);
+            if (col.TryGetComponent(out IInteractable interactable))
+                AddInteractable(interactable);
+        }
 
-            _inRangeInteractables.Clear();
-            
+        protected override void OnColliderExits(Collider2D col)
+        {
+            if (col.TryGetComponent(out IInteractable interactable))
+                RemoveInteractable(interactable);
+        }
+
+        private void AddInteractable(IInteractable interactable)
+        {
+            if (interactable == null || _inRangeInteractables.Contains(interactable)) return;
+            _inRangeInteractables.Add(interactable);
+        }
+
+        private void RemoveInteractable(IInteractable interactable)
+        {
+            if (interactable == null || !_inRangeInteractables.Remove(interactable)) return;
+        }
+        
+        private void FindNearestInteractable()
+        {
             _nearestInteractable = null;
+         
+            if (_inRangeInteractables.Count == 0) return;
+            if (_inRangeInteractables.Count == 1)
+            {
+                _nearestInteractable = _inRangeInteractables[0];
+                return;
+            }
             
             float nearestDistance = float.PositiveInfinity;
             
-            foreach (var col in _colliders)
+            foreach (var interactable in _inRangeInteractables)
             {
-                if (col != null && col.TryGetComponent(out IInteractable interactable))
-                {
-                    _inRangeInteractables.Add(interactable);
+                _inRangeInteractables.Add(interactable);
                     
-                    float distance = Vector3.Distance(overlapCirclePosition, interactable.Position);
+                float distance = Vector3.Distance(_cachedTransform.position, interactable.Position);
 
-                    if (distance < nearestDistance)
-                    {
-                        nearestDistance = distance;
-                        _nearestInteractable = interactable;
-                    }
+                if (distance < nearestDistance)
+                {
+                    nearestDistance = distance;
+                    _nearestInteractable = interactable;
                 }
             }
+
+            _nearestInteractable?.OnHover();
         }
     }
 }
