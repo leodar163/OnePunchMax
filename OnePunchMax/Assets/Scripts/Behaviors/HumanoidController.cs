@@ -1,12 +1,11 @@
-﻿using System;
-using Behaviors.Attack;
+﻿using Behaviors.Attack;
 using Interactions;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace Behaviors
 {
-    public abstract class HumanoïdController : MonoBehaviour, IInteractor
+    public abstract class HumanoidController : MonoBehaviour, IInteractor, ITarget
     {
         [Header("Rotation")]
         [SerializeField] protected LookAtBehavior _lookAtBehavior;
@@ -18,9 +17,10 @@ namespace Behaviors
         [SerializeField] protected AttackBehavior[] _attacks;
 
         [SerializeField] public UnityEvent OnAttack;
+        [SerializeField] public UnityEvent<AttackData> OnReceiveAttack;
 
         public Vector2 AimingDirection { get; protected set; }
-
+        public Vector3 Position => transform.position;
 
         protected virtual void FixedUpdate()
         {
@@ -64,6 +64,11 @@ namespace Behaviors
             _attacks[attackType]?.Attack();
             
             OnAttack.Invoke();
+        }
+        
+        public virtual void ReceiveAttack(AttackData data)
+        {
+            OnReceiveAttack.Invoke(data);
         }
     }
 }

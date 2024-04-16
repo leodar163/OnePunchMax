@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Behaviors
 {
-    public class PlayerController : HumanoïdController
+    public class PlayerController : HumanoidController
     {
         [Header("Movement")]
         [SerializeField] private MovementBehavior _movementBehavior;
