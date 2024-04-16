@@ -1,6 +1,5 @@
 ﻿using Behaviors.Attack;
 using Detections;
-using UnityEngine;
 
 namespace Interactions
 {

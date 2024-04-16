@@ -1,29 +1,19 @@
-﻿using Behaviors.Attack;
-using Inputs;
-using Interactions;
+﻿using Inputs;
 using UnityEngine;
 
 namespace Behaviors
 {
-    public class PlayerController : MonoBehaviour, IInteractor
+    public class PlayerController : HumanoïdController
     {
-        [Header("Behaviors")]
+        [Header("Movement")]
         [SerializeField] private MovementBehavior _movementBehavior;
-        [SerializeField] private LookAtBehavior _lookAtBehavior;
         [Header("Aiming")]
         [SerializeField] private Transform _aimePoint;
         [SerializeField] private float _aimingRadius;
-        [Header("Interactions")]
-        [SerializeField] private InteractableDetector _interactableDetector;
-        [SerializeField] private ObjectHolder _holder;
-        [SerializeField] private ObjectThrower _thrower;
-        [Header("Attack")] 
-        [SerializeField] private AttackBehavior _quickAttack; 
-        [SerializeField] private AttackBehavior _chargedAttack;
+        [Header("Attack")]
         [SerializeField] private float _timeToChargeAttack;
         private float _timeCharged;
 
-        private Vector2 _aimingDirection;
         private Vector2 _lastMousePosition;
         
         private Camera _mainCam;
@@ -39,6 +29,7 @@ namespace Behaviors
             if (InputsUtility.MainControls.Actions.Fire.IsPressed() && _holder.HolderSelf.HoldObject == null)
             {
                 _timeCharged += Time.deltaTime;
+                _timeCharged = 0;
             }
             
             if (InputsUtility.MainControls.Actions.Interact.WasReleasedThisFrame())
@@ -53,19 +44,19 @@ namespace Behaviors
                     if (_timeCharged > _timeToChargeAttack)
                     {
                         _timeCharged = 0;
-                        _chargedAttack.Attack();
+                        _attacks[0]?.Attack();
                     }
                     else
                     {
-                        _quickAttack.Attack();
+                        _attacks[1]?.Attack();
                     }
                 }
             }
 
-            _thrower.Direction = _aimingDirection;
+            _thrower.Direction = AimingDirection;
         }
 
-        private void FixedUpdate()
+        protected override void FixedUpdate()
         {
             DefineAimingDirection();
 
@@ -73,9 +64,9 @@ namespace Behaviors
             
             if (moveInput.magnitude > 0.125f) 
                 _movementBehavior.MoveToward(moveInput);
-            
-            _lookAtBehavior.LookTo((Vector2)transform.position + _aimingDirection);
             PlaceAimePoint();
+            
+            base.FixedUpdate();
         }
 
         private void DefineAimingDirection()
@@ -86,12 +77,12 @@ namespace Behaviors
             
             if (direction.magnitude > 0.125f)
             {
-                _aimingDirection = direction.normalized;
+                AimingDirection = direction.normalized;
             }
             else if (Vector2.Distance(currentMousePosition, _lastMousePosition) > 0.125f)
             {
-                _aimingDirection = mouseWorldPos - (Vector2)transform.position;
-                _aimingDirection = _aimingDirection.normalized;
+                AimingDirection = mouseWorldPos - (Vector2)transform.position;
+                AimingDirection = AimingDirection.normalized;
             }
 
             _lastMousePosition = currentMousePosition;
@@ -100,38 +91,8 @@ namespace Behaviors
         private void PlaceAimePoint()
         {
             Transform aimeTransform = _aimePoint.transform;
-            aimeTransform.position = transform.position + (Vector3)_aimingDirection * _aimingRadius;
+            aimeTransform.position = transform.position + (Vector3)AimingDirection * _aimingRadius;
             aimeTransform.rotation = new Quaternion();
-        }
-
-        public void InteractWith(IInteractable interactable)
-        {
-            switch (interactable)
-            {
-                case IPickable { IsPickable: true } pickable:
-                    _holder.HolderSelf.Switch(pickable);
-                    break;
-                case IThrowable throwable:
-                    _thrower.Throw(throwable);
-                    break;
-                default:
-                    interactable?.OnInteract(this);
-                    break;
-            }
-        }
-
-        public void ActivateHoldObject()
-        {
-            IPickable pickable = _holder.HolderSelf.HoldObject;
-            
-            if (pickable == null) return;
-            
-            _holder.HolderSelf.Drop();
-
-            if (pickable.RigidBody.TryGetComponent(out IThrowable throwable))
-            {
-                _thrower.Throw(throwable);
-            }
         }
     }   
 }

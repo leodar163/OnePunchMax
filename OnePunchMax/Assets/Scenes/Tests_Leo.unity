@@ -730,15 +730,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfd3aee661d64364891a7454bb997ffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementBehavior: {fileID: 419709797}
   _lookAtBehavior: {fileID: 419709800}
-  _aimePoint: {fileID: 536428503}
-  _aimingRadius: 1
   _interactableDetector: {fileID: 1877685095}
   _holder: {fileID: 1877685093}
   _thrower: {fileID: 1877685094}
-  _quickAttack: {fileID: 1701083258}
-  _chargedAttack: {fileID: 745556421}
+  _attacks:
+  - {fileID: 1701083258}
+  - {fileID: 745556421}
+  OnAttack:
+    m_PersistentCalls:
+      m_Calls: []
+  _movementBehavior: {fileID: 419709797}
+  _aimePoint: {fileID: 536428503}
+  _aimingRadius: 1
   _timeToChargeAttack: 1.5
 --- !u!114 &419709800
 MonoBehaviour:
