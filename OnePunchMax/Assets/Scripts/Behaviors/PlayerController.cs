@@ -32,8 +32,7 @@ namespace Behaviors
         {
             if (InputsUtility.MainControls.Actions.Interact.WasReleasedThisFrame())
             {
-                print(_interactableDetector.NearestInteractable);
-               InteractWith(_interactableDetector.NearestInteractable);
+               InteractWith(_interactableDetector.Nearest);
             }
             if (InputsUtility.MainControls.Actions.Fire.WasReleasedThisFrame())
             {

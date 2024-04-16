@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using Utils.Debug;
-using Utils.Debug.Gizmos;
 using Collider2D = UnityEngine.Collider2D;
 
 namespace Detections
