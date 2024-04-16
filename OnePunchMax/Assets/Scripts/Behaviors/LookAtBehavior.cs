@@ -1,7 +1,6 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Characters
+namespace Behaviors
 {
     public class LookAtBehavior : MonoBehaviour
     {

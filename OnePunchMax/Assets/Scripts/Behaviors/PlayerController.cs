@@ -2,7 +2,7 @@
 using Interactions;
 using UnityEngine;
 
-namespace Characters
+namespace Behaviors
 {
     public class PlayerController : MonoBehaviour, IInteractor
     {

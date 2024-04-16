@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 
-namespace Characters.Tests
+namespace Behaviors.Tests
 {
     public class NavAgentTest : MonoBehaviour
     {
