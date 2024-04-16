@@ -1,4 +1,5 @@
-﻿using Inputs;
+﻿using Environment;
+using Inputs;
 using UnityEngine;
 
 namespace Behaviors
@@ -22,6 +23,7 @@ namespace Behaviors
         private void Awake()
         {
             _mainCam = Camera.main;
+            EnvironmentManager.Player = this;
         }
 
         private void Update()
