@@ -1,9 +1,8 @@
-﻿using System;
-using Inputs;
+﻿using Inputs;
 using Interactions;
 using UnityEngine;
 
-namespace Characters
+namespace Behaviors
 {
     public class PlayerController : MonoBehaviour, IInteractor
     {
@@ -13,7 +12,7 @@ namespace Characters
         [Header("Aiming")]
         [SerializeField] private Transform _aimePoint;
         [SerializeField] private float _aimingRadius;
-        [Header("Interactions")] 
+        [Header("Interactions")]
         [SerializeField] private InteractableDetector _interactableDetector;
         [SerializeField] private ObjectHolder _holder;
         [SerializeField] private ObjectThrower _thrower;
