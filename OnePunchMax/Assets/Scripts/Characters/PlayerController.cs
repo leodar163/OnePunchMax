@@ -32,6 +32,7 @@ namespace Characters
         {
             if (InputsUtility.MainControls.Actions.Interact.WasReleasedThisFrame())
             {
+                print(_interactableDetector.NearestInteractable);
                InteractWith(_interactableDetector.NearestInteractable);
             }
             if (InputsUtility.MainControls.Actions.Fire.WasReleasedThisFrame())

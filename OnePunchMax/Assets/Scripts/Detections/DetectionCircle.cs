@@ -9,7 +9,7 @@ namespace Detections
     public class DetectionCircle : DetectionGeometry
     {
         [SerializeField]private float _offset;
-        [SerializeField][Min(0)] private float _radius;
+        [SerializeField][Min(0)] private float _radius = 1;
         
         public float Offset
         {
