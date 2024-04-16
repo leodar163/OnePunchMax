@@ -1,4 +1,5 @@
-﻿using Inputs;
+﻿using Behaviors.Attack;
+using Inputs;
 using Interactions;
 using UnityEngine;
 
@@ -16,6 +17,11 @@ namespace Behaviors
         [SerializeField] private InteractableDetector _interactableDetector;
         [SerializeField] private ObjectHolder _holder;
         [SerializeField] private ObjectThrower _thrower;
+        [Header("Attack")] 
+        [SerializeField] private AttackBehavior _quickAttack; 
+        [SerializeField] private AttackBehavior _chargedAttack;
+        [SerializeField] private float _timeToChargeAttack;
+        private float _timeCharged;
 
         private Vector2 _aimingDirection;
         private Vector2 _lastMousePosition;
@@ -30,13 +36,30 @@ namespace Behaviors
 
         private void Update()
         {
+            if (InputsUtility.MainControls.Actions.Fire.IsPressed() && _holder.HolderSelf.HoldObject == null)
+            {
+                _timeCharged += Time.deltaTime;
+            }
+            
             if (InputsUtility.MainControls.Actions.Interact.WasReleasedThisFrame())
             {
                InteractWith(_interactableDetector.Nearest);
             }
             if (InputsUtility.MainControls.Actions.Fire.WasReleasedThisFrame())
             {
-                ActivateHoldObject();
+                if (_holder.HolderSelf.HoldObject != null) ActivateHoldObject();
+                else
+                {
+                    if (_timeCharged > _timeToChargeAttack)
+                    {
+                        _timeCharged = 0;
+                        _chargedAttack.Attack();
+                    }
+                    else
+                    {
+                        _quickAttack.Attack();
+                    }
+                }
             }
 
             _thrower.Direction = _aimingDirection;

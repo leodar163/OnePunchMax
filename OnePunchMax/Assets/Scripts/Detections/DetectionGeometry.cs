@@ -14,7 +14,7 @@ namespace Detections
 
         public virtual List<Collider2D> DetectColliders(Vector3 center, Quaternion rotation, ContactFilter2D filter,
             Collider2D[] unFilteredColliders, bool activateOcclusion = false, ContactFilter2D occlusionFilter = default,
-            DebugData debugData = default)
+            DebugData debugData = null)
         {
             return null;
         }

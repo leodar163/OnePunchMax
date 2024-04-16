@@ -34,7 +34,7 @@ namespace Detections
         }
 
         public override List<Collider2D> DetectColliders(Vector3 center, Quaternion rotation, ContactFilter2D filter, Collider2D[] unFilteredColliders,
-            bool activateOcclusion = false, ContactFilter2D occlusionFilter = default, DebugData debugData = default)
+            bool activateOcclusion = false, ContactFilter2D occlusionFilter = default, DebugData debugData = null)
         {
             List<Collider2D> filteredColliders = new();
 
@@ -50,9 +50,9 @@ namespace Detections
                     if (Physics2D.Linecast(position, closestPoint, occlusionFilter, _occlusionHits) == 0)
                     {
                         filteredColliders.Add(col);
-                        if (debugData.activateDebug) Debug.DrawLine(position, closestPoint, Color.green, 0.128f);
+                        if (debugData?.activateVisualDebug ?? false) Debug.DrawLine(position, closestPoint, Color.green, 0.128f);
                     }
-                    else if (debugData.activateDebug)
+                    else if (debugData?.activateVisualDebug ?? false)
                     {
                         Debug.DrawLine(position, _occlusionHits[0].point, Color.green, 0.128f);
                         Debug.DrawLine(_occlusionHits[0].point, closestPoint, Color.red, 0.128f);

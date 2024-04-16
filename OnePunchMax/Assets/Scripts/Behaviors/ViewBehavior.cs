@@ -61,7 +61,7 @@ namespace Behaviors
         
         private void OnDrawGizmosSelected()
         {
-            if (!_debugData.activateDebug) return;
+            if (!_debugData.activateVisualDebug) return;
             
             Gizmos.color = _debugData.gizmoColor;
             GizmosExtensions.Draw2DCone(cachedTransform.position, _viewRadius, _viewAngle, _viewOffset + cachedTransform.rotation.eulerAngles.z);
@@ -100,16 +100,16 @@ namespace Behaviors
                         if (!_activateOcclusion)
                         {
                             filteredColliders.Add(col);
-                            if (_debugData.activateDebug) Debug.DrawLine(position, closestPoint, Color.green, 0.128f);
+                            if (_debugData.activateVisualDebug) Debug.DrawLine(position, closestPoint, Color.green, 0.128f);
                             continue;
                         }
                         
                         if (Physics2D.Linecast(position, closestPoint, _occlusionFilter, _occlusionHits) == 0)
                         {
                             filteredColliders.Add(col);
-                            if (_debugData.activateDebug) Debug.DrawLine(position, closestPoint, Color.green, 0.128f);
+                            if (_debugData.activateVisualDebug) Debug.DrawLine(position, closestPoint, Color.green, 0.128f);
                         }
-                        else if (_debugData.activateDebug)
+                        else if (_debugData.activateVisualDebug)
                         {
                             Debug.DrawLine(position, _occlusionHits[0].point, Color.green, 0.128f);
                             Debug.DrawLine(_occlusionHits[0].point, closestPoint, Color.red, 0.128f);
@@ -122,7 +122,7 @@ namespace Behaviors
                     if (!_previousColliders.Remove(col))
                     {
                         onColliderEnters.Invoke(col);
-                        if (_debugData.activateDebug) print($"{col.name} entered view");
+                        if (_debugData.activateVisualDebug) print($"{col.name} entered view");
                     }
                 }
             }
@@ -130,7 +130,7 @@ namespace Behaviors
             foreach (var col in _previousColliders)
             {
                 onColliderExits.Invoke(col);
-                if (_debugData.activateDebug) print($"{col.name} exited view");
+                if (_debugData.activateVisualDebug) print($"{col.name} exited view");
             }
 
             _previousColliders = filteredColliders;

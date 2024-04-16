@@ -1,18 +1,13 @@
 ﻿using Detections;
+using Interactions;
 using UnityEngine;
 
 namespace Behaviors.Attack
 {
-    public class AttackBehavior : DetectorSubscriberFiltered<AttackReceiver>
+    public class AttackBehavior : DetectorSubscriberFiltered<ITarget>
     {
         [SerializeField] private float _reachableNbr = 2;
         [SerializeField] private AttackData _attackData;
-
-        protected override void Awake()
-        {
-            base.Awake();
-            _attackData.attacker = this;
-        }
 
         public void Attack()
         {
@@ -22,8 +17,10 @@ namespace Behaviors.Attack
             }
         }
         
-        private void Attack(AttackReceiver receiver)
+        private void Attack(ITarget receiver)
         {
+            if (receiver == null || receiver.Equals(null)) return;
+            print($"attack on {receiver}");
             receiver.ReceiveAttack(_attackData);
         }
     }

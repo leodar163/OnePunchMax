@@ -15,13 +15,14 @@ namespace Detections
         
         protected virtual void OnDrawGizmosSelected()
         {
-            if (!_debugData.activateDebug) return;
+            if (!_debugData.activateVisualDebug) return;
             Gizmos.color = _debugData.gizmoColor;
             Gizmos.DrawSphere(transform.position + transform.rotation * _distanceOffset , 0.15f);
         }
 
         protected virtual void LateUpdate()
         {
+            _inRanges.RemoveAll(item => item == null || item.Equals(null));
             SortInRangesByPosition();
         }
 
@@ -48,22 +49,20 @@ namespace Detections
             if (filtered == null || !_inRanges.Remove(filtered)) return;
         }
 
-        protected virtual void SortInRangesByPosition()
+        private void SortInRangesByPosition()
         {
             if (_inRanges.Count < 2) return;
 
             List<T> sorteds = new List<T>();
-
+            
             while (_inRanges.Count > 0)
             {
                 T nearest = null;
                 
                 float nearestDistance = float.PositiveInfinity;
             
-                foreach (var inRange in _inRanges)
+                foreach (var inRange in _inRanges.ToArray())
                 {
-                    _inRanges.Add(inRange);
-                    
                     float distance = Vector3.Distance(transform.position, inRange.Position);
 
                     if (distance < nearestDistance)

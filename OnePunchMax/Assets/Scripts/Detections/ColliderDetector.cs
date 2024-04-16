@@ -77,7 +77,7 @@ namespace Detections
 
         private void OnDrawGizmosSelected()
         {
-            if (!_debugData.activateDebug) return;
+            if (!_debugData.activateVisualDebug) return;
             
             Gizmos.color = _debugData.gizmoColor;
             Geometry?.DrawGizmo(cachedTransform.position, cachedTransform.rotation);
@@ -106,14 +106,15 @@ namespace Detections
                 if (!_previousColliders.Remove(col))
                 {
                     onColliderEnters.Invoke(col);
-                    if (_debugData.activateDebug) print($"{col.name} entered view");
+                    if (_debugData.activateTextDebug) print($"{col.name} entered view");
                 }
             }
             
             foreach (var col in _previousColliders)
             {
+                if (col == null) continue;
                 onColliderExits.Invoke(col);
-                if (_debugData.activateDebug) print($"{col.name} exited view");
+                if (_debugData.activateTextDebug) print($"{col.name} exited view");
             }
 
             _previousColliders = filteredColliders;

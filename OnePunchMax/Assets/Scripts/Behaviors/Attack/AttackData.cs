@@ -6,11 +6,9 @@ namespace Behaviors.Attack
     [Serializable]
     public class AttackData
     {
-        [SerializeField] public bool canSetOnFire;
-        [SerializeField] public bool canMakeThingsExplode;
-        [SerializeField] public bool canBreakBreakable;
+        [SerializeField] public bool canBurn;
+        [SerializeField] public bool canExplode;
+        [SerializeField] public bool canBreak;
         [SerializeField] public float knockBackForce;
-
-        public AttackBehavior attacker;
     }
 }
