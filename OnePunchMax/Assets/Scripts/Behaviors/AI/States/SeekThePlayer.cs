@@ -3,10 +3,10 @@ using Utils;
 
 namespace Behaviors.AI.States
 {
+    [CreateAssetMenu(fileName = "SeekPlayerBehavior", menuName = "IA/Behavior/Seek Player")]
     public class SeekThePlayer : StateBehavior
     {
         [SerializeField] [Min(0.001f)] private float _stopDistance;
-        [SerializeField] private SeekInteractables _seekInteractables;
             
         public override void Update(AIController controller)
         {
@@ -21,11 +21,6 @@ namespace Behaviors.AI.States
                 controller.MoveTo(playerPosition);
             }
             base.Update(controller);
-            
-            if (_seekInteractables != null && controller.GetNearestInteractableInView() != null)
-            {
-                controller.PushState(_seekInteractables);
-            }
         }
     }
 }
