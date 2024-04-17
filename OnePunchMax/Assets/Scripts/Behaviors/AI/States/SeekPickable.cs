@@ -1,13 +1,13 @@
 ﻿using Interactions;
 using UnityEngine;
-using Utils;
 
 namespace Behaviors.AI.States
 {
     [CreateAssetMenu(fileName = "SeekPickableBehavior", menuName = "IA/Behavior/Seek Pickable")]
     public class SeekPickable : StateBehavior
     {
-        public override void Update(AIController controller)
+        [SerializeField] private StateBehavior _whenNoPickableInView;
+        public override void BehaveFixedUpdate(AIController controller)
         {
             if ( controller.GetNearestInteractableInRange() is IPickable nearestPickable)
             {
@@ -20,9 +20,13 @@ namespace Behaviors.AI.States
             }
             else
             {
-                ExitState(controller);
+                CancelState(controller);
+                if (_pushNextStateWithHesitation)
+                    controller.PushStateWithHesitation(_whenNoPickableInView);
+                else
+                    controller.PushState(_whenNoPickableInView);
             }
-            base.Update(controller);
+            base.BehaveUpdate(controller);
         }
     }
 }

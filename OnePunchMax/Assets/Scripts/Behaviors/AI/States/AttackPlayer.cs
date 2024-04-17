@@ -6,7 +6,7 @@ namespace Behaviors.AI.States
     [CreateAssetMenu(fileName = "AttackPlayerBehavior", menuName = "IA/Behavior/Attack Player")]
     public class AttackPlayer : StateBehavior
     {
-        public override void Update(AIController controller)
+        public override void BehaveUpdate(AIController controller)
         {
 
             if (controller.GetHoldThrowable() != null && controller.IsPlayerInThrowRange())
@@ -23,7 +23,7 @@ namespace Behaviors.AI.States
             {
                 ExitState(controller);
             }
-            base.Update(controller);
+            base.BehaveUpdate(controller);
         }
     }
 }

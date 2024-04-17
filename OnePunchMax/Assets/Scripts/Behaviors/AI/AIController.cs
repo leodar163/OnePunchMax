@@ -21,7 +21,7 @@ namespace Behaviors.AI
 
         [Space] 
         [SerializeField] public UnityEvent onAlterModeGoesOn; 
-        
+        private bool _hasReceivedDestinationInput;
         
         protected override void FixedUpdate()
         {
@@ -30,23 +30,26 @@ namespace Behaviors.AI
             else
                 AimAtTheMovement();
             
-            currentState.FixedUpdate(this);
+            if (currentState != null) currentState.BehaveFixedUpdate(this);
             base.FixedUpdate();
         }
 
         private void Update()
         {
-            currentState.Update(this);
+            if (currentState != null) currentState.BehaveUpdate(this);
         }
 
         private void LateUpdate()
         {
-            currentState.LateUpdate(this);
-            _navMeshAgent.destination = transform.position;
+            if (currentState != null) currentState.BehaveLateUpdate(this);
+            if (!_hasReceivedDestinationInput)
+                _navMeshAgent.destination = transform.position;
+            _hasReceivedDestinationInput = false;
         }
 
         public void MoveTo(Vector3 position)
         {
+            _hasReceivedDestinationInput = true;
             _navMeshAgent.destination = position;
         }
 
@@ -91,10 +94,11 @@ namespace Behaviors.AI
 
         public void PushState(StateBehavior state)
         {
-            if (currentState) currentState.CancelState(this);
             currentState = state;
-            state.EnterState(this);
             
+            if(currentState != null) currentState.EnterState(this);
+            
+            if (_hesitationRoutine != null) StopCoroutine(_hesitationRoutine);
         }
         
         public void PushStateWithHesitation(StateBehavior state)

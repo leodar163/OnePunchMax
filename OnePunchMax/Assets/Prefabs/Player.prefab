@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3971745065746716681}
   - component: {fileID: 6516628566076308081}
   - component: {fileID: 4194639146468025163}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: QuickAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3277864813529314139}
   - component: {fileID: 3202283711277108781}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AimingPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,8 @@ GameObject:
   - component: {fileID: 2043672357611324611}
   - component: {fileID: 1548921321036718049}
   - component: {fileID: 6764700792011673508}
-  m_Layer: 0
+  - component: {fileID: 5689984859453723062}
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -320,7 +321,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -350,10 +351,45 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0.5, y: 0}
+  m_Anchor: {x: 0.7, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_DampingRatio: 0
   m_Frequency: 0
+--- !u!58 &5689984859453723062
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142295357559388899}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &7262164153284881341
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,7 +400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8428030588738491903}
   - component: {fileID: 1302497289482679454}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +487,7 @@ GameObject:
   - component: {fileID: 712046415286518122}
   - component: {fileID: 5119325266067880570}
   - component: {fileID: 4710249009337829076}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Interactions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -594,7 +630,7 @@ GameObject:
   - component: {fileID: 3322429463934172045}
   - component: {fileID: 275982677901057191}
   - component: {fileID: 8864027468545105146}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ChargedAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}

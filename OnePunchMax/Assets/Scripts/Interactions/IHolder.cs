@@ -11,11 +11,21 @@ namespace Interactions
 
         public void Pick(IPickable pickable)
         {
-            if (HoldObject != null) return;
+            if (HoldObject != null || pickable == null) return;
 
+            Transform pickableTransform = pickable.RigidBody.transform;
+            Transform anchorTransform = AnchorPoint.transform;
+
+            Vector3 anchorPosition = anchorTransform.position + anchorTransform.rotation * AnchorPoint.connectedAnchor;
+            
             HoldObject = pickable;
-            AnchorPoint.enabled = true;
+
+            pickableTransform.position = anchorPosition;
+            pickableTransform.right = anchorTransform.right;
+            
             AnchorPoint.connectedBody = pickable.RigidBody;
+            AnchorPoint.enabled = true;
+            
             pickable.OnPicked(this);
         }
 

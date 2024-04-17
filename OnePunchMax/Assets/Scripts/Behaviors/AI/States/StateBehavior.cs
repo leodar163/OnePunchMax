@@ -16,7 +16,7 @@ namespace Behaviors.AI.States
             
         }
         
-        public virtual void FixedUpdate(AIController controller)
+        public virtual void BehaveFixedUpdate(AIController controller)
         {
             /*
             foreach (var state in _childStateBehaviors)
@@ -26,7 +26,7 @@ namespace Behaviors.AI.States
             */
         }
         
-        public virtual void Update(AIController controller)
+        public virtual void BehaveUpdate(AIController controller)
         {
             /*
             foreach (var state in _childStateBehaviors)
@@ -36,7 +36,7 @@ namespace Behaviors.AI.States
             */
         }
 
-        public virtual void LateUpdate(AIController controller)
+        public virtual void BehaveLateUpdate(AIController controller)
         {
             /*
             foreach (var state in _childStateBehaviors)
