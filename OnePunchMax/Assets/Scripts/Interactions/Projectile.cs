@@ -1,12 +1,17 @@
-﻿using UnityEngine;
+﻿using Behaviors.Attack;
+using UnityEngine;
+using UnityEngine.Events;
 
-namespace Interactions.Tests
+namespace Interactions
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class projectileTest : MonoBehaviour, IProjectile
+    public class Projectile : MonoBehaviour
     {
         [SerializeField] private Rigidbody2D _rb;
+        [SerializeField] public AttackData attackData;
 
+        [SerializeField] public UnityEvent<ITarget> onHitTarget;
+        
         public Vector2 Direction
         {
             get => _rb.velocity.normalized;
@@ -29,11 +34,21 @@ namespace Interactions.Tests
             if (_rb == null) TryGetComponent(out _rb);
         }
 
-        public void OnHitTarget(Target target)
+        protected virtual void OnHitTarget(ITarget target)
         {
-            target.Die();
+            target.ReceiveAttack(attackData);
+            onHitTarget.Invoke(target);
+        }
+
+        protected virtual void OnCollisionEnter2D(Collision2D other)
+        {
             _rb.angularVelocity = 0;
             _rb.velocity = Vector2.zero;
+            
+            if (other.collider.TryGetComponent(out ITarget target))
+            {
+                OnHitTarget(target);
+            }
         }
     }
 }

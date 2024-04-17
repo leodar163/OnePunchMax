@@ -1,12 +1,9 @@
-
-
-using UnityEngine;
+using Detections;
 
 namespace Interactions
 {
-    public interface IInteractable
+    public interface IInteractable : IPositionnable
     {
-        public Vector3 Position { get; }
         public void OnInteract(IInteractor interactor);
 
         public void OnHover();

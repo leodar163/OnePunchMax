@@ -14,9 +14,9 @@ TagManager:
   - Interactables
   - Triggers
   - Projectiles
-  - Target
+  - Ennemies
   - Player
-  - 
+  - Walls
   - 
   - 
   - 
