@@ -1,5 +1,6 @@
 ﻿using Environment;
 using Inputs;
+using Ui;
 using UnityEngine;
 
 namespace Behaviors
@@ -8,6 +9,8 @@ namespace Behaviors
     {
         [Header("Movement")]
         [SerializeField] private MovementBehavior _movementBehavior;
+        [Min(0)][SerializeField] private float _hudOpenedMaxSpeed;
+        private float _hudClosedMaxSpeed;
         [Header("Aiming")]
         [SerializeField] private Transform _aimePoint;
         [SerializeField] private float _aimingRadius;
@@ -24,6 +27,17 @@ namespace Behaviors
         {
             _mainCam = Camera.main;
             EnvironmentManager.Player = this;
+            _hudClosedMaxSpeed = _movementBehavior.maxSpeed;
+        }
+
+        private void Start()
+        {
+            UiManager.HudOpened += OnHudOpened;
+        }
+
+        private void OnDestroy()
+        {
+            UiManager.HudOpened -= OnHudOpened;
         }
 
         private void Update()
@@ -56,6 +70,11 @@ namespace Behaviors
             }
 
             _thrower.Direction = AimingDirection;
+        }
+
+        private void OnHudOpened(bool open)
+        {
+            _movementBehavior.maxSpeed = open ? _hudOpenedMaxSpeed : _hudClosedMaxSpeed;
         }
 
         protected override void FixedUpdate()

@@ -7,9 +7,7 @@ namespace Environment
 {
     public class SceneLoaderTrigger : MonoBehaviour, ITriggerable
     {
-        [SerializeField] private AssetReference _sceneToLoad;
-
-        public AssetReference SceneToLoad { get => _sceneToLoad; set => _sceneToLoad = value; }
+        public AssetReference SceneToLoad { get; set; }
 
         public void Trigger()
         {
