@@ -7,7 +7,9 @@ namespace Behaviors.AI.States
     {
         //[SerializeField] protected StateBehavior[] _childStateBehaviors;
         [SerializeField] protected StateBehavior _nextState;
-        [SerializeField] protected bool PushNextStateWithHesitation;
+        [SerializeField] protected bool _pushNextStateWithHesitation;
+
+        public bool PushNextStateWithHesitation => _pushNextStateWithHesitation;
         
         public virtual void EnterState(AIController controller)
         {
