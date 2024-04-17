@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 176994323d95d2d488bff1c573c85924
+guid: a1f497920023a0541a180d37651bbe37
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sparkus_move_down_0
+      name: sparkus_die_down_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,20 +131,20 @@ TextureImporter:
         width: 384
         height: 384
       alignment: 9
-      pivot: {x: 0.5, y: 0.32}
+      pivot: {x: 0.5, y: 0.24692689}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82933313932af2145984b7d78dfd24ec
-      internalID: -644665712
+      spriteID: 7068782742606c14d9955c84d45c36c6
+      internalID: -1404593061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sparkus_move_down_1
+      name: sparkus_die_down_1
       rect:
         serializedVersion: 2
         x: 384
@@ -152,20 +152,20 @@ TextureImporter:
         width: 384
         height: 384
       alignment: 9
-      pivot: {x: 0.5, y: 0.32}
+      pivot: {x: 0.5, y: 0.2469269}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e50cc6c4ddb16e3499edb250f88346ec
-      internalID: -487348991
+      spriteID: 5c292622589d08d4b829e5e83487e8cc
+      internalID: 961219184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sparkus_move_down_2
+      name: sparkus_die_down_2
       rect:
         serializedVersion: 2
         x: 768
@@ -173,56 +173,14 @@ TextureImporter:
         width: 384
         height: 384
       alignment: 9
-      pivot: {x: 0.5, y: 0.32}
+      pivot: {x: 0.5, y: 0.2469269}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54a1617b260d86d42b82eba8ad797f30
-      internalID: -313211925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sparkus_move_down_3
-      rect:
-        serializedVersion: 2
-        x: 1152
-        y: 0
-        width: 384
-        height: 384
-      alignment: 9
-      pivot: {x: 0.5, y: 0.32}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81363836d6a770f40af29b89ee6dbbbe
-      internalID: 998536147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sparkus_move_down_4
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 384
-        height: 384
-      alignment: 9
-      pivot: {x: 0.5, y: 0.32}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e04d0f1616c5964fa9b9400c071f9f4
-      internalID: 1964024409
+      spriteID: 1b981d2fd8f620e43af9cd6a10426c77
+      internalID: 356028150
       vertices: []
       indices: 
       edges: []
@@ -238,11 +196,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sparkus_move_down_0: -644665712
-      sparkus_move_down_1: -487348991
-      sparkus_move_down_2: -313211925
-      sparkus_move_down_3: 998536147
-      sparkus_move_down_4: 1964024409
+      sparkus_die_down_0: -1404593061
+      sparkus_die_down_1: 961219184
+      sparkus_die_down_2: 356028150
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
