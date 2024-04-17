@@ -130,15 +130,15 @@ TextureImporter:
         y: 0
         width: 500
         height: 510
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2903564}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 656cb338d7f9485478cd8815898cdae6
-      internalID: -1776085160
+      spriteID: 5a02a1e61f009bc46be669bde97a2872
+      internalID: -696928080
       vertices: []
       indices: 
       edges: []
@@ -154,7 +154,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      water_barrel_0: -1776085160
+      water_barrel_0: -696928080
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

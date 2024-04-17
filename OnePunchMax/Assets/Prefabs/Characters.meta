@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:OnePunchMax/Assets/Prefabs/Characters.meta
 guid: d303bd9e5647e4c4ebdabc4e5a9f6f80
 folderAsset: yes
+========
+guid: 3dfabf37564990c46bc6add6c62ddd89
+>>>>>>>> origin/animators-setup:OnePunchMax/Assets/Scenes/MainMap.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

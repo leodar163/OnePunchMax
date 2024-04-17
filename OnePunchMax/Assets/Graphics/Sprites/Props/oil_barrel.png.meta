@@ -128,17 +128,17 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 500
-        height: 700
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 375
+        height: 525
+      alignment: 9
+      pivot: {x: 0.5, y: 0.18902862}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac2fae3311399bb48a0350e8cdddabc1
-      internalID: -1689465393
+      spriteID: 292494047a7fdbb47bc8ce29eb57eecf
+      internalID: 1340499064
       vertices: []
       indices: 
       edges: []
@@ -154,7 +154,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      oil_barrel_0: -1689465393
+      oil_barrel_0: 1340499064
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
