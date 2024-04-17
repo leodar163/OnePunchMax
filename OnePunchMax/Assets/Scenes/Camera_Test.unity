@@ -858,7 +858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 419709795}
-  maxSpeed: 15
+  maxSpeed: 12
   acceleration: 60
   deceleration: 100
 --- !u!4 &419709798
