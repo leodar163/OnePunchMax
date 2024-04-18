@@ -1,4 +1,5 @@
-﻿using Behaviors.Attack;
+﻿using System;
+using Behaviors.Attack;
 using Interactions;
 using UnityEngine;
 using UnityEngine.Events;
@@ -21,6 +22,11 @@ namespace Behaviors
 
         public Vector2 AimingDirection { get; protected set; }
         public Vector3 Position => transform.position;
+
+        protected virtual void Update()
+        {
+            _thrower.Direction = AimingDirection;
+        }
 
         protected virtual void FixedUpdate()
         {
@@ -56,7 +62,7 @@ namespace Behaviors
                 _thrower.Throw(throwable);
             }
         }
-
+        
         public void Attack(int attackType = 0)
         {
             if (_attacks.Length <= 0 || attackType >= _attacks.Length) return;
@@ -69,6 +75,11 @@ namespace Behaviors
         public virtual void ReceiveAttack(AttackData data)
         {
             OnReceiveAttack.Invoke(data);
+        }
+        
+        public virtual void Die()
+        {
+            Destroy(gameObject);
         }
     }
 }

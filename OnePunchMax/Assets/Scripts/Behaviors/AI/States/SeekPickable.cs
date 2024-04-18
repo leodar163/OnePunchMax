@@ -7,7 +7,7 @@ namespace Behaviors.AI.States
     public class SeekPickable : StateBehavior
     {
         [SerializeField] private StateBehavior _whenNoPickableInView;
-        public override void BehaveFixedUpdate(AIController controller)
+        public override void BehaveUpdate(AIController controller)
         {
             if ( controller.GetNearestInteractableInRange() is IPickable nearestPickable)
             {
@@ -20,7 +20,6 @@ namespace Behaviors.AI.States
             }
             else
             {
-                CancelState(controller);
                 if (_pushNextStateWithHesitation)
                     controller.PushStateWithHesitation(_whenNoPickableInView);
                 else

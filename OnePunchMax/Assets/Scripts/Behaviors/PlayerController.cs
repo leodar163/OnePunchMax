@@ -1,4 +1,5 @@
-﻿using Environment;
+﻿using Behaviors.Attack;
+using Environment;
 using Inputs;
 using UnityEngine;
 
@@ -26,12 +27,11 @@ namespace Behaviors
             EnvironmentManager.Player = this;
         }
 
-        private void Update()
+        protected override void Update()
         {
             if (InputsUtility.MainControls.Actions.Fire.IsPressed() && _holder.HolderSelf.HoldObject == null)
             {
                 _timeCharged += Time.deltaTime;
-                _timeCharged = 0;
             }
             
             if (InputsUtility.MainControls.Actions.Interact.WasReleasedThisFrame())
@@ -46,16 +46,15 @@ namespace Behaviors
                     if (_timeCharged > _timeToChargeAttack)
                     {
                         _timeCharged = 0;
-                        _attacks[0]?.Attack();
+                        _attacks[1]?.Attack();
                     }
                     else
                     {
-                        _attacks[1]?.Attack();
+                        _attacks[0]?.Attack();
                     }
                 }
             }
-
-            _thrower.Direction = AimingDirection;
+            base.Update();
         }
 
         protected override void FixedUpdate()
@@ -95,6 +94,12 @@ namespace Behaviors
             Transform aimeTransform = _aimePoint.transform;
             aimeTransform.position = transform.position + (Vector3)AimingDirection * _aimingRadius;
             aimeTransform.rotation = new Quaternion();
+        }
+
+        public override void ReceiveAttack(AttackData data)
+        {
+            Destroy(gameObject);
+            base.ReceiveAttack(data);
         }
     }   
 }

@@ -42,7 +42,6 @@ namespace Behaviors.Attack
         private void Attack(ITarget receiver)
         {
             if (receiver == null || receiver.Equals(null)) return;
-            print($"attack on {receiver}");
             receiver.ReceiveAttack(_attackData);
         }
 

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using Behaviors.AI.States;
+using Behaviors.Attack;
 using Interactions;
 using UnityEngine;
 using UnityEngine.AI;
@@ -13,6 +14,7 @@ namespace Behaviors.AI
         [SerializeField] public InteractableDetector _InteractableViewer;
         [SerializeField] public NavMeshAgent _navMeshAgent;
         [SerializeField] public StateBehavior currentState;
+        [SerializeField] private SeekThePlayer _seekThePlayer;
         [SerializeField] private SeekPickable _seekPickable;
         [SerializeField] private float _hesitationTime = 1;
         private IEnumerator _hesitationRoutine;
@@ -34,16 +36,19 @@ namespace Behaviors.AI
             base.FixedUpdate();
         }
 
-        private void Update()
+        protected override void Update()
         {
             if (currentState != null) currentState.BehaveUpdate(this);
+            base.Update();
         }
 
         private void LateUpdate()
         {
             if (currentState != null) currentState.BehaveLateUpdate(this);
             if (!_hasReceivedDestinationInput)
+            {
                 _navMeshAgent.destination = transform.position;
+            }
             _hasReceivedDestinationInput = false;
         }
 
@@ -78,7 +83,7 @@ namespace Behaviors.AI
         public void ThrowHoldObject(Vector2 direction)
         {
             AimingDirection = direction;
-            _thrower.Throw(GetHoldThrowable());
+            ActivateHoldObject();
         }
         
         public bool IsPlayerInAttackRange()
@@ -94,8 +99,8 @@ namespace Behaviors.AI
 
         public void PushState(StateBehavior state)
         {
-            currentState = state;
-            
+            currentState = state; 
+            print(state);
             if(currentState != null) currentState.EnterState(this);
             
             if (_hesitationRoutine != null) StopCoroutine(_hesitationRoutine);
@@ -124,12 +129,12 @@ namespace Behaviors.AI
 
         private void AimAtThePlayer()
         {
-            
+            AimingDirection = (Singleton<PlayerController>.Instance.transform.position - transform.position).normalized;
         }
 
         private void AimAtTheMovement()
         {
-            
+            AimingDirection = (_navMeshAgent.destination - transform.position).normalized;
         }
 
         public void GoInAlertMode()
@@ -137,8 +142,23 @@ namespace Behaviors.AI
             if (!isInAlertMode)
             {
                 isInAlertMode = true;
-                //_interactableDetector.on new nearest => pushnextstate(seekpickable)
+                PushState(_seekThePlayer);
+                _InteractableViewer.onNewNearest.AddListener(PushSeekPickable);
             }
+        }
+
+        private void PushSeekPickable(IInteractable detectedInteractable)
+        {
+            if (detectedInteractable is IPickable)
+            {
+                PushState(_seekPickable);
+            }
+        }
+        
+        public override void ReceiveAttack(AttackData data)
+        {
+            Die();
+            base.ReceiveAttack(data);
         }
     }
 }

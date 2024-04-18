@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 namespace Interactions
 {
@@ -9,6 +10,9 @@ namespace Interactions
         
         public IHolder HolderSelf { get; }
 
+
+        //protected IEnumerator _grabRoutine { get; set; }
+        
         public void Pick(IPickable pickable)
         {
             if (HoldObject != null || pickable == null) return;
@@ -20,13 +24,19 @@ namespace Interactions
             
             HoldObject = pickable;
 
-            pickableTransform.position = anchorPosition;
+            HoldObject.RigidBody.position = anchorPosition;
             pickableTransform.right = anchorTransform.right;
-            
-            AnchorPoint.connectedBody = pickable.RigidBody;
-            AnchorPoint.enabled = true;
-            
-            pickable.OnPicked(this);
+
+            if (AnchorPoint.TryGetComponent(out MonoBehaviour behaviour))
+            {
+                behaviour.StartCoroutine(GrabRoutine());
+            }
+            else
+            {
+                AnchorPoint.connectedBody = HoldObject.RigidBody;
+                AnchorPoint.enabled = true;
+                HoldObject.OnPicked(this);
+            }
         }
 
         public void Drop()
@@ -43,6 +53,14 @@ namespace Interactions
         {
             Drop();
             Pick(pickable);
+        }
+
+        private IEnumerator GrabRoutine()
+        {
+            yield return new WaitForFixedUpdate();
+            AnchorPoint.connectedBody = HoldObject.RigidBody;
+            AnchorPoint.enabled = true;
+            HoldObject.OnPicked(this);
         }
     }
 }

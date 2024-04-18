@@ -14,10 +14,12 @@ namespace Behaviors.AI.States
                 Vector2 direction = Singleton<PlayerController>.Instance.transform.position -
                                     controller.transform.position;
                 controller.ThrowHoldObject(direction.normalized);
+                ExitState(controller);
             }
             else if (controller.IsPlayerInAttackRange())
             {
                 controller.Attack();
+                ExitState(controller);
             }
             else
             {

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: SeekPlayerBehavior
   m_EditorClassIdentifier: 
   _nextState: {fileID: 11400000, guid: 87e1cb38abb5b35488fa355ac54caab0, type: 2}
-  _pushNextStateWithHesitation: 0
-  _stopDistance: 0.2
+  _pushNextStateWithHesitation: 1
+  _stopDistance: 0.8
