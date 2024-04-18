@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Utils.Debug;
 
 namespace Detections
@@ -8,10 +9,13 @@ namespace Detections
     {
         protected List<T> _inRanges = new();
 
-        public T Nearest => _inRanges.Count > 0 ? _inRanges[0] : null;
+        private T _nearest;
+        public T Nearest => _nearest;
         
         [SerializeField] private Vector2 _distanceOffset;
         [SerializeField] private DebugData _debugData;
+
+        [SerializeField] public UnityEvent<T> onNewNearest; 
         
         protected virtual void OnDrawGizmosSelected()
         {
@@ -23,7 +27,12 @@ namespace Detections
         protected virtual void LateUpdate()
         {
             _inRanges.RemoveAll(item => item == null || item.Equals(null));
+            T oldNearest = Nearest;
             SortInRangesByPosition();
+            if ((oldNearest == null && Nearest != null) || (oldNearest != null && oldNearest != Nearest) || (oldNearest != null && Nearest == null))
+            {
+                onNewNearest.Invoke(Nearest);
+            }
         }
 
         protected override void OnColliderEnters(Collider2D col)
@@ -51,7 +60,11 @@ namespace Detections
 
         private void SortInRangesByPosition()
         {
-            if (_inRanges.Count < 2) return;
+            if (_inRanges.Count < 2)
+            {
+                _nearest = _inRanges.Count > 0 ? _inRanges[0] : null;
+                return;
+            }
 
             List<T> sorteds = new List<T>();
             
@@ -77,6 +90,8 @@ namespace Detections
             }
 
             _inRanges = sorteds;
+
+            _nearest = _inRanges.Count > 0 ? _inRanges[0] : null;
         }
     }
 }

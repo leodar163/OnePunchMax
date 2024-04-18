@@ -1,5 +1,7 @@
-﻿using Environment;
+﻿using Behaviors.Attack;
+using Environment;
 using Inputs;
+using Ui;
 using UnityEngine;
 
 namespace Behaviors
@@ -8,6 +10,8 @@ namespace Behaviors
     {
         [Header("Movement")]
         [SerializeField] private MovementBehavior _movementBehavior;
+        [Min(0)][SerializeField] private float _hudOpenedMaxSpeed;
+        private float _hudClosedMaxSpeed;
         [Header("Aiming")]
         [SerializeField] private Transform _aimePoint;
         [SerializeField] private float _aimingRadius;
@@ -24,14 +28,24 @@ namespace Behaviors
         {
             _mainCam = Camera.main;
             EnvironmentManager.Player = this;
+            _hudClosedMaxSpeed = _movementBehavior.maxSpeed;
         }
 
-        private void Update()
+        private void Start()
+        {
+            UiManager.HudOpened += OnHudOpened;
+        }
+
+        private void OnDestroy()
+        {
+            UiManager.HudOpened -= OnHudOpened;
+        }
+
+        protected override void Update()
         {
             if (InputsUtility.MainControls.Actions.Fire.IsPressed() && _holder.HolderSelf.HoldObject == null)
             {
                 _timeCharged += Time.deltaTime;
-                _timeCharged = 0;
             }
             
             if (InputsUtility.MainControls.Actions.Interact.WasReleasedThisFrame())
@@ -46,16 +60,20 @@ namespace Behaviors
                     if (_timeCharged > _timeToChargeAttack)
                     {
                         _timeCharged = 0;
-                        _attacks[0]?.Attack();
+                        _attacks[1]?.Attack();
                     }
                     else
                     {
-                        _attacks[1]?.Attack();
+                        _attacks[0]?.Attack();
                     }
                 }
             }
+            base.Update();
+        }
 
-            _thrower.Direction = AimingDirection;
+        private void OnHudOpened(bool open)
+        {
+            _movementBehavior.maxSpeed = open ? _hudOpenedMaxSpeed : _hudClosedMaxSpeed;
         }
 
         protected override void FixedUpdate()
@@ -95,6 +113,17 @@ namespace Behaviors
             Transform aimeTransform = _aimePoint.transform;
             aimeTransform.position = transform.position + (Vector3)AimingDirection * _aimingRadius;
             aimeTransform.rotation = new Quaternion();
+        }
+
+        public override void ReceiveAttack(AttackData data)
+        {
+            Destroy(gameObject);
+            base.ReceiveAttack(data);
+        }
+
+        public override Vector2 GetMovement()
+        {
+            return _movementBehavior.direction;
         }
     }   
 }

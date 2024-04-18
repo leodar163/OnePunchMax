@@ -235,6 +235,15 @@ namespace Inputs
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ShowUi"",
+                    ""type"": ""Button"",
+                    ""id"": ""dbb5fbdb-2574-46f5-a7a7-b04506424dd7"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -281,6 +290,17 @@ namespace Inputs
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a2f906aa-d508-40ac-ab38-7a13217106a4"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ShowUi"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -296,6 +316,7 @@ namespace Inputs
             m_Actions_Fire = m_Actions.FindAction("Fire", throwIfNotFound: true);
             m_Actions_Aime = m_Actions.FindAction("Aime", throwIfNotFound: true);
             m_Actions_Interact = m_Actions.FindAction("Interact", throwIfNotFound: true);
+            m_Actions_ShowUi = m_Actions.FindAction("ShowUi", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -414,6 +435,7 @@ namespace Inputs
         private readonly InputAction m_Actions_Fire;
         private readonly InputAction m_Actions_Aime;
         private readonly InputAction m_Actions_Interact;
+        private readonly InputAction m_Actions_ShowUi;
         public struct ActionsActions
         {
             private @MainControls m_Wrapper;
@@ -421,6 +443,7 @@ namespace Inputs
             public InputAction @Fire => m_Wrapper.m_Actions_Fire;
             public InputAction @Aime => m_Wrapper.m_Actions_Aime;
             public InputAction @Interact => m_Wrapper.m_Actions_Interact;
+            public InputAction @ShowUi => m_Wrapper.m_Actions_ShowUi;
             public InputActionMap Get() { return m_Wrapper.m_Actions; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -439,6 +462,9 @@ namespace Inputs
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
+                @ShowUi.started += instance.OnShowUi;
+                @ShowUi.performed += instance.OnShowUi;
+                @ShowUi.canceled += instance.OnShowUi;
             }
 
             private void UnregisterCallbacks(IActionsActions instance)
@@ -452,6 +478,9 @@ namespace Inputs
                 @Interact.started -= instance.OnInteract;
                 @Interact.performed -= instance.OnInteract;
                 @Interact.canceled -= instance.OnInteract;
+                @ShowUi.started -= instance.OnShowUi;
+                @ShowUi.performed -= instance.OnShowUi;
+                @ShowUi.canceled -= instance.OnShowUi;
             }
 
             public void RemoveCallbacks(IActionsActions instance)
@@ -479,6 +508,7 @@ namespace Inputs
             void OnFire(InputAction.CallbackContext context);
             void OnAime(InputAction.CallbackContext context);
             void OnInteract(InputAction.CallbackContext context);
+            void OnShowUi(InputAction.CallbackContext context);
         }
     }
 }

@@ -16,8 +16,8 @@ namespace Detections
         [Tooltip("Defines the number of frame before one detection occur")]
         [SerializeField] [Min(0)] private int _rateOfDetection = 6;
         private int _frameRecord;
-        [SerializeField] private ContactFilter2D _filter;
         [SerializeField][Min(0)] private int _maxNumberOfDetection = 4;
+        [SerializeField] private ContactFilter2D _filter;
 
         [Space] [Header("Occlusion")] 
         [SerializeField] private bool _activateOcclusion = true;

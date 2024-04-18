@@ -7,8 +7,6 @@ namespace Behaviors
 {
     public abstract class HumanoidController : MonoBehaviour, IInteractor, ITarget
     {
-        [Header("Rotation")]
-        [SerializeField] protected LookAtBehavior _lookAtBehavior;
         [Header("Interactions")]
         [SerializeField] protected InteractableDetector _interactableDetector;
         [SerializeField] protected ObjectHolder _holder;
@@ -20,11 +18,17 @@ namespace Behaviors
         [SerializeField] public UnityEvent<AttackData> OnReceiveAttack;
 
         public Vector2 AimingDirection { get; protected set; }
+        
         public Vector3 Position => transform.position;
+
+        protected virtual void Update()
+        {
+            _thrower.Direction = AimingDirection;
+        }
 
         protected virtual void FixedUpdate()
         {
-            _lookAtBehavior.LookTo((Vector2)transform.position + AimingDirection);
+            
         }
 
         public void InteractWith(IInteractable interactable)
@@ -56,7 +60,7 @@ namespace Behaviors
                 _thrower.Throw(throwable);
             }
         }
-
+        
         public void Attack(int attackType = 0)
         {
             if (_attacks.Length <= 0 || attackType >= _attacks.Length) return;
@@ -69,6 +73,16 @@ namespace Behaviors
         public virtual void ReceiveAttack(AttackData data)
         {
             OnReceiveAttack.Invoke(data);
+        }
+        
+        public virtual void Die()
+        {
+            Destroy(gameObject);
+        }
+
+        public virtual Vector2 GetMovement()
+        {
+            return Vector2.zero;
         }
     }
 }

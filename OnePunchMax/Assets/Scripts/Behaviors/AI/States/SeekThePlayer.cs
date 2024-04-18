@@ -8,9 +8,8 @@ namespace Behaviors.AI.States
     {
         [SerializeField] [Min(0.001f)] private float _stopDistance;
             
-        public override void Update(AIController controller)
+        public override void BehaveUpdate(AIController controller)
         {
-            
             Vector3 playerPosition = Singleton<PlayerController>.Instance.transform.position;
             if (Vector2.Distance(playerPosition, controller.transform.position) <= _stopDistance)
             {
@@ -20,7 +19,7 @@ namespace Behaviors.AI.States
             {
                 controller.MoveTo(playerPosition);
             }
-            base.Update(controller);
+            base.BehaveUpdate(controller);
         }
     }
 }
