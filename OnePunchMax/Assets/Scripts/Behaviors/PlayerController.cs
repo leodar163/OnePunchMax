@@ -120,5 +120,10 @@ namespace Behaviors
             Destroy(gameObject);
             base.ReceiveAttack(data);
         }
+
+        public override Vector2 GetMovement()
+        {
+            return _movementBehavior.direction;
+        }
     }   
 }
