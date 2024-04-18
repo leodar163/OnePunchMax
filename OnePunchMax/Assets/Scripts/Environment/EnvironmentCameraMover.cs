@@ -23,12 +23,12 @@ namespace Environment
 
         private void Start()
         {
-            EnvironmentManager.S_MapMoved += OnMapMoved;
+            EnvironmentManager.MapMoved += OnMapMoved;
         }
 
         private void OnDestroy()
         {
-            EnvironmentManager.S_MapMoved -= OnMapMoved;
+            EnvironmentManager.MapMoved -= OnMapMoved;
         }
 
         private void OnMapMoved(Vector2 displacement)
