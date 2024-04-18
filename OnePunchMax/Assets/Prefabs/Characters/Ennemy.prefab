@@ -372,8 +372,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4905079369519307830}
   - component: {fileID: 7159738025482749823}
+  - component: {fileID: 3964500586147259458}
+  - component: {fileID: 8643468847646152842}
   m_Layer: 9
-  m_Name: Triangle
+  m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -387,13 +389,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2896254757559316239}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 872652668734488585}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7159738025482749823
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -435,8 +437,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 1, g: 0.3830188, b: 0.3830188, a: 1}
+  m_Sprite: {fileID: -1270188803, guid: a46dcc3401e829a41a6354fa27135e65, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -446,6 +448,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3964500586147259458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2896254757559316239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c0a7e4de7be4774b29887afd57ee211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _controller: {fileID: 6097947107926023311}
+  _animator: {fileID: 8643468847646152842}
+  _lookByAim: 0
+--- !u!95 &8643468847646152842
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2896254757559316239}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 195338a155f178541872555eb23225b8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2945388014366549802
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,7 +619,6 @@ GameObject:
   m_Component:
   - component: {fileID: 872652668734488585}
   - component: {fileID: 6097947107926023311}
-  - component: {fileID: 8482772395289607482}
   - component: {fileID: 1539003098037566569}
   - component: {fileID: 6174083803111401251}
   - component: {fileID: 1294808942508331517}
@@ -602,7 +639,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3741774708682747451}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.04, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -625,7 +662,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13bc06c532c240bcbc997f9b1dac96dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lookAtBehavior: {fileID: 8482772395289607482}
   _interactableDetector: {fileID: 3290075149253817554}
   _holder: {fileID: 1772380765175386858}
   _thrower: {fileID: 959612993083909904}
@@ -646,22 +682,6 @@ MonoBehaviour:
   onAlterModeGoesOn:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8482772395289607482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3741774708682747451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c0a7e4de7be4774b29887afd57ee211, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rb: {fileID: 1539003098037566569}
-  maxRotationSpeed: 400
-  acceleration: 15
-  _initialDirection: {x: 0, y: -1}
 --- !u!50 &1539003098037566569
 Rigidbody2D:
   serializedVersion: 4
