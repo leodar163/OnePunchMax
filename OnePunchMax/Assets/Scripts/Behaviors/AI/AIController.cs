@@ -100,7 +100,7 @@ namespace Behaviors.AI
         public void PushState(StateBehavior state)
         {
             currentState = state; 
-            print(state);
+            //print(state);
             if(currentState != null) currentState.EnterState(this);
             
             if (_hesitationRoutine != null) StopCoroutine(_hesitationRoutine);

@@ -53,6 +53,9 @@ MonoBehaviour:
     activateTextDebug: 0
     gizmoColor: {r: 0, g: 1, b: 0, a: 1}
     debugColor: {r: 1, g: 1, b: 1, a: 1}
+  onNewNearest:
+    m_PersistentCalls:
+      m_Calls: []
   _reachableNbr: 2
   _attackData:
     canBurn: 1
@@ -81,6 +84,7 @@ MonoBehaviour:
     _offset: 0
     _radius: 1
   _rateOfDetection: 6
+  _maxNumberOfDetection: 2
   _filter:
     useTriggers: 0
     useLayerMask: 1
@@ -95,7 +99,6 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  _maxNumberOfDetection: 2
   _activateOcclusion: 1
   _occlusionFilter:
     useTriggers: 0
@@ -221,6 +224,8 @@ GameObject:
   - component: {fileID: 1548921321036718049}
   - component: {fileID: 6764700792011673508}
   - component: {fileID: 5689984859453723062}
+  - component: {fileID: 7817927238946788522}
+  - component: {fileID: 3105980126734026268}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -274,6 +279,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _movementBehavior: {fileID: 4680554282018304018}
+  _hudOpenedMaxSpeed: 8
   _aimePoint: {fileID: 3277864813529314139}
   _aimingRadius: 1
   _timeToChargeAttack: 1.5
@@ -390,6 +396,30 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &7817927238946788522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142295357559388899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a70ebe7991e2b40bddb8be4a92c1e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3105980126734026268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142295357559388899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c204606bd1cd9d4aa3dc8e1a0b5c42b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7262164153284881341
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,6 +587,9 @@ MonoBehaviour:
     activateTextDebug: 0
     gizmoColor: {r: 0.531859, g: 1, b: 0.49622637, a: 1}
     debugColor: {r: 0, g: 0, b: 0, a: 1}
+  onNewNearest:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &4710249009337829076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,6 +611,7 @@ MonoBehaviour:
     _offset: 0.5
     _radius: 0.6
   _rateOfDetection: 6
+  _maxNumberOfDetection: 1
   _filter:
     useTriggers: 0
     useLayerMask: 1
@@ -592,7 +626,6 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  _maxNumberOfDetection: 1
   _activateOcclusion: 1
   _occlusionFilter:
     useTriggers: 0
@@ -672,6 +705,9 @@ MonoBehaviour:
     activateTextDebug: 0
     gizmoColor: {r: 0, g: 1, b: 0, a: 1}
     debugColor: {r: 1, g: 1, b: 1, a: 1}
+  onNewNearest:
+    m_PersistentCalls:
+      m_Calls: []
   _reachableNbr: 12
   _attackData:
     canBurn: 0
@@ -700,6 +736,7 @@ MonoBehaviour:
     _offset: 0
     _radius: 1
   _rateOfDetection: 6
+  _maxNumberOfDetection: 12
   _filter:
     useTriggers: 0
     useLayerMask: 1
@@ -714,7 +751,6 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  _maxNumberOfDetection: 12
   _activateOcclusion: 1
   _occlusionFilter:
     useTriggers: 0
