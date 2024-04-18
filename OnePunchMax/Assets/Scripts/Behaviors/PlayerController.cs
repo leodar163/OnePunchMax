@@ -22,8 +22,7 @@ namespace Behaviors
         private Vector2 _lastMousePosition;
         
         private Camera _mainCam;
-        
-        
+
         private void Awake()
         {
             _mainCam = Camera.main;
@@ -46,6 +45,7 @@ namespace Behaviors
             if (InputsUtility.MainControls.Actions.Fire.IsPressed() && _holder.HolderSelf.HoldObject == null)
             {
                 _timeCharged += Time.deltaTime;
+                if (_timeCharged > 0.1f) IsCharging = true;
             }
             
             if (InputsUtility.MainControls.Actions.Interact.WasReleasedThisFrame())
@@ -59,14 +59,16 @@ namespace Behaviors
                 {
                     if (_timeCharged > _timeToChargeAttack)
                     {
-                        _timeCharged = 0;
-                        _attacks[1]?.Attack();
+                        Attack(1);
                     }
                     else
                     {
-                        _attacks[0]?.Attack();
+                        Attack();
                     }
                 }
+                
+                _timeCharged = 0;
+                IsCharging = false;
             }
             base.Update();
         }
@@ -82,7 +84,7 @@ namespace Behaviors
 
             Vector2 moveInput = InputsUtility.MainControls.Movements.Move.ReadValue<Vector2>();
             
-            if (moveInput.magnitude > 0.125f) 
+            if (!IsCharging && moveInput.magnitude > 0.125f) 
                 _movementBehavior.MoveToward(moveInput);
             PlaceAimePoint();
             
@@ -113,12 +115,6 @@ namespace Behaviors
             Transform aimeTransform = _aimePoint.transform;
             aimeTransform.position = transform.position + (Vector3)AimingDirection * _aimingRadius;
             aimeTransform.rotation = new Quaternion();
-        }
-
-        public override void ReceiveAttack(AttackData data)
-        {
-            Destroy(gameObject);
-            base.ReceiveAttack(data);
         }
 
         public override Vector2 GetMovement()

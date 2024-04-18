@@ -14,9 +14,12 @@ namespace Behaviors
         [Header("Attack")] 
         [SerializeField] protected AttackBehavior[] _attacks;
 
-        [SerializeField] public UnityEvent OnAttack;
+        [SerializeField] public UnityEvent<int> OnAttack;
         [SerializeField] public UnityEvent<AttackData> OnReceiveAttack;
 
+        public bool IsDead { get; protected set; }
+        public bool IsCharging { get; protected set; }
+        
         public Vector2 AimingDirection { get; protected set; }
         
         public Vector3 Position => transform.position;
@@ -65,9 +68,12 @@ namespace Behaviors
         {
             if (_attacks.Length <= 0 || attackType >= _attacks.Length) return;
           
-            _attacks[attackType]?.Attack();
-            
-            OnAttack.Invoke();
+            if (_attacks[attackType] != null && _attacks[attackType].CanAttack)
+            {
+                _attacks[attackType]?.Attack();
+
+                OnAttack.Invoke(attackType);
+            }
         }
         
         public virtual void ReceiveAttack(AttackData data)
@@ -76,8 +82,15 @@ namespace Behaviors
         }
         
         public virtual void Die()
+        { 
+            enabled = false;
+            IsDead = true;
+        }
+
+        public virtual void Resurect()
         {
-            Destroy(gameObject);
+            enabled = true;
+            IsDead = false;
         }
 
         public virtual Vector2 GetMovement()
