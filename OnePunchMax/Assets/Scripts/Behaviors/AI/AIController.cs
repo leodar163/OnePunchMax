@@ -160,5 +160,10 @@ namespace Behaviors.AI
             Die();
             base.ReceiveAttack(data);
         }
+
+        public override Vector2 GetMovement()
+        {
+            return _navMeshAgent.velocity;
+        }
     }
 }
