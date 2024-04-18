@@ -1,23 +1,24 @@
-﻿using Inputs;
-using Interactions;
+﻿using Behaviors.Attack;
+using Environment;
+using Inputs;
+using Ui;
 using UnityEngine;
 
 namespace Behaviors
 {
-    public class PlayerController : MonoBehaviour, IInteractor
+    public class PlayerController : HumanoidController
     {
-        [Header("Behaviors")]
+        [Header("Movement")]
         [SerializeField] private MovementBehavior _movementBehavior;
-        [SerializeField] private LookAtBehavior _lookAtBehavior;
+        [Min(0)][SerializeField] private float _hudOpenedMaxSpeed;
+        private float _hudClosedMaxSpeed;
         [Header("Aiming")]
         [SerializeField] private Transform _aimePoint;
         [SerializeField] private float _aimingRadius;
-        [Header("Interactions")]
-        [SerializeField] private InteractableDetector _interactableDetector;
-        [SerializeField] private ObjectHolder _holder;
-        [SerializeField] private ObjectThrower _thrower;
+        [Header("Attack")]
+        [SerializeField] private float _timeToChargeAttack;
+        private float _timeCharged;
 
-        private Vector2 _aimingDirection;
         private Vector2 _lastMousePosition;
         
         private Camera _mainCam;
@@ -26,23 +27,56 @@ namespace Behaviors
         private void Awake()
         {
             _mainCam = Camera.main;
+            EnvironmentManager.Player = this;
+            _hudClosedMaxSpeed = _movementBehavior.maxSpeed;
         }
 
-        private void Update()
+        private void Start()
         {
+            UiManager.HudOpened += OnHudOpened;
+        }
+
+        private void OnDestroy()
+        {
+            UiManager.HudOpened -= OnHudOpened;
+        }
+
+        protected override void Update()
+        {
+            if (InputsUtility.MainControls.Actions.Fire.IsPressed() && _holder.HolderSelf.HoldObject == null)
+            {
+                _timeCharged += Time.deltaTime;
+            }
+            
             if (InputsUtility.MainControls.Actions.Interact.WasReleasedThisFrame())
             {
-               InteractWith(_interactableDetector.NearestInteractable);
+               InteractWith(_interactableDetector.Nearest);
             }
             if (InputsUtility.MainControls.Actions.Fire.WasReleasedThisFrame())
             {
-                ActivateHoldObject();
+                if (_holder.HolderSelf.HoldObject != null) ActivateHoldObject();
+                else
+                {
+                    if (_timeCharged > _timeToChargeAttack)
+                    {
+                        _timeCharged = 0;
+                        _attacks[1]?.Attack();
+                    }
+                    else
+                    {
+                        _attacks[0]?.Attack();
+                    }
+                }
             }
-
-            _thrower.Direction = _aimingDirection;
+            base.Update();
         }
 
-        private void FixedUpdate()
+        private void OnHudOpened(bool open)
+        {
+            _movementBehavior.maxSpeed = open ? _hudOpenedMaxSpeed : _hudClosedMaxSpeed;
+        }
+
+        protected override void FixedUpdate()
         {
             DefineAimingDirection();
 
@@ -50,9 +84,9 @@ namespace Behaviors
             
             if (moveInput.magnitude > 0.125f) 
                 _movementBehavior.MoveToward(moveInput);
-            
-            _lookAtBehavior.LookTo((Vector2)transform.position + _aimingDirection);
             PlaceAimePoint();
+            
+            base.FixedUpdate();
         }
 
         private void DefineAimingDirection()
@@ -63,12 +97,12 @@ namespace Behaviors
             
             if (direction.magnitude > 0.125f)
             {
-                _aimingDirection = direction.normalized;
+                AimingDirection = direction.normalized;
             }
             else if (Vector2.Distance(currentMousePosition, _lastMousePosition) > 0.125f)
             {
-                _aimingDirection = mouseWorldPos - (Vector2)transform.position;
-                _aimingDirection = _aimingDirection.normalized;
+                AimingDirection = mouseWorldPos - (Vector2)transform.position;
+                AimingDirection = AimingDirection.normalized;
             }
 
             _lastMousePosition = currentMousePosition;
@@ -77,38 +111,14 @@ namespace Behaviors
         private void PlaceAimePoint()
         {
             Transform aimeTransform = _aimePoint.transform;
-            aimeTransform.position = transform.position + (Vector3)_aimingDirection * _aimingRadius;
+            aimeTransform.position = transform.position + (Vector3)AimingDirection * _aimingRadius;
             aimeTransform.rotation = new Quaternion();
         }
 
-        public void InteractWith(IInteractable interactable)
+        public override void ReceiveAttack(AttackData data)
         {
-            switch (interactable)
-            {
-                case IPickable { IsPickable: true } pickable:
-                    _holder.HolderSelf.Switch(pickable);
-                    break;
-                case IThrowable throwable:
-                    _thrower.Throw(throwable);
-                    break;
-                default:
-                    interactable?.OnInteract(this);
-                    break;
-            }
-        }
-
-        public void ActivateHoldObject()
-        {
-            IPickable pickable = _holder.HolderSelf.HoldObject;
-            
-            if (pickable == null) return;
-            
-            _holder.HolderSelf.Drop();
-
-            if (pickable.RigidBody.TryGetComponent(out IThrowable throwable))
-            {
-                _thrower.Throw(throwable);
-            }
+            Destroy(gameObject);
+            base.ReceiveAttack(data);
         }
     }   
 }
