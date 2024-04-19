@@ -128,5 +128,13 @@ namespace Behaviors
         {
             return _movementBehavior.direction;
         }
+
+        public override void ReceiveAttack(AttackData data)
+        {
+            _waterContainer.Quantity += data.damage;
+            base.ReceiveAttack(data);
+            
+            if (_waterContainer.Quantity < 0) Die();
+        }
     }   
 }
