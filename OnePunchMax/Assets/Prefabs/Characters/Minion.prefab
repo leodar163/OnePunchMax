@@ -53,6 +53,9 @@ MonoBehaviour:
     activateTextDebug: 0
     gizmoColor: {r: 0, g: 1, b: 0, a: 1}
     debugColor: {r: 1, g: 1, b: 1, a: 1}
+  onNewNearest:
+    m_PersistentCalls:
+      m_Calls: []
   _reachableNbr: 2
   _attackData:
     canBurn: 1
@@ -81,6 +84,7 @@ MonoBehaviour:
     _offset: 0
     _radius: 1
   _rateOfDetection: 6
+  _maxNumberOfDetection: 2
   _filter:
     useTriggers: 0
     useLayerMask: 1
@@ -95,7 +99,6 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  _maxNumberOfDetection: 2
   _activateOcclusion: 1
   _occlusionFilter:
     useTriggers: 0
@@ -170,6 +173,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3831262896444315465, guid: 6cf5e9410c9ff8a409338dd551b2a8c0, type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 3147243319523703060}
     - target: {fileID: 4849603929128206523, guid: 6cf5e9410c9ff8a409338dd551b2a8c0, type: 3}
       propertyPath: m_Name
       value: Minion
@@ -185,6 +192,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 4216789354140498493}
   m_SourcePrefab: {fileID: 100100000, guid: 6cf5e9410c9ff8a409338dd551b2a8c0, type: 3}
+--- !u!95 &3147243319523703060 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2130593571800266079, guid: 6cf5e9410c9ff8a409338dd551b2a8c0, type: 3}
+  m_PrefabInstance: {fileID: 3908036576341183563}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3447342022706389207 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1867667565711207580, guid: 6cf5e9410c9ff8a409338dd551b2a8c0, type: 3}

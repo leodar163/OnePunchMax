@@ -236,6 +236,17 @@
                 },
                 {
                     "name": "",
+                    "id": "3bc07196-449a-4cfc-be0f-b9c6c2766b7e",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "6b749dc3-68d3-41d2-9627-e8efb2c7f5f2",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
@@ -269,8 +280,30 @@
                 },
                 {
                     "name": "",
+                    "id": "02d11fc8-9d86-49b9-b4da-9debd7fc5b74",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "a2f906aa-d508-40ac-ab38-7a13217106a4",
-                    "path": "<Keyboard>/tab",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShowUi",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0a565ea0-c061-4950-ac72-19e1f92a3c0d",
+                    "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

@@ -19,6 +19,7 @@ namespace Behaviors
 
         public bool IsDead { get; protected set; }
         public bool IsCharging { get; protected set; }
+        public bool FullyCharged { get; protected set; }
         
         public Vector2 AimingDirection { get; protected set; }
         
@@ -73,6 +74,7 @@ namespace Behaviors
                 _attacks[attackType]?.Attack();
 
                 OnAttack.Invoke(attackType);
+                FullyCharged = false;
             }
         }
         

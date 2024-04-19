@@ -46,6 +46,7 @@ namespace Behaviors
             {
                 _timeCharged += Time.deltaTime;
                 if (_timeCharged > 0.1f) IsCharging = true;
+                if (_timeCharged > _timeToChargeAttack) FullyCharged = true;
             }
             
             if (InputsUtility.MainControls.Actions.Interact.WasReleasedThisFrame())
@@ -57,7 +58,7 @@ namespace Behaviors
                 if (_holder.HolderSelf.HoldObject != null) ActivateHoldObject();
                 else
                 {
-                    if (_timeCharged > _timeToChargeAttack)
+                    if (FullyCharged)
                     {
                         Attack(1);
                     }

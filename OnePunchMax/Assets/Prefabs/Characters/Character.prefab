@@ -83,6 +83,9 @@ MonoBehaviour:
     activateTextDebug: 0
     gizmoColor: {r: 0, g: 1, b: 0, a: 1}
     debugColor: {r: 1, g: 1, b: 1, a: 1}
+  onNewNearest:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &25625967802652644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,6 +107,7 @@ MonoBehaviour:
     _offset: 0.5
     _radius: 0.6
   _rateOfDetection: 6
+  _maxNumberOfDetection: 1
   _filter:
     useTriggers: 0
     useLayerMask: 1
@@ -118,7 +122,6 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  _maxNumberOfDetection: 1
   _activateOcclusion: 1
   _occlusionFilter:
     useTriggers: 0
@@ -296,10 +299,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c0a7e4de7be4774b29887afd57ee211, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rb: {fileID: 8665502645884181609}
-  maxRotationSpeed: 400
-  acceleration: 15
-  _initialDirection: {x: 0, y: 0}
+  _controller: {fileID: 0}
+  _animator: {fileID: 2130593571800266079}
+  _lookByAim: 0
 --- !u!50 &8665502645884181609
 Rigidbody2D:
   serializedVersion: 4

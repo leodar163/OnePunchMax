@@ -12,6 +12,7 @@ namespace Behaviors.Animations
         private static readonly int DirectionAnimArg = Animator.StringToHash("Direction");
         private static readonly int SpeedAnimArg = Animator.StringToHash("Speed");
         private static readonly int DeadAnimArg = Animator.StringToHash("IsDead");
+        private static readonly int ChargedAnimArg = Animator.StringToHash("FullyCharged");
         private static readonly int ChargingAnimArg = Animator.StringToHash("IsCharging");
         private static readonly int AttackAnimArg = Animator.StringToHash("LightAttack");
         private static readonly int LargeAttackAnimArg = Animator.StringToHash("ChargedAttack");
@@ -60,6 +61,7 @@ namespace Behaviors.Animations
             _animator.SetFloat(SpeedAnimArg, _controller.GetMovement().magnitude > 0.01f ? 1 : 0);
             _animator.SetBool(DeadAnimArg, _controller.IsDead);
             _animator.SetBool(ChargingAnimArg, _controller.IsCharging);
+            _animator.SetBool(ChargedAnimArg, _controller.FullyCharged);
         }
 
         public void SwitchLookMode()

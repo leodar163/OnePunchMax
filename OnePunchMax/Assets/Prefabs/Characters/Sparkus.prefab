@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 3210664391715586984}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.521, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -53,12 +53,16 @@ MonoBehaviour:
     activateTextDebug: 0
     gizmoColor: {r: 0, g: 1, b: 0, a: 1}
     debugColor: {r: 1, g: 1, b: 1, a: 1}
+  onNewNearest:
+    m_PersistentCalls:
+      m_Calls: []
   _reachableNbr: 12
   _attackData:
     canBurn: 0
     canExplode: 0
     canBreak: 0
     knockBackForce: 200
+  _attackDelay: 1
   _attackCoolDown: 1
 --- !u!114 &646924854596584835
 MonoBehaviour:
@@ -74,13 +78,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _geometryType: 1
   _cone:
-    _viewAngle: 120
-    _viewOffset: 0
-    _viewRadius: 2
+    _viewAngle: 114
+    _viewOffset: -11
+    _viewRadius: 2.2
   _circle:
     _offset: 0
     _radius: 1
   _rateOfDetection: 6
+  _maxNumberOfDetection: 12
   _filter:
     useTriggers: 0
     useLayerMask: 1
@@ -95,7 +100,6 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  _maxNumberOfDetection: 12
   _activateOcclusion: 1
   _occlusionFilter:
     useTriggers: 0
@@ -175,12 +179,16 @@ MonoBehaviour:
     activateTextDebug: 0
     gizmoColor: {r: 0, g: 1, b: 0, a: 1}
     debugColor: {r: 1, g: 1, b: 1, a: 1}
+  onNewNearest:
+    m_PersistentCalls:
+      m_Calls: []
   _reachableNbr: 2
   _attackData:
     canBurn: 1
     canExplode: 1
     canBreak: 1
     knockBackForce: 100
+  _attackDelay: 1
   _attackCoolDown: 1
 --- !u!114 &7282454895345827967
 MonoBehaviour:
@@ -203,6 +211,7 @@ MonoBehaviour:
     _offset: 0
     _radius: 1
   _rateOfDetection: 6
+  _maxNumberOfDetection: 2
   _filter:
     useTriggers: 0
     useLayerMask: 1
@@ -217,7 +226,6 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  _maxNumberOfDetection: 2
   _activateOcclusion: 1
   _occlusionFilter:
     useTriggers: 0
@@ -252,6 +260,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 25625967802652644, guid: 6cf5e9410c9ff8a409338dd551b2a8c0, type: 3}
+      propertyPath: onColliderEnters.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 25625967802652644, guid: 6cf5e9410c9ff8a409338dd551b2a8c0, type: 3}
+      propertyPath: onColliderEnters.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 25625967802652644, guid: 6cf5e9410c9ff8a409338dd551b2a8c0, type: 3}
+      propertyPath: onColliderEnters.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 786833033084171827, guid: 6cf5e9410c9ff8a409338dd551b2a8c0, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -300,6 +320,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 5ebb3ac9bc8e49a41aa5c63ff69360fb, type: 2}
+    - target: {fileID: 3831262896444315465, guid: 6cf5e9410c9ff8a409338dd551b2a8c0, type: 3}
+      propertyPath: _lookByAim
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831262896444315465, guid: 6cf5e9410c9ff8a409338dd551b2a8c0, type: 3}
+      propertyPath: _controller
+      value: 
+      objectReference: {fileID: 7416214443520773353}
     - target: {fileID: 4849603929128206523, guid: 6cf5e9410c9ff8a409338dd551b2a8c0, type: 3}
       propertyPath: m_Name
       value: Sparkus
@@ -346,17 +374,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20994712396e46cb8dd0f58c15794bd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2846635888304711929 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3831262896444315465, guid: 6cf5e9410c9ff8a409338dd551b2a8c0, type: 3}
-  m_PrefabInstance: {fileID: 1344932571061256112}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5901800291026861835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c0a7e4de7be4774b29887afd57ee211, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &5477935999524590570 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6822848743911042138, guid: 6cf5e9410c9ff8a409338dd551b2a8c0, type: 3}
@@ -379,7 +396,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfd3aee661d64364891a7454bb997ffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lookAtBehavior: {fileID: 2846635888304711929}
   _interactableDetector: {fileID: 7938627234260143150}
   _holder: {fileID: 8959819922125822615}
   _thrower: {fileID: 1300429260191342243}
@@ -393,6 +409,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _movementBehavior: {fileID: 1603370202466109464}
+  _hudOpenedMaxSpeed: 0
   _aimePoint: {fileID: 5477935999524590570}
   _aimingRadius: 1
   _timeToChargeAttack: 1.5
