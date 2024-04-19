@@ -41,8 +41,23 @@ namespace Behaviors
         protected virtual void Update()
         {
             _thrower.Direction = AimingDirection;
+            OrientateViews();
         }
 
+        protected virtual void OrientateViews()
+        {
+            Quaternion newRotation =
+                Quaternion.Euler(0, 0, Mathf.Atan2(AimingDirection.y, AimingDirection.x) * Mathf.Rad2Deg);
+
+            _interactableDetector.transform.rotation = newRotation;
+            _holder.transform.rotation = newRotation;
+            _thrower.transform.rotation = newRotation;
+            foreach (var attack in _attacks)
+            {
+                attack.transform.rotation = newRotation;
+            }
+        }
+        
         protected virtual void FixedUpdate()
         {
             

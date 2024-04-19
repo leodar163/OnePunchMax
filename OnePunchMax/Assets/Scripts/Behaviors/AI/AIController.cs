@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using Behaviors.AI.States;
 using Behaviors.Attack;
+using Detections;
 using Interactions;
 using UnityEngine;
 using UnityEngine.AI;
@@ -12,6 +13,7 @@ namespace Behaviors.AI
     public class AIController : HumanoidController
     {
         [SerializeField] public InteractableDetector _InteractableViewer;
+        [SerializeField] public ColliderDetector _playerViewer;
         [SerializeField] public NavMeshAgent _navMeshAgent;
         [SerializeField] public StateBehavior currentState;
         [SerializeField] private SeekThePlayer _seekThePlayer;
@@ -22,7 +24,7 @@ namespace Behaviors.AI
         public bool isInAlertMode { get; private set; }
 
         [Space] 
-        [SerializeField] public UnityEvent onAlterModeGoesOn; 
+        [SerializeField] public UnityEvent onAlertModeGoesOn; 
         private bool _hasReceivedDestinationInput;
         
         protected override void FixedUpdate()
@@ -50,6 +52,16 @@ namespace Behaviors.AI
                 _navMeshAgent.destination = transform.position;
             }
             _hasReceivedDestinationInput = false;
+        }
+
+        protected override void OrientateViews()
+        {
+            Quaternion newRotation =
+                Quaternion.Euler(0, 0, Mathf.Atan2(AimingDirection.y, AimingDirection.x) * Mathf.Rad2Deg);
+            
+            base.OrientateViews();
+            _interactableDetector.transform.rotation = newRotation;
+            _playerViewer.transform.rotation = newRotation;
         }
 
         public void MoveTo(Vector3 position)

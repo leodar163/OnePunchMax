@@ -49,6 +49,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 120
     _viewOffset: 0
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 4
   _circle:
     _offset: 0
@@ -123,6 +124,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 240
     _viewOffset: -180
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 1
   _circle:
     _offset: 0
@@ -316,6 +318,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 120
     _viewOffset: 0
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 5
   _circle:
     _offset: 0.5
@@ -542,6 +545,7 @@ MonoBehaviour:
       m_Calls: []
   _reachableNbr: 2
   _attackData:
+    damage: 0
     canBurn: 1
     canExplode: 1
     canBreak: 1
@@ -564,6 +568,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 90
     _viewOffset: 0
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 1
   _circle:
     _offset: 0
@@ -664,6 +669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13bc06c532c240bcbc997f9b1dac96dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _rb: {fileID: 1539003098037566569}
   _interactableDetector: {fileID: 3290075149253817554}
   _holder: {fileID: 1772380765175386858}
   _thrower: {fileID: 959612993083909904}
@@ -730,12 +736,13 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   _InteractableViewer: {fileID: 7175060224471953717}
+  _playerViewer: {fileID: 3383526764029604383}
   _navMeshAgent: {fileID: 1294808942508331517}
   currentState: {fileID: 11400000, guid: 5e8c0e384beb200419dcf8447fe6a89a, type: 2}
   _seekThePlayer: {fileID: 11400000, guid: 0e5e9f62172913d4e8f4e58c93ff394b, type: 2}
   _seekPickable: {fileID: 11400000, guid: de56ccbfa5490674b8a996ea3fcc604b, type: 2}
   _hesitationTime: 0.5
-  onAlterModeGoesOn:
+  onAlertModeGoesOn:
     m_PersistentCalls:
       m_Calls: []
 --- !u!50 &1539003098037566569
@@ -925,6 +932,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 120
     _viewOffset: 0
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 5
   _circle:
     _offset: 0.5
