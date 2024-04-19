@@ -90,6 +90,7 @@ namespace Behaviors
 
             if (pickable.RigidBody.TryGetComponent(out IThrowable throwable))
             {
+                _thrower.Direction = AimingDirection;
                 _thrower.Throw(throwable);
             }
         }

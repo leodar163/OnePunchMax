@@ -29,17 +29,13 @@ namespace Behaviors.AI
         
         protected override void FixedUpdate()
         {
-            if (isInAlertMode)
-                AimAtThePlayer();
-            else
-                AimAtTheMovement();
-            
             if (currentState != null) currentState.BehaveFixedUpdate(this);
             base.FixedUpdate();
         }
 
         protected override void Update()
         {
+            if(_hesitationRoutine == null )AimAtTheMovement();
             if (currentState != null) currentState.BehaveUpdate(this);
             base.Update();
         }
@@ -139,12 +135,12 @@ namespace Behaviors.AI
             PushState(state);
         }
 
-        private void AimAtThePlayer()
+        public void AimAt(Vector3 position)
         {
-            AimingDirection = (Singleton<PlayerController>.Instance.transform.position - transform.position).normalized;
+            AimingDirection = (position- transform.position).normalized;
         }
 
-        private void AimAtTheMovement()
+        public void AimAtTheMovement()
         {
             AimingDirection = (_navMeshAgent.destination - transform.position).normalized;
         }
@@ -161,9 +157,13 @@ namespace Behaviors.AI
 
         private void PushSeekPickable(IInteractable detectedInteractable)
         {
-            if (detectedInteractable is IPickable)
+            if (detectedInteractable is IPickable pickable)
             {
-                PushStateWithHesitation(_seekPickable);
+                Vector3 actualDestination = _navMeshAgent.destination;
+                if (_navMeshAgent.SetDestination(pickable.Position))
+                    PushStateWithHesitation(_seekPickable);
+                else
+                    _navMeshAgent.destination = actualDestination;
             }
         }
         

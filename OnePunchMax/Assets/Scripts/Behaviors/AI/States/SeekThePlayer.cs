@@ -11,6 +11,9 @@ namespace Behaviors.AI.States
         public override void BehaveUpdate(AIController controller)
         {
             Vector3 playerPosition = Singleton<PlayerController>.Instance.transform.position;
+            
+            controller.AimAt(playerPosition);
+            
             if (Vector2.Distance(playerPosition, controller.transform.position) <= _stopDistance)
             {
                 ExitState(controller);

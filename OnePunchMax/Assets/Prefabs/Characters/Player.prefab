@@ -287,6 +287,9 @@ MonoBehaviour:
   OnResurect:
     m_PersistentCalls:
       m_Calls: []
+  onGetHurt:
+    m_PersistentCalls:
+      m_Calls: []
   _waterContainer:
     _quantity: 0
     _minQuantity: 0
@@ -299,9 +302,6 @@ MonoBehaviour:
   _aimePoint: {fileID: 3277864813529314139}
   _aimingRadius: 1
   _timeToChargeAttack: 0.5
-  onGetHurt:
-    m_PersistentCalls:
-      m_Calls: []
   onGetHealed:
     m_PersistentCalls:
       m_Calls: []
@@ -611,6 +611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _anchorPoint: {fileID: 6764700792011673508}
+  _holdObjectOffset: {x: 0.7, y: 0}
 --- !u!114 &5119325266067880570
 MonoBehaviour:
   m_ObjectHideFlags: 0

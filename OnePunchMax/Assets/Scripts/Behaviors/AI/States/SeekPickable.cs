@@ -11,12 +11,14 @@ namespace Behaviors.AI.States
         {
             if ( controller.GetNearestInteractableInRange() is IPickable nearestPickable)
             {
+                controller.AimAt(nearestPickable.Position);
                 controller.InteractWith(nearestPickable);
                 ExitState(controller);
             }
             else if (controller.GetNearestInteractableInView() is IPickable nearestPickableInView)
             {
-                controller.MoveTo(nearestPickableInView.RigidBody.position);
+                controller.AimAt(nearestPickableInView.Position);
+                controller.MoveTo(nearestPickableInView.Position);
             }
             else
             {

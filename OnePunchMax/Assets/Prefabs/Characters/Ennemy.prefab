@@ -246,6 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _anchorPoint: {fileID: 6174083803111401251}
+  _holdObjectOffset: {x: 0.7, y: 0}
 --- !u!1 &948851886795476232
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,6 +736,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  onGetHurt:
+    m_PersistentCalls:
+      m_Calls: []
   _InteractableViewer: {fileID: 7175060224471953717}
   _playerViewer: {fileID: 3383526764029604383}
   _navMeshAgent: {fileID: 1294808942508331517}
