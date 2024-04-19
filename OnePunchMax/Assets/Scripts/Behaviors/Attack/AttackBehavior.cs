@@ -10,6 +10,7 @@ namespace Behaviors.Attack
         [SerializeField] private float _reachableNbr = 2;
         [SerializeField] private AttackData _attackData;
 
+        [SerializeField] private float _attackDelay = 1f;
         [SerializeField] private float _attackCoolDown = 1f;
         
         private bool _canAttack = true;
@@ -27,7 +28,7 @@ namespace Behaviors.Attack
             
             for (int i = 0; i < _inRanges.Count && i < _reachableNbr - 1; i++)
             {
-                Attack(_inRanges[i]);
+               StartCoroutine(Attack(_inRanges[i]));
             }
 
             if (_coolDownRoutine != null)
@@ -39,10 +40,10 @@ namespace Behaviors.Attack
             StartCoroutine(_coolDownRoutine);
         }
         
-        private void Attack(ITarget receiver)
+        private IEnumerator Attack(ITarget receiver)
         {
-            if (receiver == null || receiver.Equals(null)) return;
-            receiver.ReceiveAttack(_attackData);
+            yield return new WaitForSeconds(_attackDelay);
+            if (receiver != null && !receiver.Equals(null)) receiver.ReceiveAttack(_attackData);
         }
 
         private IEnumerator CoolDown()
@@ -52,5 +53,6 @@ namespace Behaviors.Attack
             _canAttack = true;
             _coolDownRoutine = null;
         }
+        
     }
 }

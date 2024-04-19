@@ -62,7 +62,8 @@ MonoBehaviour:
     canExplode: 1
     canBreak: 1
     knockBackForce: 100
-  _attackCoolDown: 0
+  _attackDelay: 1
+  _attackCoolDown: 1
 --- !u!114 &4194639146468025163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,7 +281,7 @@ MonoBehaviour:
   _hudOpenedMaxSpeed: 8
   _aimePoint: {fileID: 3277864813529314139}
   _aimingRadius: 1
-  _timeToChargeAttack: 1.5
+  _timeToChargeAttack: 0.5
 --- !u!114 &4680554282018304018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,6 +503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _controller: {fileID: 596411288422764449}
   _animator: {fileID: 6003938454113027245}
+  _lookByAim: 0
 --- !u!95 &6003938454113027245
 Animator:
   serializedVersion: 5
@@ -733,7 +735,8 @@ MonoBehaviour:
     canExplode: 0
     canBreak: 0
     knockBackForce: 200
-  _attackCoolDown: 0
+  _attackDelay: 1
+  _attackCoolDown: 2
 --- !u!114 &8864027468545105146
 MonoBehaviour:
   m_ObjectHideFlags: 0
