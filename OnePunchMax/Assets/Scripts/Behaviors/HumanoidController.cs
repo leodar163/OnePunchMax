@@ -108,6 +108,9 @@ namespace Behaviors
         
         public virtual void ReceiveAttack(AttackData data)
         {
+            Vector2 attackDirection = (transform.position - data.source.Position).normalized;
+            _rb.AddForce(attackDirection * (data.knockBackForce * _rb.mass), ForceMode2D.Impulse);
+            
             OnReceiveAttack.Invoke(data);
         }
         

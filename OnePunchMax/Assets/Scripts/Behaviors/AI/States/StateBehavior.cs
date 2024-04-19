@@ -48,7 +48,7 @@ namespace Behaviors.AI.States
 
         public virtual void CancelState(AIController controller)
         {
-            controller.PushState(null);
+            
         }
         
         public virtual void ExitState(AIController controller)

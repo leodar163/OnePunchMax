@@ -136,13 +136,17 @@ namespace Behaviors
         public override void ReceiveAttack(AttackData data)
         {
             _waterContainer.Quantity -= data.damage;
-
-            Vector2 attackDirection = (transform.position - data.source.Position).normalized;
-            _rb.AddForce(attackDirection * data.knockBackForce, ForceMode2D.Impulse);
             
             base.ReceiveAttack(data);
             
             if (_waterContainer.Quantity <= 0) Die();
+            else onGetHurt.Invoke(data);
+        }
+
+        public void Heal(float heal)
+        {
+            _waterContainer.Quantity += heal;
+            onGetHealed.Invoke();
         }
     }   
 }

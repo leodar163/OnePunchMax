@@ -177,5 +177,11 @@ namespace Behaviors.AI
         {
             return _navMeshAgent.velocity;
         }
+
+        public override void Die()
+        {
+            base.Die();
+            PushState(null);
+        }
     }
 }

@@ -545,13 +545,13 @@ MonoBehaviour:
       m_Calls: []
   _reachableNbr: 2
   _attackData:
-    damage: 0
+    damage: 30
     canBurn: 1
     canExplode: 1
     canBreak: 1
     knockBackForce: 100
-  _attackDelay: 1
-  _attackCoolDown: 1.5
+  _attackDelay: 0.6
+  _attackCoolDown: 1
 --- !u!114 &6387266848593528391
 MonoBehaviour:
   m_ObjectHideFlags: 0
