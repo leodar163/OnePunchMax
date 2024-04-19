@@ -62,10 +62,8 @@ namespace Interactions.Tests
             {
                 col.enabled = false;
             }
-            print("cols désactivés");
             yield return new WaitForSeconds(0.1f);
             
-            print("cols réactivés");
             foreach (var col in cols)
             {
                 col.enabled = true;

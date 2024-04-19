@@ -16,6 +16,8 @@ namespace Behaviors
 
         [SerializeField] public UnityEvent<int> OnAttack;
         [SerializeField] public UnityEvent<AttackData> OnReceiveAttack;
+        [SerializeField] public UnityEvent OnDie;
+        [SerializeField] public UnityEvent OnResurect;
 
         public bool IsDead { get; protected set; }
         public bool IsCharging { get; protected set; }
@@ -87,12 +89,14 @@ namespace Behaviors
         { 
             enabled = false;
             IsDead = true;
+            OnDie.Invoke();
         }
 
         public virtual void Resurect()
         {
             enabled = true;
             IsDead = false;
+            OnResurect.Invoke();
         }
 
         public virtual Vector2 GetMovement()
