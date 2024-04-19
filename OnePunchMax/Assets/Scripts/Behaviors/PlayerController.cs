@@ -3,6 +3,7 @@ using Environment;
 using Inputs;
 using Ui;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Behaviors
 {
@@ -18,7 +19,10 @@ namespace Behaviors
         [Header("Attack")]
         [SerializeField] private float _timeToChargeAttack;
         private float _timeCharged;
-
+        [Space] 
+        [SerializeField] public UnityEvent<AttackData> onGetHurt;
+        [SerializeField] public UnityEvent onGetHealed;
+        
         private Vector2 _lastMousePosition;
         
         private Camera _mainCam;
