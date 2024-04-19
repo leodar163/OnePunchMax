@@ -23,7 +23,6 @@ namespace Behaviors
         [SerializeField] private float _timeToChargeAttack;
         private float _timeCharged;
         [Space] 
-        [SerializeField] public UnityEvent<AttackData> onGetHurt;
         [SerializeField] public UnityEvent onGetHealed;
         
         private Vector2 _lastMousePosition;

@@ -1,4 +1,5 @@
 ﻿using System;
+using Behaviors.Attack;
 using UnityEngine;
 
 namespace Behaviors.Animations
@@ -16,17 +17,20 @@ namespace Behaviors.Animations
         private static readonly int ChargingAnimArg = Animator.StringToHash("IsCharging");
         private static readonly int AttackAnimArg = Animator.StringToHash("LightAttack");
         private static readonly int LargeAttackAnimArg = Animator.StringToHash("ChargedAttack");
+        private static readonly int GetHitAnimArg = Animator.StringToHash("GetHit");
 
         [SerializeField] private bool _lookByAim;
 
         private void Awake()
         {
             _controller.OnAttack.AddListener(SetAttackAnimationTrigger);
+            _controller.onGetHurt.AddListener(TriggerHurt);
         }
 
         private void OnDisable()
         {
             _controller.OnAttack.RemoveListener(SetAttackAnimationTrigger);
+            _controller.onGetHurt.RemoveListener(TriggerHurt);
         }
 
         private void Update()
@@ -80,6 +84,11 @@ namespace Behaviors.Animations
                     _animator.SetTrigger(LargeAttackAnimArg);
                     break;
             }
+        }
+
+        private void TriggerHurt(AttackData data)
+        {
+            _animator.SetTrigger(GetHitAnimArg);
         }
     }
 }

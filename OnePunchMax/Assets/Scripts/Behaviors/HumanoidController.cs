@@ -21,6 +21,7 @@ namespace Behaviors
         [SerializeField] public UnityEvent<AttackData> OnReceiveAttack;
         [SerializeField] public UnityEvent OnDie;
         [SerializeField] public UnityEvent OnResurect;
+        [SerializeField] public UnityEvent<AttackData> onGetHurt;
 
         public bool IsDead { get; protected set; }
         public bool IsCharging { get; protected set; }
