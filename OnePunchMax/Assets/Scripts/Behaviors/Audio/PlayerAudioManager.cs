@@ -16,6 +16,7 @@ namespace Behaviors.Audio
         
         private void OnValidate()
         {
+            if (_controller == null) return;
             if (_controller is not PlayerController pc)
             {
                 Debug.LogWarning("Controller must be a PlayerController here");
