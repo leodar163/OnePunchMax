@@ -151,7 +151,7 @@ namespace Behaviors.AI
         {
             if (detectedInteractable is IPickable)
             {
-                PushState(_seekPickable);
+                PushStateWithHesitation(_seekPickable);
             }
         }
         
