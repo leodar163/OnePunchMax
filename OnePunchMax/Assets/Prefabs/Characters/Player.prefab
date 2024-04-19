@@ -291,7 +291,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _waterContainer:
-    _quantity: 0
+    _quantity: 100
     _minQuantity: 0
     _maxQuantity: 100
     _onQuantityChanged:
