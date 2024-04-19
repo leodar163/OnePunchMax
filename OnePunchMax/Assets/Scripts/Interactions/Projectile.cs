@@ -1,17 +1,18 @@
 ﻿using Behaviors.Attack;
+using Detections;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace Interactions
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class Projectile : MonoBehaviour
+    public class Projectile : MonoBehaviour, IPositionnable
     {
         [SerializeField] private Rigidbody2D _rb;
         [SerializeField] public AttackData attackData;
 
         [SerializeField] public UnityEvent<ITarget> onHitTarget;
-        
+        public Vector3 Position => transform.position;
         public Vector2 Direction
         {
             get => _rb.velocity.normalized;
@@ -36,6 +37,7 @@ namespace Interactions
 
         protected virtual void OnHitTarget(ITarget target)
         {
+            attackData.source = this;
             target.ReceiveAttack(attackData);
             onHitTarget.Invoke(target);
         }
