@@ -58,6 +58,7 @@ MonoBehaviour:
       m_Calls: []
   _reachableNbr: 2
   _attackData:
+    damage: 0
     canBurn: 1
     canExplode: 1
     canBreak: 1
@@ -80,6 +81,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 90
     _viewOffset: 0
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 1
   _circle:
     _offset: 0
@@ -266,6 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfd3aee661d64364891a7454bb997ffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _rb: {fileID: 1548921321036718049}
   _interactableDetector: {fileID: 5119325266067880570}
   _holder: {fileID: 712046415286518122}
   _thrower: {fileID: 8206429257161843731}
@@ -284,6 +287,13 @@ MonoBehaviour:
   OnResurect:
     m_PersistentCalls:
       m_Calls: []
+  _waterContainer:
+    _quantity: 0
+    _minQuantity: 0
+    _maxQuantity: 100
+    _onQuantityChanged:
+      m_PersistentCalls:
+        m_Calls: []
   _movementBehavior: {fileID: 4680554282018304018}
   _hudOpenedMaxSpeed: 8
   _aimePoint: {fileID: 3277864813529314139}
@@ -640,6 +650,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 90
     _viewOffset: 0
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 3
   _circle:
     _offset: 0.5
@@ -744,6 +755,7 @@ MonoBehaviour:
       m_Calls: []
   _reachableNbr: 12
   _attackData:
+    damage: 0
     canBurn: 0
     canExplode: 0
     canBreak: 0
@@ -766,6 +778,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 120
     _viewOffset: 0
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 2
   _circle:
     _offset: 0

@@ -1,4 +1,5 @@
 ﻿using System;
+using Detections;
 using UnityEngine;
 
 namespace Behaviors.Attack
@@ -11,5 +12,6 @@ namespace Behaviors.Attack
         [SerializeField] public bool canExplode;
         [SerializeField] public bool canBreak;
         [SerializeField] public float knockBackForce;
+        [HideInInspector] public IPositionnable source;
     }
 }

@@ -1,12 +1,15 @@
-﻿using Behaviors.Attack;
+﻿using System;
+using Behaviors.Attack;
 using Interactions;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace Behaviors
 {
+    [RequireComponent(typeof(Rigidbody2D))]
     public abstract class HumanoidController : MonoBehaviour, IInteractor, ITarget
     {
+        [SerializeField] protected Rigidbody2D _rb;
         [Header("Interactions")]
         [SerializeField] protected InteractableDetector _interactableDetector;
         [SerializeField] protected ObjectHolder _holder;
@@ -26,6 +29,14 @@ namespace Behaviors
         public Vector2 AimingDirection { get; protected set; }
         
         public Vector3 Position => transform.position;
+
+        protected virtual void OnValidate()
+        {
+            if (_rb == null && TryGetComponent(out _rb))
+            {
+                
+            }
+        }
 
         protected virtual void Update()
         {

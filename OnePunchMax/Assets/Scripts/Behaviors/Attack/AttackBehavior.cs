@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Behaviors.Attack
 {
-    public class AttackBehavior : DetectorSubscriberFiltered<ITarget>
+    public class AttackBehavior : DetectorSubscriberFiltered<ITarget>, IPositionnable
     {
         [SerializeField] private float _reachableNbr = 2;
         [SerializeField] private AttackData _attackData;
@@ -21,6 +21,7 @@ namespace Behaviors.Attack
         }
 
         private IEnumerator _coolDownRoutine;
+        public Vector3 Position => transform.position;
         
         public void Attack()
         {
@@ -43,7 +44,11 @@ namespace Behaviors.Attack
         private IEnumerator Attack(ITarget receiver)
         {
             yield return new WaitForSeconds(_attackDelay);
-            if (receiver != null && !receiver.Equals(null)) receiver.ReceiveAttack(_attackData);
+            if (receiver != null && !receiver.Equals(null))
+            {
+                _attackData.source = this;
+                receiver.ReceiveAttack(_attackData);
+            }
         }
 
         private IEnumerator CoolDown()
@@ -53,6 +58,5 @@ namespace Behaviors.Attack
             _canAttack = true;
             _coolDownRoutine = null;
         }
-        
     }
 }

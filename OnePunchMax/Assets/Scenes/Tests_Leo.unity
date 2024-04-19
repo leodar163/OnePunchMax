@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 596411288422764449, guid: 15dc3ee7a9e6611408c09c709536f31f, type: 3}
+      propertyPath: _waterContainer._quantity
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2043672357611324611, guid: 15dc3ee7a9e6611408c09c709536f31f, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -639,7 +643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &617211746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,6 +658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rb: {fileID: 617211747}
   attackData:
+    damage: 0
     canBurn: 0
     canExplode: 0
     canBreak: 0
@@ -906,7 +911,7 @@ Transform:
   m_GameObject: {fileID: 617211745}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.52, y: -1.11, z: 0}
+  m_LocalPosition: {x: 12.19, y: 3.62, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1077,6 +1082,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 90
     _viewOffset: 0
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 3
   _circle:
     _offset: 0
@@ -1771,6 +1777,18 @@ PrefabInstance:
     - target: {fileID: 3741774708682747451, guid: 3427ac7ea548ec44d966c64f396263ab, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132171676937074312, guid: 3427ac7ea548ec44d966c64f396263ab, type: 3}
+      propertyPath: _attackDelay
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132171676937074312, guid: 3427ac7ea548ec44d966c64f396263ab, type: 3}
+      propertyPath: _attackData.damage
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132171676937074312, guid: 3427ac7ea548ec44d966c64f396263ab, type: 3}
+      propertyPath: _attackData.knockBackForce
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 7159738025482749823, guid: 3427ac7ea548ec44d966c64f396263ab, type: 3}
       propertyPath: m_SortingLayer
