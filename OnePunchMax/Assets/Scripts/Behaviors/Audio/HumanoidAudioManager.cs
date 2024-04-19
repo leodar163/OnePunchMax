@@ -75,7 +75,6 @@ namespace Behaviors.Audio
         {
             while (_controller.GetMovement().magnitude > 0)
             {
-                print("Step");
                 _stepPlayer.PlayAudioRandom();
                 yield return new WaitForSeconds(_stepIntervalTime);   
             }
