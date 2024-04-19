@@ -736,7 +736,7 @@ MonoBehaviour:
     canBreak: 0
     knockBackForce: 200
   _attackDelay: 1
-  _attackCoolDown: 2
+  _attackCoolDown: 0
 --- !u!114 &8864027468545105146
 MonoBehaviour:
   m_ObjectHideFlags: 0
