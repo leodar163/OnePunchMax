@@ -230,9 +230,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0fff3e3c81243e8b29de180ef16e979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _force: 15
-  _spineForce: 1200
-  _range: 8
+  _force: 20
+  _spineForce: 400
+  _range: 10
 --- !u!114 &1772380765175386858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,6 +545,7 @@ MonoBehaviour:
       m_Calls: []
   _reachableNbr: 2
   _attackData:
+    damage: 0
     canBurn: 1
     canExplode: 1
     canBreak: 1
