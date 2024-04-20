@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 27e4e00ade17c434da601156b2783053
+guid: e3dae99b4954f6f44b563b6755cb5a96
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sparkus_chargedAttack_down_0
+      name: minion_lightAttack_down_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,20 +131,20 @@ TextureImporter:
         width: 384
         height: 384
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce1fa1ead93f7fe4db55d55ca4e2b2ee
-      internalID: -826861862
+      spriteID: 089b7fb1c8978584a8c56beb1d6f4192
+      internalID: 240415951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sparkus_chargedAttack_down_1
+      name: minion_lightAttack_down_1
       rect:
         serializedVersion: 2
         x: 384
@@ -152,20 +152,20 @@ TextureImporter:
         width: 384
         height: 384
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 826fc0cfe94017b47b4a849093435d4a
-      internalID: -463280212
+      spriteID: 767b72c1f6a22dd4a89edefefab3923e
+      internalID: 1079500377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sparkus_chargedAttack_down_2
+      name: minion_lightAttack_down_2
       rect:
         serializedVersion: 2
         x: 768
@@ -173,20 +173,20 @@ TextureImporter:
         width: 384
         height: 384
       alignment: 9
-      pivot: {x: 0.5, y: 0.42}
+      pivot: {x: 0.5, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aad16190cc6b6634d9776f34f1016a0e
-      internalID: 1537127440
+      spriteID: 523e87c8dcf0e9247a818f00d3f76bb9
+      internalID: -659405342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sparkus_chargedAttack_down_3
+      name: minion_lightAttack_down_3
       rect:
         serializedVersion: 2
         x: 1152
@@ -194,20 +194,20 @@ TextureImporter:
         width: 384
         height: 384
       alignment: 9
-      pivot: {x: 0.5, y: 0.44}
+      pivot: {x: 0.5, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 249cc6631e335254e905f4f3b065a318
-      internalID: -1387696794
+      spriteID: b70db9fafa2fbdc459bd7ef91d91bf78
+      internalID: -1085061168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sparkus_chargedAttack_down_4
+      name: minion_lightAttack_down_4
       rect:
         serializedVersion: 2
         x: 1536
@@ -215,14 +215,14 @@ TextureImporter:
         width: 384
         height: 384
       alignment: 9
-      pivot: {x: 0.5, y: 0.44}
+      pivot: {x: 0.5, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff26efa63ffc29d488575487a8116bfe
-      internalID: -606374686
+      spriteID: c1ea65a12d3781c439363c103dd8f511
+      internalID: -98712350
       vertices: []
       indices: 
       edges: []
@@ -238,11 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sparkus_chargedAttack_down_0: -826861862
-      sparkus_chargedAttack_down_1: -463280212
-      sparkus_chargedAttack_down_2: 1537127440
-      sparkus_chargedAttack_down_3: -1387696794
-      sparkus_chargedAttack_down_4: -606374686
+      minion_lightAttack_down_0: 240415951
+      minion_lightAttack_down_1: 1079500377
+      minion_lightAttack_down_2: -659405342
+      minion_lightAttack_down_3: -1085061168
+      minion_lightAttack_down_4: -98712350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

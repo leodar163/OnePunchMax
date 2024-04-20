@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 27e4e00ade17c434da601156b2783053
+guid: 1ef3088ef0d9c3844accfb4b32feda53
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sparkus_chargedAttack_down_0
+      name: minion_lightAttack_right_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,20 +131,20 @@ TextureImporter:
         width: 384
         height: 384
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce1fa1ead93f7fe4db55d55ca4e2b2ee
-      internalID: -826861862
+      spriteID: 30d74125784b2d343b5ee13c019a6175
+      internalID: 1231457639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sparkus_chargedAttack_down_1
+      name: minion_lightAttack_right_1
       rect:
         serializedVersion: 2
         x: 384
@@ -152,20 +152,20 @@ TextureImporter:
         width: 384
         height: 384
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 826fc0cfe94017b47b4a849093435d4a
-      internalID: -463280212
+      spriteID: 5399d99559b7e224db6639653c9c9690
+      internalID: -1268933482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sparkus_chargedAttack_down_2
+      name: minion_lightAttack_right_2
       rect:
         serializedVersion: 2
         x: 768
@@ -173,20 +173,20 @@ TextureImporter:
         width: 384
         height: 384
       alignment: 9
-      pivot: {x: 0.5, y: 0.42}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aad16190cc6b6634d9776f34f1016a0e
-      internalID: 1537127440
+      spriteID: a8b0bb3fb9c28b8488568ab622d28434
+      internalID: -1271532085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sparkus_chargedAttack_down_3
+      name: minion_lightAttack_right_3
       rect:
         serializedVersion: 2
         x: 1152
@@ -194,35 +194,14 @@ TextureImporter:
         width: 384
         height: 384
       alignment: 9
-      pivot: {x: 0.5, y: 0.44}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 249cc6631e335254e905f4f3b065a318
-      internalID: -1387696794
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sparkus_chargedAttack_down_4
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 384
-        height: 384
-      alignment: 9
-      pivot: {x: 0.5, y: 0.44}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff26efa63ffc29d488575487a8116bfe
-      internalID: -606374686
+      spriteID: 76d7724b03fdca241be48568266ffeb3
+      internalID: -811222460
       vertices: []
       indices: 
       edges: []
@@ -238,11 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sparkus_chargedAttack_down_0: -826861862
-      sparkus_chargedAttack_down_1: -463280212
-      sparkus_chargedAttack_down_2: 1537127440
-      sparkus_chargedAttack_down_3: -1387696794
-      sparkus_chargedAttack_down_4: -606374686
+      minion_lightAttack_right_0: 1231457639
+      minion_lightAttack_right_1: -1268933482
+      minion_lightAttack_right_2: -1271532085
+      minion_lightAttack_right_3: -811222460
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

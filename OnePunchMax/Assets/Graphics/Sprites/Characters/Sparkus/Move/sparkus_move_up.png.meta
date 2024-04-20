@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 27e4e00ade17c434da601156b2783053
+guid: 37feb9caf020849428832204e3acdc95
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sparkus_chargedAttack_down_0
+      name: sparkus_move_down_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,20 +131,20 @@ TextureImporter:
         width: 384
         height: 384
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.65}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce1fa1ead93f7fe4db55d55ca4e2b2ee
-      internalID: -826861862
+      spriteID: 82933313932af2145984b7d78dfd24ec
+      internalID: -644665712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sparkus_chargedAttack_down_1
+      name: sparkus_move_down_1
       rect:
         serializedVersion: 2
         x: 384
@@ -152,20 +152,20 @@ TextureImporter:
         width: 384
         height: 384
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.65}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 826fc0cfe94017b47b4a849093435d4a
-      internalID: -463280212
+      spriteID: e50cc6c4ddb16e3499edb250f88346ec
+      internalID: -487348991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sparkus_chargedAttack_down_2
+      name: sparkus_move_down_2
       rect:
         serializedVersion: 2
         x: 768
@@ -173,20 +173,20 @@ TextureImporter:
         width: 384
         height: 384
       alignment: 9
-      pivot: {x: 0.5, y: 0.42}
+      pivot: {x: 0.5, y: 0.65}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aad16190cc6b6634d9776f34f1016a0e
-      internalID: 1537127440
+      spriteID: 54a1617b260d86d42b82eba8ad797f30
+      internalID: -313211925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sparkus_chargedAttack_down_3
+      name: sparkus_move_down_3
       rect:
         serializedVersion: 2
         x: 1152
@@ -194,20 +194,20 @@ TextureImporter:
         width: 384
         height: 384
       alignment: 9
-      pivot: {x: 0.5, y: 0.44}
+      pivot: {x: 0.5, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 249cc6631e335254e905f4f3b065a318
-      internalID: -1387696794
+      spriteID: 81363836d6a770f40af29b89ee6dbbbe
+      internalID: 998536147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sparkus_chargedAttack_down_4
+      name: sparkus_move_down_4
       rect:
         serializedVersion: 2
         x: 1536
@@ -215,14 +215,14 @@ TextureImporter:
         width: 384
         height: 384
       alignment: 9
-      pivot: {x: 0.5, y: 0.44}
+      pivot: {x: 0.5, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff26efa63ffc29d488575487a8116bfe
-      internalID: -606374686
+      spriteID: 8e04d0f1616c5964fa9b9400c071f9f4
+      internalID: 1964024409
       vertices: []
       indices: 
       edges: []
@@ -238,11 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sparkus_chargedAttack_down_0: -826861862
-      sparkus_chargedAttack_down_1: -463280212
-      sparkus_chargedAttack_down_2: 1537127440
-      sparkus_chargedAttack_down_3: -1387696794
-      sparkus_chargedAttack_down_4: -606374686
+      sparkus_move_down_0: -644665712
+      sparkus_move_down_1: -487348991
+      sparkus_move_down_2: -313211925
+      sparkus_move_down_3: 998536147
+      sparkus_move_down_4: 1964024409
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
