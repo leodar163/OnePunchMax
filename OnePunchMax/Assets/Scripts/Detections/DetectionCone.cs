@@ -11,6 +11,7 @@ namespace Detections
     {
         [SerializeField][Range(0,360)] private float _viewAngle = 90;
         [SerializeField][Range(-180,180)] private float _viewOffset;
+        [SerializeField] private Vector2 _positionOffset;
         [SerializeField][Min(0)] private float _viewRadius = 3;
 
         public float ViewAngle
@@ -31,9 +32,15 @@ namespace Detections
             set => _viewRadius = value;
         }
 
+        public Vector2 PositionOffset
+        {
+            get => _positionOffset;
+            set => _positionOffset = value;
+        }
+
         public override void DrawGizmo(Vector3 center, Quaternion rotation)
         {
-            GizmosExtensions.Draw2DCone(center, _viewRadius, _viewAngle, _viewOffset + rotation.eulerAngles.z);
+            GizmosExtensions.Draw2DCone(center + (Vector3)_positionOffset, _viewRadius, _viewAngle, _viewOffset + rotation.eulerAngles.z);
         }
 
         public override List<Collider2D> DetectColliders(Vector3 center, Quaternion rotation, ContactFilter2D filter, Collider2D[] unFilteredColliders,
@@ -47,7 +54,7 @@ namespace Detections
                 {
                     if (col == null) continue;
 
-                    Vector2 position = center;
+                    Vector2 position = (Vector2)center + _positionOffset;
                     Vector2 closestPoint = col.ClosestPoint(position);
                     Vector2 relativePos = closestPoint - position;
 

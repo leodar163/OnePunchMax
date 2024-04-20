@@ -6,6 +6,26 @@ namespace Utils.Debug.Gizmos
     {
         public static void Draw2DCone(Vector3 center, float radius, float angle, float offset, int angleDefinition = 24)
         {
+            DrawAngle(center, radius, angle, offset, angleDefinition);
+            
+            angle *= Mathf.Deg2Rad;
+            offset *= Mathf.Deg2Rad;
+            
+            UnityEngine.Gizmos.DrawLine(center, new Vector3
+            {
+                x = Mathf.Cos(-angle / 2 + offset),
+                y = Mathf.Sin(-angle / 2 + offset)
+            } * radius + center);
+            
+            UnityEngine.Gizmos.DrawLine(center, new Vector3
+            {
+                x = Mathf.Cos(angle / 2 + offset),
+                y = Mathf.Sin(angle / 2 + offset)
+            } * radius + center);
+        }
+
+        public static void DrawAngle(Vector3 center, float radius, float angle, float offset, int angleDefinition = 24)
+        {
             angle *= Mathf.Deg2Rad;
             offset *= Mathf.Deg2Rad;
 
@@ -17,8 +37,6 @@ namespace Utils.Debug.Gizmos
                 y = Mathf.Sin(-angle / 2 + offset)
             } * radius + center;
             
-            UnityEngine.Gizmos.DrawLine(center, previousPoint);
-
             float stepAngle = angle / angleDefinition;
             
             for (int i = 0; i <= angleDefinition; i++)
@@ -32,8 +50,6 @@ namespace Utils.Debug.Gizmos
                 UnityEngine.Gizmos.DrawLine(previousPoint, nextPoint);
                 previousPoint = nextPoint;
             }
-            
-            UnityEngine.Gizmos.DrawLine(center, previousPoint);
         }
     }
 }
