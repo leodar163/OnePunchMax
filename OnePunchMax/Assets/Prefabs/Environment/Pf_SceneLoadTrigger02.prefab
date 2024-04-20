@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6360989005074822816}
   - component: {fileID: -7567273430793238015}
   m_Layer: 7
-  m_Name: Pf_SceneLoadTrigger
+  m_Name: Pf_SceneLoadTrigger02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

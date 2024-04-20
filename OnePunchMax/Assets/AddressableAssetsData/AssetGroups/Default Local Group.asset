@@ -17,8 +17,8 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 44af650b0c5e3b34c9514cee60c5b671
   m_SerializeEntries:
-  - m_GUID: a51ffe038c5582f4f91c11cdf96af599
-    m_Address: Assets/Prefabs/Environment/Pf_SceneLoadTrigger.prefab
+  - m_GUID: 937b88e1cf8b7c34db90558ec2edef0f
+    m_Address: Assets/Prefabs/Environment/Pf_SceneLoadTrigger05.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -39,6 +39,51 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 924f9a92b3264934ca94e7d81c3194d3
     m_Address: Assets/Scenes/Sc_CampTest 3.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 17e1adcbbd1734e4ea754d4e92e9cc2d
+    m_Address: Assets/Prefabs/Environment/Pf_SceneLoadTrigger04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc72d8490c95a2c4c8dd454044d0418b
+    m_Address: Assets/Prefabs/Environment/Pf_SceneLoadTrigger03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0dcd2eaf18b7496419cadfc923467013
+    m_Address: Assets/Prefabs/Environment/Pf_SceneLoadTrigger02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a51ffe038c5582f4f91c11cdf96af599
+    m_Address: Assets/Prefabs/Environment/Pf_SceneLoadTrigger01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fbf3120722445c54da6e4d748064491c
+    m_Address: Assets/Scenes/Camps/Sc_Camp02.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4624fda769356674fa8eb8b37fce9742
+    m_Address: Assets/Scenes/Camps/Sc_Camp01.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 49d4464ee4972964b9f788d9ec92c16d
+    m_Address: Assets/Scenes/Camps/Sc_CampTutot01.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 01eea347c39a6ca4c8acdcc99f730257
+    m_Address: Assets/Scenes/Camps/Sc_CampTuto02.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 836308093a52ed048a06d5089155376f
+    m_Address: Assets/Scenes/Camps/Sc_Camp03Final.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
