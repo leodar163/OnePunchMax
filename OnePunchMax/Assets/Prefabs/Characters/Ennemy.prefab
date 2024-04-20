@@ -49,6 +49,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 120
     _viewOffset: 0
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 4
   _circle:
     _offset: 0
@@ -123,6 +124,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 240
     _viewOffset: -180
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 1
   _circle:
     _offset: 0
@@ -228,9 +230,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0fff3e3c81243e8b29de180ef16e979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _force: 15
-  _spineForce: 1200
-  _range: 8
+  _force: 20
+  _spineForce: 400
+  _range: 10
 --- !u!114 &1772380765175386858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,6 +318,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 120
     _viewOffset: 0
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 5
   _circle:
     _offset: 0.5
@@ -542,12 +545,13 @@ MonoBehaviour:
       m_Calls: []
   _reachableNbr: 2
   _attackData:
+    damage: 0
     canBurn: 1
     canExplode: 1
     canBreak: 1
     knockBackForce: 100
-  _attackDelay: 1
-  _attackCoolDown: 1.5
+  _attackDelay: 0.5
+  _attackCoolDown: 0.5
 --- !u!114 &6387266848593528391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,7 +567,8 @@ MonoBehaviour:
   _geometryType: 1
   _cone:
     _viewAngle: 90
-    _viewOffset: 0
+    _viewOffset: -90
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 1
   _circle:
     _offset: 0
@@ -925,6 +930,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 120
     _viewOffset: 0
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 5
   _circle:
     _offset: 0.5
