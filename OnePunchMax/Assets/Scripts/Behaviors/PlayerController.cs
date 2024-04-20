@@ -1,13 +1,17 @@
-﻿using Behaviors.Attack;
+﻿using System;
+using Behaviors.Attack;
 using Environment;
 using Inputs;
 using Ui;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Behaviors
 {
     public class PlayerController : HumanoidController
     {
+        [Header("Water")] 
+        [SerializeField] private WaterContainer _waterContainer;
         [Header("Movement")]
         [SerializeField] private MovementBehavior _movementBehavior;
         [Min(0)][SerializeField] private float _hudOpenedMaxSpeed;
@@ -18,16 +22,22 @@ namespace Behaviors
         [Header("Attack")]
         [SerializeField] private float _timeToChargeAttack;
         private float _timeCharged;
-
+        [Space] 
+        [SerializeField] public UnityEvent<AttackData> onGetHurt;
+        [SerializeField] public UnityEvent onGetHealed;
+        
         private Vector2 _lastMousePosition;
         
         private Camera _mainCam;
+
+        public WaterContainer WaterContainer => _waterContainer;
 
         private void Awake()
         {
             _mainCam = Camera.main;
             EnvironmentManager.Player = this;
             _hudClosedMaxSpeed = _movementBehavior.maxSpeed;
+            _waterContainer.Quantity = _waterContainer.Quantity;
         }
 
         private void Start()
@@ -121,6 +131,14 @@ namespace Behaviors
         public override Vector2 GetMovement()
         {
             return _movementBehavior.direction;
+        }
+
+        public override void ReceiveAttack(AttackData data)
+        {
+            _waterContainer.Quantity += data.damage;
+            base.ReceiveAttack(data);
+            
+            if (_waterContainer.Quantity < 0) Die();
         }
     }   
 }
