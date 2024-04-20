@@ -743,8 +743,8 @@ MonoBehaviour:
     canExplode: 0
     canBreak: 0
     knockBackForce: 200
-  _attackDelay: 1
-  _attackCoolDown: 0
+  _attackDelay: 0.8
+  _attackCoolDown: 0.1
 --- !u!114 &8864027468545105146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -760,7 +760,7 @@ MonoBehaviour:
   _geometryType: 1
   _cone:
     _viewAngle: 120
-    _viewOffset: 0
+    _viewOffset: -90
     _positionOffset: {x: 0, y: 0}
     _viewRadius: 2
   _circle:
