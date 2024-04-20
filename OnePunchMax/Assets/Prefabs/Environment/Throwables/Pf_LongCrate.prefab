@@ -50,23 +50,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5444400151608207580, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
       propertyPath: m_Name
-      value: Pf_WaterBarrel
+      value: Pf_LongCrate
       objectReference: {fileID: 0}
     - target: {fileID: 6654743814838862626, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -696928080, guid: 51895fde2fbb72b49ad361d6219b6c8a, type: 3}
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 6654743814838862626, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
       propertyPath: m_Color.b
-      value: 0.56078434
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6654743814838862626, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
       propertyPath: m_Color.g
-      value: 0.5568628
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6654743814838862626, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
       propertyPath: m_Color.r
-      value: 0.5686275
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -74,15 +74,15 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5444400151608207580, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5353423870563485115}
+      addedObject: {fileID: 3894543968627224168}
   m_SourcePrefab: {fileID: 100100000, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
 --- !u!1 &1907084967994002309 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5444400151608207580, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
   m_PrefabInstance: {fileID: 5906812563101164377}
   m_PrefabAsset: {fileID: 0}
---- !u!70 &5353423870563485115
-CapsuleCollider2D:
+--- !u!61 &3894543968627224168
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -113,6 +113,16 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.07576367}
-  m_Size: {x: 0.96437097, y: 0.964371}
-  m_Direction: 0
+  m_Offset: {x: -0.0016469359, y: -0.2387873}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.36, y: 1.2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3063062, y: 0.71345544}
+  m_EdgeRadius: 0
