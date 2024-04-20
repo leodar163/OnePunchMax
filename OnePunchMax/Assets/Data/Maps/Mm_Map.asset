@@ -22,6 +22,42 @@ MonoBehaviour:
       m_SubObjectType: 
       m_EditorAssetChanged: 0
     _campScene:
+      m_AssetGUID: 49d4464ee4972964b9f788d9ec92c16d
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - _minDistanceFromLastCamp: 40
+    _maxDistanceFromLastCamp: 50
+    _campTrigger:
+      m_AssetGUID: 0dcd2eaf18b7496419cadfc923467013
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    _campScene:
+      m_AssetGUID: 4624fda769356674fa8eb8b37fce9742
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - _minDistanceFromLastCamp: 40
+    _maxDistanceFromLastCamp: 50
+    _campTrigger:
+      m_AssetGUID: cc72d8490c95a2c4c8dd454044d0418b
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 1
+    _campScene:
+      m_AssetGUID: 01eea347c39a6ca4c8acdcc99f730257
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - _minDistanceFromLastCamp: 40
+    _maxDistanceFromLastCamp: 50
+    _campTrigger:
+      m_AssetGUID: 17e1adcbbd1734e4ea754d4e92e9cc2d
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    _campScene:
       m_AssetGUID: fbf3120722445c54da6e4d748064491c
       m_SubObjectName: 
       m_SubObjectType: 
@@ -29,36 +65,12 @@ MonoBehaviour:
   - _minDistanceFromLastCamp: 40
     _maxDistanceFromLastCamp: 50
     _campTrigger:
-      m_AssetGUID: a51ffe038c5582f4f91c11cdf96af599
+      m_AssetGUID: 937b88e1cf8b7c34db90558ec2edef0f
       m_SubObjectName: 
       m_SubObjectType: 
-      m_EditorAssetChanged: 0
+      m_EditorAssetChanged: 1
     _campScene:
-      m_AssetGUID: 9566d2e25b2b371428a0134ffd61e2d5
-      m_SubObjectName: 
-      m_SubObjectType: 
-      m_EditorAssetChanged: 0
-  - _minDistanceFromLastCamp: 40
-    _maxDistanceFromLastCamp: 50
-    _campTrigger:
-      m_AssetGUID: a51ffe038c5582f4f91c11cdf96af599
-      m_SubObjectName: 
-      m_SubObjectType: 
-      m_EditorAssetChanged: 0
-    _campScene:
-      m_AssetGUID: 5b9e29fafae927448a70b2e33c079744
-      m_SubObjectName: 
-      m_SubObjectType: 
-      m_EditorAssetChanged: 0
-  - _minDistanceFromLastCamp: 40
-    _maxDistanceFromLastCamp: 50
-    _campTrigger:
-      m_AssetGUID: a51ffe038c5582f4f91c11cdf96af599
-      m_SubObjectName: 
-      m_SubObjectType: 
-      m_EditorAssetChanged: 0
-    _campScene:
-      m_AssetGUID: 924f9a92b3264934ca94e7d81c3194d3
+      m_AssetGUID: 836308093a52ed048a06d5089155376f
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
