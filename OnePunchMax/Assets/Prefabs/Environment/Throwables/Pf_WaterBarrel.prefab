@@ -9,6 +9,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 558511473631166831, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 558511473631166831, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 558511473631166831, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 558511473631166831, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -52,6 +64,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pf_WaterBarrel
       objectReference: {fileID: 0}
+    - target: {fileID: 6654743814838862626, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -696928080, guid: 51895fde2fbb72b49ad361d6219b6c8a, type: 3}
     - target: {fileID: 6654743814838862626, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
       propertyPath: m_Color.b
       value: 0.56078434
@@ -109,6 +125,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
+  m_Offset: {x: 0.00000019868214, y: 1.1264522}
+  m_Size: {x: 4, y: 4.75}
   m_Direction: 0
