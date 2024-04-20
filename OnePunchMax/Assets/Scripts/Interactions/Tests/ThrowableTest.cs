@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace Interactions.Tests
@@ -41,6 +43,7 @@ namespace Interactions.Tests
             _range = thrower.Range;
             _isThrown = true;
             onThrown.Invoke();
+            StartCoroutine(GhostingCollision());
         }   
 
         private void StopThrowing()
@@ -49,6 +52,22 @@ namespace Interactions.Tests
             _rb.velocity = Vector2.zero;
             _rb.angularVelocity = 0;
             onHitFinishThrow.Invoke();
+        }
+
+        private IEnumerator GhostingCollision()
+        {
+            List<Collider2D> cols = new List<Collider2D>();
+            _rb.GetAttachedColliders(cols);
+            foreach (var col in cols)
+            {
+                col.enabled = false;
+            }
+            yield return new WaitForSeconds(0.1f);
+            
+            foreach (var col in cols)
+            {
+                col.enabled = true;
+            }
         }
     }
 }
