@@ -35,6 +35,17 @@ namespace Environment
         public static SceneLoaderTrigger CurrentLoader => LoaderTriggers[_currentLoaderId];
         public static List<SceneLoaderTrigger> LoaderTriggers { get; set; }
 
+        public static int CompletedObjectives
+        {
+            get => _completedObjectives;
+            set
+            {
+                _completedObjectives = value;
+                ObjectiveCompleted?.Invoke();
+            }
+        }
+        private static int _completedObjectives;
+
         public static PlayerController Player { get; set; }
         
         private static List<Transform> _objectsToMove = new();
@@ -45,6 +56,8 @@ namespace Environment
 
         public delegate void CompassEvent(SceneLoaderTrigger nextLoader);
         public static event CompassEvent CompassSet;
+
+        public static event Action ObjectiveCompleted;
 
         public static void SubscribeToMove(Transform transform)
         {
