@@ -391,6 +391,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a70ebe7991e2b40bddb8be4a92c1e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &687470052 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3790869508869338664, guid: 15dc3ee7a9e6611408c09c709536f31f, type: 3}
+  m_PrefabInstance: {fileID: 17258070}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &703408973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -964,8 +969,8 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 1
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_LookAt: {fileID: 687470052}
+  m_Follow: {fileID: 687470052}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 5
