@@ -62,8 +62,8 @@ MonoBehaviour:
     canExplode: 1
     canBreak: 1
     knockBackForce: 100
-  _attackDelay: 1
-  _attackCoolDown: 1
+  _attackDelay: 0.3
+  _attackCoolDown: 0.5
 --- !u!114 &4194639146468025163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,8 +78,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _geometryType: 1
   _cone:
-    _viewAngle: 90
-    _viewOffset: 0
+    _viewAngle: 80
+    _viewOffset: -90
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 1
   _circle:
     _offset: 0
@@ -275,6 +276,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   OnReceiveAttack:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDie:
+    m_PersistentCalls:
+      m_Calls: []
+  OnResurect:
     m_PersistentCalls:
       m_Calls: []
   _movementBehavior: {fileID: 4680554282018304018}
@@ -627,6 +634,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 90
     _viewOffset: 0
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 3
   _circle:
     _offset: 0.5
@@ -753,6 +761,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 120
     _viewOffset: 0
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 2
   _circle:
     _offset: 0
