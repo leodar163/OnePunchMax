@@ -22,26 +22,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9566d2e25b2b371428a0134ffd61e2d5
-    m_Address: Assets/Scenes/Sc_CampTest 1.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8c27de48a1db0fe458f1123c80b21530
-    m_Address: Assets/Scenes/Sc_CampTest.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5b9e29fafae927448a70b2e33c079744
-    m_Address: Assets/Scenes/Sc_CampTest 2.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 924f9a92b3264934ca94e7d81c3194d3
-    m_Address: Assets/Scenes/Sc_CampTest 3.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 17e1adcbbd1734e4ea754d4e92e9cc2d
     m_Address: Assets/Prefabs/Environment/Pf_SceneLoadTrigger04.prefab
     m_ReadOnly: 0
