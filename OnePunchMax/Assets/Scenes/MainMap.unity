@@ -175,6 +175,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4194639146468025163, guid: 15dc3ee7a9e6611408c09c709536f31f, type: 3}
+      propertyPath: _cone._viewAngle
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194639146468025163, guid: 15dc3ee7a9e6611408c09c709536f31f, type: 3}
+      propertyPath: _cone._viewOffset
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194639146468025163, guid: 15dc3ee7a9e6611408c09c709536f31f, type: 3}
+      propertyPath: _cone._positionOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516628566076308081, guid: 15dc3ee7a9e6611408c09c709536f31f, type: 3}
+      propertyPath: _attackDelay
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516628566076308081, guid: 15dc3ee7a9e6611408c09c709536f31f, type: 3}
+      propertyPath: _attackCoolDown
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
