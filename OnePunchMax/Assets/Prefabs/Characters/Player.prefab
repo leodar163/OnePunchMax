@@ -58,6 +58,7 @@ MonoBehaviour:
       m_Calls: []
   _reachableNbr: 2
   _attackData:
+    damage: 0
     canBurn: 1
     canExplode: 1
     canBreak: 1
@@ -285,6 +286,13 @@ MonoBehaviour:
   OnResurect:
     m_PersistentCalls:
       m_Calls: []
+  _waterContainer:
+    _quantity: 0
+    _minQuantity: 0
+    _maxQuantity: 100
+    _onQuantityChanged:
+      m_PersistentCalls:
+        m_Calls: []
   _movementBehavior: {fileID: 4680554282018304018}
   _hudOpenedMaxSpeed: 8
   _aimePoint: {fileID: 3277864813529314139}
@@ -414,8 +422,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.5794961}
-  m_Size: {x: 0.5, y: 1.5035623}
+  m_Offset: {x: 0, y: 0.5429857}
+  m_Size: {x: 0.5, y: 1.3783836}
   m_Direction: 0
 --- !u!1 &7262164153284881341
 GameObject:
@@ -746,6 +754,7 @@ MonoBehaviour:
       m_Calls: []
   _reachableNbr: 12
   _attackData:
+    damage: 0
     canBurn: 0
     canExplode: 0
     canBreak: 0
