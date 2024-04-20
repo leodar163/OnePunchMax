@@ -49,6 +49,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 120
     _viewOffset: 0
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 4
   _circle:
     _offset: 0
@@ -123,6 +124,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 240
     _viewOffset: -180
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 1
   _circle:
     _offset: 0
@@ -316,6 +318,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 120
     _viewOffset: 0
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 5
   _circle:
     _offset: 0.5
@@ -546,8 +549,8 @@ MonoBehaviour:
     canExplode: 1
     canBreak: 1
     knockBackForce: 100
-  _attackDelay: 1
-  _attackCoolDown: 1.5
+  _attackDelay: 0.5
+  _attackCoolDown: 0.5
 --- !u!114 &6387266848593528391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,7 +566,8 @@ MonoBehaviour:
   _geometryType: 1
   _cone:
     _viewAngle: 90
-    _viewOffset: 0
+    _viewOffset: -90
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 1
   _circle:
     _offset: 0
@@ -924,6 +928,7 @@ MonoBehaviour:
   _cone:
     _viewAngle: 120
     _viewOffset: 0
+    _positionOffset: {x: 0, y: 0}
     _viewRadius: 5
   _circle:
     _offset: 0.5
