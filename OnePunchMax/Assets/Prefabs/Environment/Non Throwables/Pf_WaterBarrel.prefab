@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5353423870563485115}
   - component: {fileID: 6289595244924106563}
   - component: {fileID: 6395237036681261219}
+  - component: {fileID: 4554827148726685865}
   m_Layer: 4
   m_Name: Pf_WaterBarrel
   m_TagString: Untagged
@@ -187,3 +188,19 @@ MonoBehaviour:
   _destroyedSprite: {fileID: 21300000, guid: 605effbd2933c124baccc6092264d5d6, type: 3}
   _renderer: {fileID: 982717683387031675}
   _spawnedAttack: {fileID: 4453153103936715460, guid: b665051d1480c124c90efd6c3a746770, type: 3}
+--- !u!114 &4554827148726685865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907084967994002309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
