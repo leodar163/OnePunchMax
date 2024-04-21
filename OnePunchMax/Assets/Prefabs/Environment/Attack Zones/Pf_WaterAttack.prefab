@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _attackData:
-    damage: -10
+    damage: -20
     canBurn: 0
     canExplode: 0
     canBreak: 0
