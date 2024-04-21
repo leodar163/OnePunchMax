@@ -1,5 +1,4 @@
-﻿using System;
-using Behaviors.Attack;
+﻿using Behaviors.Attack;
 using Environment;
 using Inputs;
 using Ui;
@@ -137,15 +136,23 @@ namespace Behaviors
             _waterContainer.Quantity -= data.damage;
             
             base.ReceiveAttack(data);
-            
-            if (_waterContainer.Quantity <= 0) Die();
-            else onGetHurt.Invoke(data);
+
+            if (data.damage < 0 || _waterContainer.Quantity <= 0)
+                return;
+
+            onGetHurt.Invoke(data);
         }
 
-        public void Heal(float heal)
+        public void OnWaterQuantityChanged(float delta)
         {
-            _waterContainer.Quantity += heal;
-            onGetHealed.Invoke();
+            if (delta > 0)
+            {
+                onGetHealed.Invoke();
+                return;
+            }
+
+            if (_waterContainer.Quantity <= 0)
+                Die();
         }
     }   
 }

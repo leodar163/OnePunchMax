@@ -2,6 +2,7 @@
 using Cysharp.Threading.Tasks;
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.SceneManagement;
@@ -50,6 +51,20 @@ namespace Environment
         
         private static List<Transform> _objectsToMove = new();
         private static int _currentLoaderId;
+
+        private const float WATER_LOSE_DELAY = 1f;
+        private const float WATER_LOSE_AMOUNT = 1f;
+
+        private static CancellationTokenSource _waterTokenSource;
+        private static CancellationToken WaterToken
+        {
+            get
+            {
+                if ( _waterTokenSource == null)
+                    _waterTokenSource = new CancellationTokenSource();
+                return _waterTokenSource.Token;
+            }
+        }
 
         public delegate void MoveEvent(Vector2 displacement);
         public static event MoveEvent MapMoved;
@@ -113,6 +128,34 @@ namespace Environment
             }
 
             return index;
+        }
+    
+        public static void EnterCamp()
+        {
+            // TODO: play Camp music
+
+            if (_waterTokenSource == null) return;
+
+            _waterTokenSource.Cancel();
+            _waterTokenSource.Dispose();
+            _waterTokenSource = null;
+        }
+
+        public static void ExitCamp()
+        {
+            // TODO: play Outdoor music
+
+            LoseWater().Forget();
+            return;
+
+            async UniTaskVoid LoseWater()
+            {
+                while (true)
+                {
+                    await UniTask.Delay(TimeSpan.FromSeconds(WATER_LOSE_DELAY), cancellationToken: WaterToken);
+                    Player.WaterContainer.Quantity -= WATER_LOSE_AMOUNT;
+                }
+            }
         }
     }
 }

@@ -2,6 +2,7 @@
 {
     public interface ITriggerable
     {
-        public void Trigger();
+        public void TriggerEnter();
+        public void TriggerExit();
     }
 }

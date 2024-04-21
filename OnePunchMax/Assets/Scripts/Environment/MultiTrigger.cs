@@ -10,7 +10,7 @@ namespace Environment
         [Space]
         [SerializeField] private Object[] _callables;
 
-        public void Trigger()
+        public void TriggerEnter()
         {
             if (!_useLimiter.Use()) return;
 
@@ -37,6 +37,11 @@ namespace Environment
                 }
                 c.Call();
             }
+        }
+
+        public void TriggerExit()
+        {
+            
         }
     }
 }

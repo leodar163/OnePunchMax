@@ -9,7 +9,7 @@ namespace Environment
     {
         public AssetReference SceneToLoad { get; set; }
 
-        public void Trigger()
+        public void TriggerEnter()
         {
             Async().Forget();
 
@@ -18,6 +18,11 @@ namespace Environment
                 await EnvironmentManager.MoveMap(-transform.position);
                 EnvironmentManager.LastSceneLoaded = SceneToLoad;
             }
+        }
+
+        public void TriggerExit()
+        {
+            
         }
     }
 }
