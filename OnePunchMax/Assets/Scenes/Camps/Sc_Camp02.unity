@@ -332,10 +332,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (9)
@@ -380,6 +376,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -465,10 +465,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (54)
@@ -525,6 +521,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -724,10 +724,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (22)
@@ -784,6 +780,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1163,10 +1163,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (11)
@@ -1223,6 +1219,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1874,10 +1874,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (19)
@@ -1922,6 +1918,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2002,10 +2002,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (16)
@@ -2050,6 +2046,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2321,10 +2321,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (12)
@@ -2381,6 +2377,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2590,10 +2590,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 722254590}
     m_Modifications:
-    - target: {fileID: 6177258424283421340, guid: e928b5fdd702a0d4c90f8c51bda8ffeb, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -696928080, guid: 51895fde2fbb72b49ad361d6219b6c8a, type: 3}
     - target: {fileID: 1907084967994002309, guid: 9f6e0c8f3be04b34da827a1b43a67fd9, type: 3}
       propertyPath: m_Name
       value: Pf_WaterBarrel (3)
@@ -2650,6 +2646,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6177258424283421340, guid: e928b5fdd702a0d4c90f8c51bda8ffeb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -696928080, guid: 51895fde2fbb72b49ad361d6219b6c8a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2782,10 +2782,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (46)
@@ -2842,6 +2838,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3012,10 +3012,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (4)
@@ -3072,6 +3068,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3326,10 +3326,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (17)
@@ -3386,6 +3382,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3580,10 +3580,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (26)
@@ -3640,6 +3636,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3968,10 +3968,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (12)
@@ -4016,6 +4012,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4034,10 +4034,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (56)
@@ -4094,6 +4090,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4107,10 +4107,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (4)
@@ -4155,6 +4151,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4404,10 +4404,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (2)
@@ -4452,6 +4448,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5072,10 +5072,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (14)
@@ -5120,6 +5116,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5788,10 +5788,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (42)
@@ -5848,6 +5844,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6047,10 +6047,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (20)
@@ -6095,6 +6091,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6401,10 +6401,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (14)
@@ -6461,6 +6457,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6546,10 +6546,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (28)
@@ -6606,6 +6602,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6619,10 +6619,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (3)
@@ -6679,6 +6675,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6816,10 +6816,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (18)
@@ -6876,6 +6872,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7885,10 +7885,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (22)
@@ -7933,6 +7929,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8443,10 +8443,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (20)
@@ -8503,6 +8499,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8910,10 +8910,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (33)
@@ -8970,6 +8966,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8983,10 +8983,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 722254590}
     m_Modifications:
-    - target: {fileID: 6177258424283421340, guid: e928b5fdd702a0d4c90f8c51bda8ffeb, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -696928080, guid: 51895fde2fbb72b49ad361d6219b6c8a, type: 3}
     - target: {fileID: 1907084967994002309, guid: 9f6e0c8f3be04b34da827a1b43a67fd9, type: 3}
       propertyPath: m_Name
       value: Pf_WaterBarrel (4)
@@ -9043,6 +9039,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6177258424283421340, guid: e928b5fdd702a0d4c90f8c51bda8ffeb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -696928080, guid: 51895fde2fbb72b49ad361d6219b6c8a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9828,10 +9828,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (24)
@@ -9888,6 +9884,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9901,10 +9901,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (43)
@@ -9961,6 +9957,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10098,10 +10098,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (55)
@@ -10158,6 +10154,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11064,10 +11064,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (26)
@@ -11112,6 +11108,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11331,10 +11331,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (27)
@@ -11379,6 +11375,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11464,10 +11464,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (25)
@@ -11512,6 +11508,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11821,10 +11821,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel
@@ -11869,6 +11865,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12011,10 +12011,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (37)
@@ -12071,6 +12067,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12141,10 +12141,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (1)
@@ -12189,6 +12185,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12341,10 +12341,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (45)
@@ -12401,6 +12397,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12476,10 +12476,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (8)
@@ -12524,6 +12520,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13105,10 +13105,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (3)
@@ -13153,6 +13149,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13352,10 +13352,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (30)
@@ -13412,6 +13408,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13487,10 +13487,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (41)
@@ -13547,6 +13543,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13813,10 +13813,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (21)
@@ -13861,6 +13857,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14158,10 +14158,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (15)
@@ -14206,6 +14202,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14472,10 +14472,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (30)
@@ -14520,6 +14516,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14600,10 +14600,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (9)
@@ -14660,6 +14656,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15407,10 +15407,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (27)
@@ -15467,6 +15463,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15542,10 +15542,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (1)
@@ -15602,6 +15598,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15739,10 +15739,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (31)
@@ -15799,6 +15795,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15980,10 +15980,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (29)
@@ -16040,6 +16036,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16871,10 +16871,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 722254590}
     m_Modifications:
-    - target: {fileID: 6177258424283421340, guid: e928b5fdd702a0d4c90f8c51bda8ffeb, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -696928080, guid: 51895fde2fbb72b49ad361d6219b6c8a, type: 3}
     - target: {fileID: 1907084967994002309, guid: 9f6e0c8f3be04b34da827a1b43a67fd9, type: 3}
       propertyPath: m_Name
       value: Pf_WaterBarrel (1)
@@ -16931,6 +16927,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6177258424283421340, guid: e928b5fdd702a0d4c90f8c51bda8ffeb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -696928080, guid: 51895fde2fbb72b49ad361d6219b6c8a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17006,10 +17006,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (7)
@@ -17066,6 +17062,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17327,10 +17327,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (35)
@@ -17375,6 +17371,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17917,10 +17917,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (29)
@@ -17965,6 +17961,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18112,10 +18112,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (35)
@@ -18172,6 +18168,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18190,10 +18190,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (17)
@@ -18238,6 +18234,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18696,10 +18696,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (23)
@@ -18756,6 +18752,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18774,10 +18774,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 722254590}
     m_Modifications:
-    - target: {fileID: 6177258424283421340, guid: e928b5fdd702a0d4c90f8c51bda8ffeb, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -696928080, guid: 51895fde2fbb72b49ad361d6219b6c8a, type: 3}
     - target: {fileID: 1907084967994002309, guid: 9f6e0c8f3be04b34da827a1b43a67fd9, type: 3}
       propertyPath: m_Name
       value: Pf_WaterBarrel (6)
@@ -18834,6 +18830,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6177258424283421340, guid: e928b5fdd702a0d4c90f8c51bda8ffeb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -696928080, guid: 51895fde2fbb72b49ad361d6219b6c8a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18847,10 +18847,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (38)
@@ -18907,6 +18903,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19626,10 +19626,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 722254590}
     m_Modifications:
-    - target: {fileID: 6177258424283421340, guid: e928b5fdd702a0d4c90f8c51bda8ffeb, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -696928080, guid: 51895fde2fbb72b49ad361d6219b6c8a, type: 3}
     - target: {fileID: 1907084967994002309, guid: 9f6e0c8f3be04b34da827a1b43a67fd9, type: 3}
       propertyPath: m_Name
       value: Pf_WaterBarrel (5)
@@ -19686,6 +19682,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6177258424283421340, guid: e928b5fdd702a0d4c90f8c51bda8ffeb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -696928080, guid: 51895fde2fbb72b49ad361d6219b6c8a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19704,10 +19704,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (33)
@@ -19752,6 +19748,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20013,10 +20013,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (6)
@@ -20073,6 +20069,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20148,10 +20148,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (50)
@@ -20208,6 +20204,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20350,10 +20350,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (52)
@@ -20410,6 +20406,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20738,10 +20738,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (25)
@@ -20798,6 +20794,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21054,10 +21054,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (15)
@@ -21114,6 +21110,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21132,10 +21132,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (36)
@@ -21192,6 +21188,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21875,10 +21875,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 722254590}
     m_Modifications:
-    - target: {fileID: 6177258424283421340, guid: e928b5fdd702a0d4c90f8c51bda8ffeb, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -696928080, guid: 51895fde2fbb72b49ad361d6219b6c8a, type: 3}
     - target: {fileID: 1907084967994002309, guid: 9f6e0c8f3be04b34da827a1b43a67fd9, type: 3}
       propertyPath: m_Name
       value: Pf_WaterBarrel
@@ -21935,6 +21931,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6177258424283421340, guid: e928b5fdd702a0d4c90f8c51bda8ffeb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -696928080, guid: 51895fde2fbb72b49ad361d6219b6c8a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22496,10 +22496,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (10)
@@ -22556,6 +22552,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23100,10 +23100,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (11)
@@ -23148,6 +23144,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23290,10 +23290,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (5)
@@ -23350,6 +23346,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23703,10 +23703,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (48)
@@ -23763,6 +23759,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24029,10 +24029,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (13)
@@ -24089,6 +24085,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24164,10 +24164,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 722254590}
     m_Modifications:
-    - target: {fileID: 6177258424283421340, guid: e928b5fdd702a0d4c90f8c51bda8ffeb, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -696928080, guid: 51895fde2fbb72b49ad361d6219b6c8a, type: 3}
     - target: {fileID: 1907084967994002309, guid: 9f6e0c8f3be04b34da827a1b43a67fd9, type: 3}
       propertyPath: m_Name
       value: Pf_WaterBarrel (2)
@@ -24224,6 +24220,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6177258424283421340, guid: e928b5fdd702a0d4c90f8c51bda8ffeb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -696928080, guid: 51895fde2fbb72b49ad361d6219b6c8a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24418,10 +24418,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (6)
@@ -24466,6 +24462,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24484,10 +24484,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (28)
@@ -24532,6 +24528,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24684,10 +24684,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (5)
@@ -24732,6 +24728,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24894,10 +24894,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (53)
@@ -24954,6 +24950,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25122,10 +25122,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (47)
@@ -25182,6 +25178,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25257,10 +25257,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (44)
@@ -25317,6 +25313,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25511,10 +25511,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (13)
@@ -25559,6 +25555,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26062,10 +26062,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (39)
@@ -26122,6 +26118,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26254,10 +26254,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (34)
@@ -26314,6 +26310,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26389,10 +26389,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (36)
@@ -26437,6 +26433,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26817,10 +26817,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (7)
@@ -26865,6 +26861,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27007,10 +27007,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (40)
@@ -27067,6 +27063,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27080,10 +27080,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (32)
@@ -27128,6 +27124,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27194,10 +27194,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate
@@ -27254,6 +27250,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27750,10 +27750,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (19)
@@ -27810,6 +27806,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27823,10 +27823,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (18)
@@ -27871,6 +27867,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28243,10 +28243,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (31)
@@ -28291,6 +28287,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28480,7 +28480,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1876122694
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28556,10 +28556,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (16)
@@ -28616,6 +28612,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28629,10 +28629,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (34)
@@ -28677,6 +28673,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28695,10 +28695,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (21)
@@ -28755,6 +28751,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28902,10 +28902,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (10)
@@ -28950,6 +28946,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29641,10 +29641,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (8)
@@ -29701,6 +29697,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29724,10 +29724,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (24)
@@ -29772,6 +29768,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29976,10 +29976,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (32)
@@ -30036,6 +30032,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30703,10 +30703,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (2)
@@ -30763,6 +30759,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31363,10 +31363,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (49)
@@ -31423,6 +31419,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31436,10 +31436,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663685882}
     m_Modifications:
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (51)
@@ -31496,6 +31492,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eec378afe8091344a86ae2d9e262e3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31509,10 +31509,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1165160938}
     m_Modifications:
-    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     - target: {fileID: 1907084967994002309, guid: 8f5eef2a77ba2d841a03e566fd16ebc3, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel (23)
@@ -31557,6 +31553,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001937786671847834, guid: 2b57f689b0ca04f40a3dd20af5786e3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1340499064, guid: d9f48e45cdac1f042a9420cab352dcd0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
