@@ -25,14 +25,7 @@ namespace Environment
             if (!Input.anyKeyDown) return;
 
             enabled = false;
-            Async().Forget();
-
-            async UniTaskVoid Async()
-            {
-                await SceneLoader.LoadSceneAsync(_sceneReference, _transition, false);
-                await EnvironmentManager.ResetWorld();
-                SceneLoader.AllowTransitionOut().Forget();
-            }
+            SceneLoader.LoadSceneAsync(_sceneReference, _transition, false, callback: OnSceneLoaded).Forget();
         }
 
         private void OnDestroy()
@@ -45,6 +38,12 @@ namespace Environment
         private void OnRetryAllowed()
         {
             gameObject.SetActive(true);
+        }
+
+        private void OnSceneLoaded()
+        {
+            EnvironmentManager.ResetWorld();
+            SceneLoader.AllowTransitionOut().Forget();
         }
     }
 }

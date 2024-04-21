@@ -188,15 +188,15 @@ namespace Environment
             RetryAllowed?.Invoke();
         }
     
-        public static async UniTask ResetWorld()
+        public static void ResetWorld()
         {
-            await _lastSceneLoaded.UnLoadScene();
             _lastSceneLoaded = null;
             LoaderTriggers.Clear();
             _completedObjectives = 0;
             _playerController = null;
             _objectsToMove.Clear();
             _currentLoaderId = 0;
+
             if (_waterTokenSource != null)
             {
                 _waterTokenSource.Cancel();
