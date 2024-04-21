@@ -42,7 +42,7 @@ AudioSource:
   m_GameObject: {fileID: 424666301072092061}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 5849779748109254101, guid: e61006d33e6a8de469cc297490f29628, type: 2}
+  OutputAudioMixerGroup: {fileID: 4947490179022663097, guid: e61006d33e6a8de469cc297490f29628, type: 2}
   m_audioClip: {fileID: 8300000, guid: ccb96328f656d104a9ca329c86cc1651, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -146,7 +146,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ccb96328f656d104a9ca329c86cc1651, type: 3}
   _randomPitchMin: 0
   _randomPitchMax: 0
-  _fadeDuration: 0.5
+  _fadeDuration: 1
 --- !u!1 &1942037311547370423
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +198,6 @@ MonoBehaviour:
   FightMusic: {fileID: 9101943696228170946}
   BossMusic: {fileID: 4818645250563756298}
   TravelMusic: {fileID: 8326051958226512606}
-  DesertAmbience: {fileID: 9038715312438143980}
 --- !u!1 &2863170291794726025
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,7 +241,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6702260012905619066, guid: e61006d33e6a8de469cc297490f29628, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 091928c96076edc43b956b210d9e0446, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 453a4fc7286df0143b07c12604113768, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -342,10 +341,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audioSource: {fileID: 975718451641102299}
   _audios:
-  - {fileID: 8300000, guid: 091928c96076edc43b956b210d9e0446, type: 3}
+  - {fileID: 8300000, guid: 453a4fc7286df0143b07c12604113768, type: 3}
   _randomPitchMin: 0
   _randomPitchMax: 0
-  _fadeDuration: 0.5
+  _fadeDuration: 0
 --- !u!1 &3095816927080049687
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,7 +387,7 @@ AudioSource:
   m_GameObject: {fileID: 3095816927080049687}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 5849779748109254101, guid: e61006d33e6a8de469cc297490f29628, type: 2}
+  OutputAudioMixerGroup: {fileID: 4947490179022663097, guid: e61006d33e6a8de469cc297490f29628, type: 2}
   m_audioClip: {fileID: 8300000, guid: cb16f4b53f4038f4c850531cd16d0bfc, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -492,7 +491,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cb16f4b53f4038f4c850531cd16d0bfc, type: 3}
   _randomPitchMin: 0
   _randomPitchMax: 0
-  _fadeDuration: 0.5
+  _fadeDuration: 1
 --- !u!1 &7490268681894772883
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,4 +638,4 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c8c8eade596d7bf44943702ea98a0c28, type: 3}
   _randomPitchMin: 0
   _randomPitchMax: 0
-  _fadeDuration: 0.5
+  _fadeDuration: 2
