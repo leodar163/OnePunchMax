@@ -24,7 +24,6 @@ namespace Audios
         private void OnCampEntered(int campId)
         {
             TravelMusic.FadeOut();
-            Debug.Log(EnvironmentManager.LoaderTriggers.Count);
 
             if (EnvironmentManager.LoaderTriggers.Count == 0 || campId < EnvironmentManager.LoaderTriggers.Count-1)
             {
