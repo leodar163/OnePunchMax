@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7879191303381443148}
   - component: {fileID: -5567204752790240705}
   - component: {fileID: 5163796453390134538}
+  - component: {fileID: 635884106747885722}
   m_Layer: 6
   m_Name: Pf_LongCrate
   m_TagString: Untagged
@@ -161,14 +162,30 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 2.4748356, y: 1.1377933}
+  - {x: 2.4842036, y: 1.1340461}
   - {x: 0.010030806, y: 0.8146329}
   - {x: -2.4963982, y: 0.4297279}
   - {x: -2.5128257, y: -1.1949456}
   - {x: -0.6589931, y: -2.2554402}
   - {x: 2.5124917, y: -0.38058263}
-  - {x: 2.5121198, y: 1.1088067}
+  - {x: 2.4821427, y: 1.1331632}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &635884106747885722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907084967994002309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
