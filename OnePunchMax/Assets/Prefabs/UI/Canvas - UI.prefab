@@ -1042,7 +1042,7 @@ MonoBehaviour:
   _dangerScreenTransform: {fileID: 3533322370584871185}
   _filterTransform: {fileID: 7427469048808842349}
   _background: {fileID: 5092073121303496952}
-  _animDuration: 0.25
+  _animDuration: 1
   _dangerScreenScaleCurve:
     serializedVersion: 2
     m_Curve:
@@ -1056,7 +1056,7 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.3
+      time: 0.25000077
       value: 1
       inSlope: 0
       outSlope: 3.905675
@@ -1089,7 +1089,7 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.3
+      time: 0.25000077
       value: 1
       inSlope: 0.0035073278
       outSlope: -1.1675683
@@ -1122,7 +1122,7 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.3
+      time: 0.25000077
       value: 0
       inSlope: 0.0002510161
       outSlope: 2.4389343
@@ -1144,8 +1144,8 @@ MonoBehaviour:
     m_RotationOrder: 4
   _baseColor: {r: 0, g: 0, b: 0, a: 0}
   _endColor: {r: 1, g: 0, b: 0, a: 0.5019608}
-  _idleAnimDuration: 1.5
-  _idleAnimRange: 0.1
+  _idleAnimDuration: 0.4
+  _idleAnimRange: 0.05
   _idleAnimCurve:
     serializedVersion: 2
     m_Curve:
