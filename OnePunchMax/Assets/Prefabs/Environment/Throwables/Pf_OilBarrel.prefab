@@ -48,9 +48,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4368971049796124949, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697430531986423949, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: onHitTarget.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697430531986423949, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: onHitTarget.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3746737306395773900}
+    - target: {fileID: 4697430531986423949, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: onHitTarget.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReceiveAttack
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697430531986423949, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: onHitTarget.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Environment.AttackSpawner, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5444400151608207580, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
       propertyPath: m_Name
       value: Pf_OilBarrel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5444400151608207580, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6654743814838862626, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
       propertyPath: m_Sprite
@@ -78,6 +102,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5444400151608207580, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2062801830879829084}
+    - targetCorrespondingSourceObject: {fileID: 5444400151608207580, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3746737306395773900}
   m_SourcePrefab: {fileID: 100100000, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
 --- !u!1 &1907084967994002309 stripped
 GameObject:
@@ -140,3 +167,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3746737306395773900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907084967994002309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e607a185ded29b419bb7a97336fcbcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _destroyAfterSpawning: 1
+  _destroyedSprite: {fileID: 0}
+  _renderer: {fileID: 0}
+  _spawnedAttack: {fileID: 9136549510678699926, guid: fade79dbbcc6ec548a85fcb0df7c54ad, type: 3}

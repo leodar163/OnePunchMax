@@ -37,6 +37,7 @@ namespace Interactions.Tests
 
         public void OnThrown(IThrower thrower)
         {
+            _rb.constraints = RigidbodyConstraints2D.None;
             _rb.AddForce(thrower.Direction * thrower.Force, ForceMode2D.Impulse);
             _rb.angularVelocity = thrower.SpineForce;
             _thrownPos = transform.position;

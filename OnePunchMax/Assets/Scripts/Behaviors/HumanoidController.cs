@@ -113,7 +113,7 @@ namespace Behaviors
             if (data.source != null)
             {
                 Vector2 attackDirection = (transform.position - data.source.Position).normalized;
-                _rb.AddForce(attackDirection * (data.knockBackForce * _rb.mass), ForceMode2D.Impulse);
+                _rb.AddForce(attackDirection * (data.knockBackForce * _rb.mass), ForceMode2D.Force);
             }
             OnReceiveAttack.Invoke(data);
         }

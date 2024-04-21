@@ -44,13 +44,15 @@ namespace Interactions
 
         protected virtual void OnCollisionEnter2D(Collision2D other)
         {
-            _rb.angularVelocity = 0;
-            _rb.velocity = Vector2.zero;
+            if (_rb.velocity == Vector2.zero) return;
             
             if (other.collider.TryGetComponent(out ITarget target))
             {
                 OnHitTarget(target);
             }
+
+            _rb.angularVelocity = 0;
+            _rb.velocity = Vector2.zero;
         }
     }
 }

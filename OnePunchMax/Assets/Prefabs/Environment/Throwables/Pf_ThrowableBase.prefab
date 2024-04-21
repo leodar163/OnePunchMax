@@ -114,7 +114,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!114 &2187765507016622500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,6 +239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rb: {fileID: 4368971049796124949}
   attackData:
+    damage: 0
     canBurn: 0
     canExplode: 0
     canBreak: 0
