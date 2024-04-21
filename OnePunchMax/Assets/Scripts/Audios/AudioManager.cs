@@ -1,47 +1,53 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using Environment;
+using UnityEngine;
 
-namespace Audios {
+namespace Audios
+{
     public class AudioManager : MonoBehaviour
     {
-        public AudioPlayer FightMusic;
-        public AudioPlayer BossMusic;
-        public AudioPlayer TravelMusic;
-        public AudioPlayer DesertAmbience;
+        [SerializeField] private AudioPlayer FightMusic;
+        [SerializeField] private AudioPlayer BossMusic;
+        [SerializeField] private AudioPlayer TravelMusic;
 
-        void Awake()
+        private void Start()
         {
-            DesertAmbience.FadeIn();
-            EnvironmentManager.CampEntered+=OnCampEntered;
-            EnvironmentManager.CampExited+=OnCampExited;
+            EnvironmentManager.CampEntered += OnCampEntered;
+            EnvironmentManager.CampExited += OnCampExited;
         }
 
-        void OnDestroy()
+        private void OnDestroy()
         {
-            EnvironmentManager.CampEntered-=OnCampEntered;
-            EnvironmentManager.CampExited-=OnCampExited;
+            EnvironmentManager.CampEntered -= OnCampEntered;
+            EnvironmentManager.CampExited -= OnCampExited;
         }
 
-        private void OnCampEntered(int campId){
+        private void OnCampEntered(int campId)
+        {
             TravelMusic.FadeOut();
-            if(campId < EnvironmentManager.LoaderTriggers.Count-1){
+            Debug.Log(EnvironmentManager.LoaderTriggers.Count);
+
+            if (EnvironmentManager.LoaderTriggers.Count == 0 || campId < EnvironmentManager.LoaderTriggers.Count-1)
+            {
                 FightMusic.FadeIn();
             }
-            else {
+            else
+            {
                 BossMusic.FadeIn();
             }
         }
 
-        private void OnCampExited(int campId){
-            if(campId < EnvironmentManager.LoaderTriggers.Count-1){
+        private void OnCampExited(int campId)
+        {
+            TravelMusic.FadeIn();
+
+            if (campId < EnvironmentManager.LoaderTriggers.Count - 1)
+            {
                 FightMusic.FadeOut();
             }
-            else {
+            else
+            {
                 BossMusic.FadeOut();
             }
-            TravelMusic.FadeIn();
         }
     }
 }
