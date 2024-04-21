@@ -854,6 +854,62 @@ PrefabInstance:
       propertyPath: _playerController
       value: 
       objectReference: {fileID: 596411288422764449}
+    - target: {fileID: 4559379322544685913, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _dieClips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559379322544685913, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _healClips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559379322544685913, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _hurtClips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559379322544685913, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _stepsClips.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559379322544685913, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _dieClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 839fb07f1aff7ff42a407f91d81a6f94, type: 3}
+    - target: {fileID: 4559379322544685913, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _healClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3fc2b10b29bb30f41b9fc56df6df70ab, type: 3}
+    - target: {fileID: 4559379322544685913, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _hurtClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: a90fc2e0b15daf743ab157042c2710ff, type: 3}
+    - target: {fileID: 4559379322544685913, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _chargingClips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559379322544685913, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _stepsClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2ee002453d8a2054c91ad251c5e5754e, type: 3}
+    - target: {fileID: 4559379322544685913, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _chargingClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1441b0578dd316942bd771b0ed76cd98, type: 3}
+    - target: {fileID: 4559379322544685913, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _heavyAttackClips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559379322544685913, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _lightAttackClips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559379322544685913, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _heavyAttackClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: b28bfa67b7286694186406da2793e6a4, type: 3}
+    - target: {fileID: 4559379322544685913, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _lightAttackClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: b4547f73b7e28fb438341bfad9dc63ae, type: 3}
     - target: {fileID: 7403255811272542894, guid: 42c971747777d184cb665bd41108a28a, type: 3}
       propertyPath: m_Name
       value: AudioPlayer
