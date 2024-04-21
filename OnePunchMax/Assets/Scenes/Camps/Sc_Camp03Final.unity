@@ -15594,6 +15594,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 426113041}
     m_Modifications:
+    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     - target: {fileID: 1907084967994002309, guid: 08bd8ddfef0f07342a21523301ec430e, type: 3}
       propertyPath: m_Name
       value: Pf_Crate (14)
@@ -15650,10 +15654,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2020662825946640717, guid: 30de4c48201ca074781456a6fadb0ce6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 36f30b23ec2c1314395b3c2a725ba9fc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
