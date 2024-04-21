@@ -26,8 +26,8 @@ MonoBehaviour:
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  - _minDistanceFromLastCamp: 40
-    _maxDistanceFromLastCamp: 50
+  - _minDistanceFromLastCamp: 300
+    _maxDistanceFromLastCamp: 400
     _campTrigger:
       m_AssetGUID: 0dcd2eaf18b7496419cadfc923467013
       m_SubObjectName: 
@@ -38,8 +38,8 @@ MonoBehaviour:
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  - _minDistanceFromLastCamp: 40
-    _maxDistanceFromLastCamp: 50
+  - _minDistanceFromLastCamp: 250
+    _maxDistanceFromLastCamp: 300
     _campTrigger:
       m_AssetGUID: cc72d8490c95a2c4c8dd454044d0418b
       m_SubObjectName: 
@@ -50,8 +50,8 @@ MonoBehaviour:
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  - _minDistanceFromLastCamp: 40
-    _maxDistanceFromLastCamp: 50
+  - _minDistanceFromLastCamp: 250
+    _maxDistanceFromLastCamp: 400
     _campTrigger:
       m_AssetGUID: 17e1adcbbd1734e4ea754d4e92e9cc2d
       m_SubObjectName: 
@@ -62,8 +62,8 @@ MonoBehaviour:
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  - _minDistanceFromLastCamp: 40
-    _maxDistanceFromLastCamp: 50
+  - _minDistanceFromLastCamp: 250
+    _maxDistanceFromLastCamp: 350
     _campTrigger:
       m_AssetGUID: 937b88e1cf8b7c34db90558ec2edef0f
       m_SubObjectName: 
