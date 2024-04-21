@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4707005866326126881}
   - component: {fileID: 2553924927665200010}
+  - component: {fileID: 4818645250563756298}
   m_Layer: 0
   m_Name: BossMusic
   m_TagString: Untagged
@@ -43,7 +44,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 5849779748109254101, guid: e61006d33e6a8de469cc297490f29628, type: 2}
   m_audioClip: {fileID: 8300000, guid: ccb96328f656d104a9ca329c86cc1651, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -128,6 +129,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4818645250563756298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424666301072092061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b68a9dbdd8de9e40bc8c98b127e4ee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioSource: {fileID: 2553924927665200010}
+  _audios:
+  - {fileID: 8300000, guid: ccb96328f656d104a9ca329c86cc1651, type: 3}
+  _randomPitchMin: 0
+  _randomPitchMax: 0
+  _fadeDuration: 0.5
 --- !u!1 &1942037311547370423
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,6 +156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5666955801344845719}
+  - component: {fileID: 9223244395773547182}
   m_Layer: 0
   m_Name: BackgroundAudio
   m_TagString: Untagged
@@ -163,6 +183,22 @@ Transform:
   - {fileID: 7934559827168924836}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9223244395773547182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942037311547370423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ccd472869dd22c448d99522c4ca320d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FightMusic: {fileID: 9101943696228170946}
+  BossMusic: {fileID: 4818645250563756298}
+  TravelMusic: {fileID: 8326051958226512606}
+  DesertAmbience: {fileID: 9038715312438143980}
 --- !u!1 &2863170291794726025
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,6 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7934559827168924836}
   - component: {fileID: 975718451641102299}
+  - component: {fileID: 9038715312438143980}
   m_Layer: 0
   m_Name: DesertAmbience
   m_TagString: Untagged
@@ -189,7 +226,7 @@ Transform:
   m_GameObject: {fileID: 2863170291794726025}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3280533, y: -0.17519076, z: -0.004500015}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -206,7 +243,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6702260012905619066, guid: e61006d33e6a8de469cc297490f29628, type: 2}
   m_audioClip: {fileID: 8300000, guid: 091928c96076edc43b956b210d9e0446, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -291,6 +328,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &9038715312438143980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2863170291794726025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b68a9dbdd8de9e40bc8c98b127e4ee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioSource: {fileID: 975718451641102299}
+  _audios:
+  - {fileID: 8300000, guid: 091928c96076edc43b956b210d9e0446, type: 3}
+  _randomPitchMin: 0
+  _randomPitchMax: 0
+  _fadeDuration: 0.5
 --- !u!1 &3095816927080049687
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,6 +356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1197550655706919858}
   - component: {fileID: 7023441580925795751}
+  - component: {fileID: 9101943696228170946}
   m_Layer: 0
   m_Name: FightMusic
   m_TagString: Untagged
@@ -316,7 +372,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3095816927080049687}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -334,7 +390,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 5849779748109254101, guid: e61006d33e6a8de469cc297490f29628, type: 2}
   m_audioClip: {fileID: 8300000, guid: cb16f4b53f4038f4c850531cd16d0bfc, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -419,6 +475,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &9101943696228170946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3095816927080049687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b68a9dbdd8de9e40bc8c98b127e4ee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioSource: {fileID: 7023441580925795751}
+  _audios:
+  - {fileID: 8300000, guid: cb16f4b53f4038f4c850531cd16d0bfc, type: 3}
+  _randomPitchMin: 0
+  _randomPitchMax: 0
+  _fadeDuration: 0.5
 --- !u!1 &7490268681894772883
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,6 +503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4361735405188572412}
   - component: {fileID: 4594204371329241283}
+  - component: {fileID: 8326051958226512606}
   m_Layer: 0
   m_Name: TravelMusic
   m_TagString: Untagged
@@ -462,7 +537,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 5849779748109254101, guid: e61006d33e6a8de469cc297490f29628, type: 2}
   m_audioClip: {fileID: 8300000, guid: c8c8eade596d7bf44943702ea98a0c28, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -547,3 +622,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8326051958226512606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7490268681894772883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b68a9dbdd8de9e40bc8c98b127e4ee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioSource: {fileID: 4594204371329241283}
+  _audios:
+  - {fileID: 8300000, guid: c8c8eade596d7bf44943702ea98a0c28, type: 3}
+  _randomPitchMin: 0
+  _randomPitchMax: 0
+  _fadeDuration: 0.5

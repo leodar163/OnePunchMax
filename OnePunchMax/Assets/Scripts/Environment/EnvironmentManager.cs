@@ -34,7 +34,7 @@ namespace Environment
         private static AssetReference _lastSceneLoaded;
 
         public static SceneLoaderTrigger CurrentLoader => LoaderTriggers[_currentLoaderId];
-        public static List<SceneLoaderTrigger> LoaderTriggers { get; set; }
+        public static List<SceneLoaderTrigger> LoaderTriggers { get; set; } = new();
 
         public static int CompletedObjectives
         {
@@ -86,10 +86,8 @@ namespace Environment
         public static event Action LastObjectiveCompleted;
         public static event Action RetryAllowed;
         public static event Action PlayerLost;
-
-        public static AudioSource CampAudio;
-        public static AudioSource TravelAudio;
-        public static AudioSource BossAudio;
+        public static event Action<int> CampEntered;
+        public static event Action<int> CampExited;
 
         public static void SubscribeToMove(Transform transform)
         {
@@ -149,8 +147,7 @@ namespace Environment
     
         public static void EnterCamp()
         {
-            TravelAudio.volume = 0f;
-            CampAudio.volume = 1f;
+            CampEntered?.Invoke(_currentLoaderId);
 
             if (_waterTokenSource == null) return;
 
@@ -161,8 +158,7 @@ namespace Environment
 
         public static void ExitCamp()
         {
-            CampAudio.volume = 0f;
-            TravelAudio.volume = 1f;
+            CampExited?.Invoke(_currentLoaderId);
 
             LoseWater().Forget();
             return;
