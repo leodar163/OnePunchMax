@@ -23,6 +23,13 @@ namespace Interactions.Tests
             
         }
 
+        public void FreezePosition(bool freeze)
+        {
+            bool freezeRotation = _rb.freezeRotation;
+            _rb.constraints = freeze ? RigidbodyConstraints2D.FreezeAll : RigidbodyConstraints2D.None;
+            _rb.freezeRotation = freezeRotation;
+        }
+        
         public void OnPicked(IHolder holder)
         {
             IsPickable = false;

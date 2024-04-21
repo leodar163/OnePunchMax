@@ -48,7 +48,7 @@ namespace Detections
         {
             List<Collider2D> filteredColliders = new();
 
-            if (Physics2D.OverlapCircle(center, _viewRadius, filter, unFilteredColliders) > 0)
+            if (Physics2D.OverlapCircle(center + (Vector3)_positionOffset, _viewRadius, filter, unFilteredColliders) > 0)
             {
                 foreach (var col in unFilteredColliders)
                 {
