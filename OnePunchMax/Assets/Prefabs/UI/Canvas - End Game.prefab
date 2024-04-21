@@ -117,12 +117,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneReference:
-    m_AssetGUID: 3dfabf37564990c46bc6add6c62ddd89
+    m_AssetGUID: d8e06434036c9da49a34b9f0b66b1241
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   _transition: {fileID: 11400000, guid: 12b1fb2c8bd527a4b99ceaaad6cb5b6c, type: 2}
-  _allowTransitionOut: 1
 --- !u!114 &4725121354944044941
 MonoBehaviour:
   m_ObjectHideFlags: 0

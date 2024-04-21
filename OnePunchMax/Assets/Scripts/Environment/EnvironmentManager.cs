@@ -34,7 +34,7 @@ namespace Environment
         private static AssetReference _lastSceneLoaded;
 
         public static SceneLoaderTrigger CurrentLoader => LoaderTriggers[_currentLoaderId];
-        public static List<SceneLoaderTrigger> LoaderTriggers { get; set; }
+        public static List<SceneLoaderTrigger> LoaderTriggers { get; set; } = new();
 
         public static int CompletedObjectives
         {
@@ -86,6 +86,8 @@ namespace Environment
         public static event Action LastObjectiveCompleted;
         public static event Action RetryAllowed;
         public static event Action PlayerLost;
+        public static event Action<int> CampEntered;
+        public static event Action<int> CampExited;
 
         public static void SubscribeToMove(Transform transform)
         {
@@ -145,7 +147,7 @@ namespace Environment
     
         public static void EnterCamp()
         {
-            // TODO: play Camp music
+            CampEntered?.Invoke(_currentLoaderId);
 
             if (_waterTokenSource == null) return;
 
@@ -156,7 +158,7 @@ namespace Environment
 
         public static void ExitCamp()
         {
-            // TODO: play Outdoor music
+            CampExited?.Invoke(_currentLoaderId);
 
             LoseWater().Forget();
             return;
@@ -184,6 +186,23 @@ namespace Environment
         public static void AllowRetry()
         {
             RetryAllowed?.Invoke();
+        }
+    
+        public static void ResetWorld()
+        {
+            _lastSceneLoaded = null;
+            LoaderTriggers.Clear();
+            _completedObjectives = 0;
+            _playerController = null;
+            _objectsToMove.Clear();
+            _currentLoaderId = 0;
+
+            if (_waterTokenSource != null)
+            {
+                _waterTokenSource.Cancel();
+                _waterTokenSource.Dispose();
+                _waterTokenSource = null;
+            }
         }
     }
 }

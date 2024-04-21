@@ -90,6 +90,8 @@ namespace Audios
         
         public void FadeIn(float duration)
         {
+            if (!_audioSource.isPlaying)
+                PlayAudio();
             Fade(duration, 1);
         }
 

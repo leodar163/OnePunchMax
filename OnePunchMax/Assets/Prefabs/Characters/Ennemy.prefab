@@ -1039,6 +1039,46 @@ PrefabInstance:
       propertyPath: _controller
       value: 
       objectReference: {fileID: 6097947107926023311}
+    - target: {fileID: 9048921724902272596, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
+      propertyPath: _dieClips.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9048921724902272596, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
+      propertyPath: _dieClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: d2201314f55e67f4289a21e146a6e5c6, type: 3}
+    - target: {fileID: 9048921724902272596, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
+      propertyPath: _dieClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7dbcfa5e2e05f9141ad3c93d748423df, type: 3}
+    - target: {fileID: 9048921724902272596, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
+      propertyPath: _dieClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: b9b1d764ec4677740a3961926fa7a3cd, type: 3}
+    - target: {fileID: 9048921724902272596, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
+      propertyPath: _dieClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4dd922fb885ffe44f9549bbc6cf341d2, type: 3}
+    - target: {fileID: 9048921724902272596, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
+      propertyPath: _dieClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6586f7faaad8a354ba4a20399ae35409, type: 3}
+    - target: {fileID: 9048921724902272596, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
+      propertyPath: _dieClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: b05c594b5d9b6444c8a6ae24912db3fa, type: 3}
+    - target: {fileID: 9048921724902272596, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
+      propertyPath: _dieClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3213378ef25c6b542bf3dc74d2d12e64, type: 3}
+    - target: {fileID: 9048921724902272596, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
+      propertyPath: _lightAttackClips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9048921724902272596, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
+      propertyPath: _lightAttackClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 97875884fa1ca7143800a8d63d0b155d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
