@@ -17,10 +17,8 @@ namespace SceneManagement
             try
             {
                 if (_transitionInProgress)
-                {
-                    Debug.LogWarning("Already in transition, can't launch a new one");
-                    return;
-                }
+                    await UniTask.WaitWhile(() => _transitionInProgress);
+
                 _transitionInProgress = true;
 
                 await transition.Play(TransitionMode.In);
