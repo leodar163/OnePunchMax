@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: attackData.damage
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 4697430531986423949, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: attackData.canBreak
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5444400151608207580, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
       propertyPath: m_Name
       value: Pf_Crate
