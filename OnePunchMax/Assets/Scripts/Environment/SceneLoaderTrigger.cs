@@ -22,7 +22,7 @@ namespace Environment
 
         public void TriggerExit()
         {
-            
+            gameObject.SetActive(false);
         }
     }
 }
