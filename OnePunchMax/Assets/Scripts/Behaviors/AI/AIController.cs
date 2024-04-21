@@ -1,8 +1,9 @@
-﻿using System.Collections;
-using Behaviors.AI.States;
+﻿using Behaviors.AI.States;
 using Behaviors.Attack;
 using Detections;
+using Environment;
 using Interactions;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
@@ -26,7 +27,17 @@ namespace Behaviors.AI
         [Space] 
         [SerializeField] public UnityEvent onAlertModeGoesOn; 
         private bool _hasReceivedDestinationInput;
-        
+
+        private void Start()
+        {
+            EnvironmentManager.CampExploded += OnCampExploded;
+        }
+
+        private void OnDestroy()
+        {
+            EnvironmentManager.CampExploded -= OnCampExploded;
+        }
+
         protected override void FixedUpdate()
         {
             if (currentState != null) currentState.BehaveFixedUpdate(this);
@@ -48,6 +59,11 @@ namespace Behaviors.AI
                 _navMeshAgent.destination = transform.position;
             }
             _hasReceivedDestinationInput = false;
+        }
+
+        private void OnCampExploded()
+        {
+            Die();
         }
 
         protected override void OrientateViews()

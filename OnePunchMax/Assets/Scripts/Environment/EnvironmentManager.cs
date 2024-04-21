@@ -73,6 +73,7 @@ namespace Environment
         public static event CompassEvent CompassSet;
 
         public static event Action ObjectiveCompleted;
+        public static event Action CampExploded;
 
         public static void SubscribeToMove(Transform transform)
         {
@@ -156,6 +157,11 @@ namespace Environment
                     Player.WaterContainer.Quantity -= WATER_LOSE_AMOUNT;
                 }
             }
+        }
+    
+        public static void ExplodeCamp()
+        {
+            CampExploded?.Invoke();
         }
     }
 }

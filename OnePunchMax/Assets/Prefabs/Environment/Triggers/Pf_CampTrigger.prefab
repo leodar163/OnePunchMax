@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1114156917374685889}
   - component: {fileID: 857979994336054046}
   - component: {fileID: 8016211969796765420}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pf_CampTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
