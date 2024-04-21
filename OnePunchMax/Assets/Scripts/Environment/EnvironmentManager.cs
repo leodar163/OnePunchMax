@@ -87,6 +87,10 @@ namespace Environment
         public static event Action RetryAllowed;
         public static event Action PlayerLost;
 
+        public static AudioSource CampAudio;
+        public static AudioSource TravelAudio;
+        public static AudioSource BossAudio;
+
         public static void SubscribeToMove(Transform transform)
         {
             _objectsToMove.Add(transform);
@@ -145,7 +149,8 @@ namespace Environment
     
         public static void EnterCamp()
         {
-            // TODO: play Camp music
+            TravelAudio.volume = 0f;
+            CampAudio.volume = 1f;
 
             if (_waterTokenSource == null) return;
 
@@ -156,7 +161,8 @@ namespace Environment
 
         public static void ExitCamp()
         {
-            // TODO: play Outdoor music
+            CampAudio.volume = 0f;
+            TravelAudio.volume = 1f;
 
             LoseWater().Forget();
             return;
