@@ -80,7 +80,7 @@ MonoBehaviour:
   _geometryType: 1
   _cone:
     _viewAngle: 360
-    _viewOffset: -90
+    _viewOffset: 0
     _positionOffset: {x: 0, y: 0}
     _viewRadius: 1.2
   _circle:
@@ -790,7 +790,7 @@ MonoBehaviour:
   _geometryType: 1
   _cone:
     _viewAngle: 270
-    _viewOffset: -90
+    _viewOffset: 9
     _positionOffset: {x: 0, y: 0}
     _viewRadius: 2.5
   _circle:

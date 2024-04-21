@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -69,6 +70,11 @@ namespace Interactions.Tests
             {
                 col.enabled = true;
             }
+        }
+
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            StopThrowing();
         }
     }
 }
