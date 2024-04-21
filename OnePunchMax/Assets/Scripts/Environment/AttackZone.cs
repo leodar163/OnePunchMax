@@ -24,6 +24,16 @@ namespace Environment
             _attackData.source = this;
         }
 
+        private void Start()
+        {
+            EnvironmentManager.MapMoved -= OnMapMoved;
+        }
+
+        private void OnDestroy()
+        {
+            EnvironmentManager.MapMoved += OnMapMoved;
+        }
+
         private void OnEnable()
         {
             if (_attackDuration <= 0) return;
@@ -52,6 +62,11 @@ namespace Environment
                 _hitTargets.Add(target);
                 target.ReceiveAttack(_attackData);
             }
+        }
+
+        private void OnMapMoved(Vector2 displacement)
+        {
+            gameObject.SetActive(false);
         }
     }
 }
