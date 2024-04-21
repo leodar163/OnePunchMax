@@ -79,10 +79,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _geometryType: 1
   _cone:
-    _viewAngle: 80
+    _viewAngle: 360
     _viewOffset: -90
     _positionOffset: {x: 0, y: 0}
-    _viewRadius: 1
+    _viewRadius: 1.2
   _circle:
     _offset: 0
     _radius: 1
@@ -789,10 +789,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _geometryType: 1
   _cone:
-    _viewAngle: 120
+    _viewAngle: 270
     _viewOffset: -90
     _positionOffset: {x: 0, y: 0}
-    _viewRadius: 2
+    _viewRadius: 2.5
   _circle:
     _offset: 0
     _radius: 1
