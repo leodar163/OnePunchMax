@@ -32,11 +32,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3dfabf37564990c46bc6add6c62ddd89
-    m_Address: Assets/Scenes/MainMap.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 49d4464ee4972964b9f788d9ec92c16d
     m_Address: Assets/Scenes/Camps/Sc_CampTutot01.unity
     m_ReadOnly: 0
@@ -69,11 +64,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0dcd2eaf18b7496419cadfc923467013
     m_Address: Assets/Prefabs/Environment/Triggers/Pf_SceneLoadTrigger02.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d8e06434036c9da49a34b9f0b66b1241
-    m_Address: Assets/Scenes/Sc_Welcome.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

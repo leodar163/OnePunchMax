@@ -1,14 +1,11 @@
-﻿using SceneManagement;
-using UnityEngine.AddressableAssets;
-using UnityEngine;
+﻿using Cysharp.Threading.Tasks;
 using TransitionManagement;
-using Cysharp.Threading.Tasks;
+using UnityEngine;
 
 namespace Environment
 {
     public class RetrySceneCaller : MonoBehaviour
     {
-        [SerializeField] private AssetReference _sceneReference;
         [SerializeField] private Transition _transition;
 
         private void Awake()
@@ -25,7 +22,17 @@ namespace Environment
             if (!Input.anyKeyDown) return;
 
             enabled = false;
-            SceneLoader.LoadSceneAsync(_sceneReference, _transition, false, callback: OnSceneLoaded).Forget();
+            Async().Forget();
+            return;
+
+            async UniTaskVoid Async()
+            {
+                await _transition.Play(TransitionMode.In);
+                EnvironmentManager.ResetWorld();
+                await UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(0);
+                await _transition.Play(TransitionMode.Out);
+
+            }
         }
 
         private void OnDestroy()
@@ -38,12 +45,6 @@ namespace Environment
         private void OnRetryAllowed()
         {
             gameObject.SetActive(true);
-        }
-
-        private void OnSceneLoaded()
-        {
-            EnvironmentManager.ResetWorld();
-            SceneLoader.AllowTransitionOut().Forget();
         }
     }
 }

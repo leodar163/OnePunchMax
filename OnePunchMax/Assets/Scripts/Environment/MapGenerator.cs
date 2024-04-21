@@ -1,24 +1,12 @@
 ﻿using Cysharp.Threading.Tasks;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
 using Utils;
 
 namespace Environment
 {
     public class MapGenerator : MonoBehaviour
     {
-        [SerializeField] private MapMemo _mapMemo;
-
-        private void Start()
-        {
-            // TODO: call this in loading loop
-            Async().Forget();
-            return;
-
-            async UniTaskVoid Async() => EnvironmentManager.LoaderTriggers = await Generate(_mapMemo);
-        }
-
         public async UniTask<List<SceneLoaderTrigger>> Generate(MapMemo mapMemo)
         {
             float lastAngle = 0;
