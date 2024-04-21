@@ -12,7 +12,7 @@ namespace SceneManagement
         private static bool _transitionOutAllowed;
         private static bool _transitionInProgress;
 
-        public static async UniTask LoadSceneAsync(AssetReference sceneRef, Transition transition, bool allowTransitionOut = true, LoadSceneMode loadSceneMode = LoadSceneMode.Single)
+        public static async UniTask LoadSceneAsync(AssetReference sceneRef, Transition transition, bool allowTransitionOut = true, LoadSceneMode loadSceneMode = LoadSceneMode.Single, Action callback = null)
         {
             try
             {
@@ -27,6 +27,7 @@ namespace SceneManagement
                 await sceneRef.LoadSceneAsync(loadSceneMode);
 
                 _transitionOutAllowed = allowTransitionOut;
+                callback?.Invoke();
                 await UniTask.WaitUntil(() => _transitionOutAllowed);
 
                 await transition.Play(TransitionMode.Out);
