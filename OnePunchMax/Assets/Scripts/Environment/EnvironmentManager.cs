@@ -47,7 +47,16 @@ namespace Environment
         }
         private static int _completedObjectives;
 
-        public static PlayerController Player { get; set; }
+        public static PlayerController Player
+        {
+            get => _playerController;
+            set
+            {
+                _playerController = value;
+                _playerController.OnDie.AddListener(() => PlayerLost?.Invoke());
+            }
+        }
+        private static PlayerController _playerController;
         
         private static List<Transform> _objectsToMove = new();
         private static int _currentLoaderId;
@@ -74,6 +83,9 @@ namespace Environment
 
         public static event Action ObjectiveCompleted;
         public static event Action CampExploded;
+        public static event Action LastObjectiveCompleted;
+        public static event Action RetryAllowed;
+        public static event Action PlayerLost;
 
         public static void SubscribeToMove(Transform transform)
         {
@@ -162,6 +174,16 @@ namespace Environment
         public static void ExplodeCamp()
         {
             CampExploded?.Invoke();
+        }
+
+        public static void CompleteLastObjective()
+        {
+            LastObjectiveCompleted?.Invoke();
+        }
+
+        public static void AllowRetry()
+        {
+            RetryAllowed?.Invoke();
         }
     }
 }

@@ -4,6 +4,7 @@ namespace Environment
 {
     public class ObjectiveHandler : MonoBehaviour
     {
+        [SerializeField] private bool _lastObjective;
         [SerializeField] private ObjectivePart[] _objectiveParts;
         [SerializeField] private GameObject[] _explosions;
 
@@ -27,6 +28,12 @@ namespace Environment
             foreach (ObjectivePart part in _objectiveParts)
                 if (!part.IsTriggered)
                     return;
+
+            if (_lastObjective)
+            {
+                EnvironmentManager.CompleteLastObjective();
+                return;
+            }
 
             EnvironmentManager.CompletedObjectives++;
         }
