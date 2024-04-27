@@ -116,12 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302b9be8eb73b1844a70388c1dff37dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneReference:
-    m_AssetGUID: d8e06434036c9da49a34b9f0b66b1241
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
-  _transition: {fileID: 11400000, guid: 12b1fb2c8bd527a4b99ceaaad6cb5b6c, type: 2}
+  _transition: {fileID: 11400000, guid: f3419a04ceb4d0a4f9f7b58478a903d7, type: 2}
 --- !u!114 &4725121354944044941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _label: {fileID: 988435929922169307}
-  _text: Perdu...
+  _text: "L'\xE9tincelle s'est \xE9teinte..."
 --- !u!1 &5797765619731598459
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,7 +408,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7372280226935812986, guid: 435a6643e1873ac46bb22320c886d2ea, type: 3}
       propertyPath: m_text
-      value: "Texte de fin \xE0 remplir"
+      value: "Je suis Sparkus. Et maintenant je suis immortel.\n\nImmortan a perdu,
+        j\u2019ai atteint le Valhalla. Pour toujours, je vivrai dans sa chair et
+        ses cauchemars.\n\nPour toujours, jusqu\u2019\xE0 ce qu\u2019un autre connard
+        lui place une balle entre les deux yeux.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372280226935812986, guid: 435a6643e1873ac46bb22320c886d2ea, type: 3}
+      propertyPath: m_margin.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372280226935812986, guid: 435a6643e1873ac46bb22320c886d2ea, type: 3}
+      propertyPath: m_margin.z
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

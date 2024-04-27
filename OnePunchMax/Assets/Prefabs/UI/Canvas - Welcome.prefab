@@ -289,7 +289,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7372280226935812986, guid: 435a6643e1873ac46bb22320c886d2ea, type: 3}
       propertyPath: m_text
-      value: "Texte d'intro \xE0 remplir"
+      value: "Je suis Sparkus. Et aujourd\u2019hui je vais devenir immortel.\r\nMais
+        l\xE0, dans mes derniers instants, mon corps me rappelle que je ne suis qu\u2019un
+        tas de chair\r\nqui survit.\r\n\r\nPour nous, les War Boys, Immortan n\u2019est
+        pas un homme. C\u2019est un Dieu.\r\nAujourd\u2019hui, alors que je Lui donnais
+        ma vie, mon Dieu m\u2019a abandonn\xE9, ferm\xE9 les portes du Valhalla.
+        \r\n\nImmortan Joe n\u2019est pas un dieu, juste un charlatan, un survivant
+        comme moi. Rien de plus, rien de moins.\r\nMon Soleil n\u2019a jamais \xE9t\xE9
+        qu\u2019une ampoule vacillante. Et moi, je serais l\u2019\xE9tincelle qui
+        explosera ses mensonges. \nEt ses pr\xE9cieux barils.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372280226935812986, guid: 435a6643e1873ac46bb22320c886d2ea, type: 3}
+      propertyPath: m_margin.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372280226935812986, guid: 435a6643e1873ac46bb22320c886d2ea, type: 3}
+      propertyPath: m_margin.z
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

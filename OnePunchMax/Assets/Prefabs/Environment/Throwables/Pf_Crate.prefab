@@ -64,6 +64,50 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1739683648914815991, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: onHitFinishThrow.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739683648914815991, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: onThrown.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5739195164352684797}
+    - target: {fileID: 1739683648914815991, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: onHitFinishThrow.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739683648914815991, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: onHitFinishThrow.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5739195164352684797}
+    - target: {fileID: 1739683648914815991, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: onHitFinishThrow.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1907084967994002309}
+    - target: {fileID: 1739683648914815991, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: onHitFinishThrow.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739683648914815991, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: onHitFinishThrow.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739683648914815991, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: onHitFinishThrow.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739683648914815991, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: onHitFinishThrow.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_IntArgument
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739683648914815991, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: onHitFinishThrow.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739683648914815991, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: onHitFinishThrow.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4697430531986423949, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
       propertyPath: attackData.damage
       value: 30
@@ -71,6 +115,10 @@ PrefabInstance:
     - target: {fileID: 4697430531986423949, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
       propertyPath: attackData.canBreak
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697430531986423949, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+      propertyPath: onHitTarget.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5444400151608207580, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
       propertyPath: m_Name
@@ -194,3 +242,14 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &5739195164352684797 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2187765507016622500, guid: 8e001cda6a543414eab5382d69dae306, type: 3}
+  m_PrefabInstance: {fileID: 5906812563101164377}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907084967994002309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54fbec68e8564d21acbc4f473f208fbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

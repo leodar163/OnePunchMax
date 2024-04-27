@@ -681,7 +681,19 @@ MonoBehaviour:
       m_Calls: []
   OnReceiveAttack:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6097947107926023311}
+        m_TargetAssemblyTypeName: Behaviors.AI.AIController, Assembly-CSharp
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnDie:
     m_PersistentCalls:
       m_Calls:
@@ -991,6 +1003,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 872652668734488585}
     m_Modifications:
+    - target: {fileID: 4593894290942276421, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
+      propertyPath: _randomPitchMax
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593894290942276421, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
+      propertyPath: _randomPitchMin
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593894290942276421, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
+      propertyPath: _audios.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593894290942276421, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
+      propertyPath: _audios.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 97875884fa1ca7143800a8d63d0b155d, type: 3}
+    - target: {fileID: 6358468762096064868, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
+      propertyPath: _randomPitchMax
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358468762096064868, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
+      propertyPath: _randomPitchMin
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358468762096064868, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
+      propertyPath: _audios.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358468762096064868, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
+      propertyPath: _audios.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2ee002453d8a2054c91ad251c5e5754e, type: 3}
     - target: {fileID: 8553079243916653633, guid: 393cbcd7ec92cee4f8636921388bb133, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

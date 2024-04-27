@@ -63,7 +63,7 @@ MonoBehaviour:
     canExplode: 1
     canBreak: 1
     knockBackForce: 100
-  _attackDelay: 0.3
+  _attackDelay: 0
   _attackCoolDown: 0.5
 --- !u!114 &4194639146468025163
 MonoBehaviour:
@@ -773,7 +773,7 @@ MonoBehaviour:
     canExplode: 0
     canBreak: 0
     knockBackForce: 200
-  _attackDelay: 0.8
+  _attackDelay: 0
   _attackCoolDown: 0.1
 --- !u!114 &8864027468545105146
 MonoBehaviour:
@@ -789,10 +789,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _geometryType: 1
   _cone:
-    _viewAngle: 270
-    _viewOffset: 9
+    _viewAngle: 360
+    _viewOffset: 0
     _positionOffset: {x: 0, y: 0}
-    _viewRadius: 2.5
+    _viewRadius: 4
   _circle:
     _offset: 0
     _radius: 1
@@ -908,6 +908,38 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: b28bfa67b7286694186406da2793e6a4, type: 3}
     - target: {fileID: 4559379322544685913, guid: 42c971747777d184cb665bd41108a28a, type: 3}
       propertyPath: _lightAttackClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: b4547f73b7e28fb438341bfad9dc63ae, type: 3}
+    - target: {fileID: 5594355337537839649, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _randomPitchMax
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594355337537839649, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _randomPitchMin
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594355337537839649, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _audios.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594355337537839649, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _audios.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2ee002453d8a2054c91ad251c5e5754e, type: 3}
+    - target: {fileID: 6051233828662250242, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _randomPitchMax
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6051233828662250242, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _randomPitchMin
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6051233828662250242, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _audios.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6051233828662250242, guid: 42c971747777d184cb665bd41108a28a, type: 3}
+      propertyPath: _audios.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: b4547f73b7e28fb438341bfad9dc63ae, type: 3}
     - target: {fileID: 7403255811272542894, guid: 42c971747777d184cb665bd41108a28a, type: 3}
