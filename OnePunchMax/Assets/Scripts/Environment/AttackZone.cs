@@ -19,6 +19,8 @@ namespace Environment
 
         public Vector3 Position => transform.position;
 
+        private bool _destroyed;
+
         private void Awake()
         {
             _attackData.source = this;
@@ -26,12 +28,13 @@ namespace Environment
 
         private void Start()
         {
-            EnvironmentManager.MapMoved -= OnMapMoved;
+            EnvironmentManager.MapMoved += OnMapMoved;
         }
 
         private void OnDestroy()
         {
-            EnvironmentManager.MapMoved += OnMapMoved;
+            _destroyed = true;
+            EnvironmentManager.MapMoved -= OnMapMoved;
         }
 
         private void OnEnable()
@@ -44,6 +47,8 @@ namespace Environment
             async UniTaskVoid Async()
             {
                 await UniTask.Delay(TimeSpan.FromSeconds(_attackDuration));
+
+                if (_destroyed) return;
 
                 if (_hideObjectAfterDuration)
                 {
